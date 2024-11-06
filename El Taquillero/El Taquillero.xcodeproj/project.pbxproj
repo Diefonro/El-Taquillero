@@ -13,6 +13,7 @@
 		41C0900E2CDB4C1F000CFBE5 /* ViewIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900D2CDB4C12000CFBE5 /* ViewIdentity.swift */; };
 		41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */; };
 		41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */; };
+		41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */; };
 		41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */; };
 		41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */; };
 		41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */; };
@@ -61,6 +62,7 @@
 		41C0900D2CDB4C12000CFBE5 /* ViewIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentity.swift; sourceTree = "<group>"; };
 		41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
+		41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Taquillero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,6 +245,14 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
+		41C090192CDB5591000CFBE5 /* AppLocalizedStrings */ = {
+			isa = PBXGroup;
+			children = (
+				41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */,
+			);
+			path = AppLocalizedStrings;
+			sourceTree = "<group>";
+		};
 		41E478A32CDB3DDE0012C6D7 = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +305,7 @@
 		41E479032CDB408D0012C6D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				41C090192CDB5591000CFBE5 /* AppLocalizedStrings */,
 				41C08FF92CDB491F000CFBE5 /* Utils */,
 				41E4790D2CDB45720012C6D7 /* CustomFont */,
 				41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */,
@@ -483,6 +494,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 41E478A32CDB3DDE0012C6D7;
 			minimizedProjectReferenceProxies = 1;
@@ -504,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41E478F32CDB3DEC0012C6D7 /* Assets.xcassets in Resources */,
+				41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */,
 				41E479022CDB3FFD0012C6D7 /* CustomLaunchScreen.storyboard in Resources */,
 				41E4791A2CDB457D0012C6D7 /* Lato-Thin.ttf in Resources */,
 				41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */,
@@ -722,6 +735,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -778,6 +792,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

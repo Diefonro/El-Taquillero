@@ -1,0 +1,23 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "TestPhrase" : {
+      "comment" : "A greeting phrase.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to Home Screen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a la pantalla de inicio."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
