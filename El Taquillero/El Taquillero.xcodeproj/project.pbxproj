@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */; };
+		41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */; };
+		41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */; };
+		41E478F32CDB3DEC0012C6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E478E42CDB3DEC0012C6D7 /* Assets.xcassets */; };
+		41E478F52CDB3DEC0012C6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E478E82CDB3DEC0012C6D7 /* LaunchScreen.storyboard */; };
+		41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E478EA2CDB3DEC0012C6D7 /* Main.storyboard */; };
+		41E478F92CDB3DF00012C6D7 /* El_TaquilleroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478F72CDB3DF00012C6D7 /* El_TaquilleroTests.swift */; };
+		41E478FD2CDB3DF20012C6D7 /* El_TaquilleroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478FA2CDB3DF20012C6D7 /* El_TaquilleroUITests.swift */; };
+		41E478FE2CDB3DF20012C6D7 /* El_TaquilleroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478FB2CDB3DF20012C6D7 /* El_TaquilleroUITestsLaunchTests.swift */; };
+		41E479022CDB3FFD0012C6D7 /* CustomScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E479012CDB3FFD0012C6D7 /* CustomScreen.storyboard */; };
+		41E479062CDB40BB0012C6D7 /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E479052CDB40BB0012C6D7 /* LaunchScreenVC.swift */; };
+		41E4791A2CDB457D0012C6D7 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479162CDB457D0012C6D7 /* Lato-Thin.ttf */; };
+		41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 41E479182CDB457D0012C6D7 /* OFL.txt */; };
+		41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E4790F2CDB457D0012C6D7 /* Lato-BlackItalic.ttf */; };
+		41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479142CDB457D0012C6D7 /* Lato-LightItalic.ttf */; };
+		41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479122CDB457D0012C6D7 /* Lato-Italic.ttf */; };
+		41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479172CDB457D0012C6D7 /* Lato-ThinItalic.ttf */; };
+		41E479202CDB457D0012C6D7 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479152CDB457D0012C6D7 /* Lato-Regular.ttf */; };
+		41E479212CDB457D0012C6D7 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E4790E2CDB457D0012C6D7 /* Lato-Black.ttf */; };
+		41E479222CDB457D0012C6D7 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479132CDB457D0012C6D7 /* Lato-Light.ttf */; };
+		41E479232CDB457D0012C6D7 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479102CDB457D0012C6D7 /* Lato-Bold.ttf */; };
+		41E479242CDB457D0012C6D7 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479112CDB457D0012C6D7 /* Lato-BoldItalic.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41E478C62CDB3DE00012C6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E478A42CDB3DDE0012C6D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E478AB2CDB3DDE0012C6D7;
+			remoteInfo = "El Taquillero";
+		};
+		41E478D02CDB3DE00012C6D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41E478A42CDB3DDE0012C6D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41E478AB2CDB3DDE0012C6D7;
+			remoteInfo = "El Taquillero";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Taquillero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41E478E42CDB3DEC0012C6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E478E62CDB3DEC0012C6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41E478E72CDB3DEC0012C6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41E478E92CDB3DEC0012C6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41E478EE2CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = El_Taquillero.xcdatamodel; sourceTree = "<group>"; };
+		41E478F72CDB3DF00012C6D7 /* El_TaquilleroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = El_TaquilleroTests.swift; sourceTree = "<group>"; };
+		41E478FA2CDB3DF20012C6D7 /* El_TaquilleroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = El_TaquilleroUITests.swift; sourceTree = "<group>"; };
+		41E478FB2CDB3DF20012C6D7 /* El_TaquilleroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = El_TaquilleroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41E479012CDB3FFD0012C6D7 /* CustomScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomScreen.storyboard; sourceTree = "<group>"; };
+		41E479052CDB40BB0012C6D7 /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		41E4790E2CDB457D0012C6D7 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		41E4790F2CDB457D0012C6D7 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		41E479102CDB457D0012C6D7 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		41E479112CDB457D0012C6D7 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		41E479122CDB457D0012C6D7 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		41E479132CDB457D0012C6D7 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		41E479142CDB457D0012C6D7 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		41E479152CDB457D0012C6D7 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		41E479162CDB457D0012C6D7 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		41E479172CDB457D0012C6D7 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		41E479182CDB457D0012C6D7 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41E478A92CDB3DDE0012C6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478C22CDB3DE00012C6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478CC2CDB3DE00012C6D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41E478A32CDB3DDE0012C6D7 = {
+			isa = PBXGroup;
+			children = (
+				41E478ED2CDB3DEC0012C6D7 /* El Taquillero */,
+				41E478F82CDB3DF00012C6D7 /* El TaquilleroTests */,
+				41E478FC2CDB3DF20012C6D7 /* El TaquilleroUITests */,
+				41E478AD2CDB3DDE0012C6D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41E478AD2CDB3DDE0012C6D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */,
+				41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */,
+				41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41E478ED2CDB3DEC0012C6D7 /* El Taquillero */ = {
+			isa = PBXGroup;
+			children = (
+				41E479032CDB408D0012C6D7 /* Core */,
+				41E479042CDB40940012C6D7 /* Features */,
+				41E478E42CDB3DEC0012C6D7 /* Assets.xcassets */,
+				41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */,
+				41E478E62CDB3DEC0012C6D7 /* Info.plist */,
+			);
+			path = "El Taquillero";
+			sourceTree = "<group>";
+		};
+		41E478F82CDB3DF00012C6D7 /* El TaquilleroTests */ = {
+			isa = PBXGroup;
+			children = (
+				41E478F72CDB3DF00012C6D7 /* El_TaquilleroTests.swift */,
+			);
+			path = "El TaquilleroTests";
+			sourceTree = "<group>";
+		};
+		41E478FC2CDB3DF20012C6D7 /* El TaquilleroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41E478FA2CDB3DF20012C6D7 /* El_TaquilleroUITests.swift */,
+				41E478FB2CDB3DF20012C6D7 /* El_TaquilleroUITestsLaunchTests.swift */,
+			);
+			path = "El TaquilleroUITests";
+			sourceTree = "<group>";
+		};
+		41E479032CDB408D0012C6D7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				41E4790D2CDB45720012C6D7 /* CustomFont */,
+				41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */,
+				41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */,
+				41E478E82CDB3DEC0012C6D7 /* LaunchScreen.storyboard */,
+				41E478EA2CDB3DEC0012C6D7 /* Main.storyboard */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		41E479042CDB40940012C6D7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				41E479072CDB420A0012C6D7 /* CustomLaunchScreen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		41E479072CDB420A0012C6D7 /* CustomLaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41E479082CDB42150012C6D7 /* View */,
+				41E479092CDB421D0012C6D7 /* Interactor */,
+				41E4790C2CDB423B0012C6D7 /* Presenter */,
+				41E4790B2CDB42340012C6D7 /* Entity */,
+				41E4790A2CDB422C0012C6D7 /* Router */,
+			);
+			path = CustomLaunchScreen;
+			sourceTree = "<group>";
+		};
+		41E479082CDB42150012C6D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41E479012CDB3FFD0012C6D7 /* CustomScreen.storyboard */,
+				41E479052CDB40BB0012C6D7 /* LaunchScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41E479092CDB421D0012C6D7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41E4790A2CDB422C0012C6D7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41E4790B2CDB42340012C6D7 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41E4790C2CDB423B0012C6D7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41E4790D2CDB45720012C6D7 /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				41E479192CDB457D0012C6D7 /* Lato */,
+			);
+			path = CustomFont;
+			sourceTree = "<group>";
+		};
+		41E479192CDB457D0012C6D7 /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				41E4790E2CDB457D0012C6D7 /* Lato-Black.ttf */,
+				41E4790F2CDB457D0012C6D7 /* Lato-BlackItalic.ttf */,
+				41E479102CDB457D0012C6D7 /* Lato-Bold.ttf */,
+				41E479112CDB457D0012C6D7 /* Lato-BoldItalic.ttf */,
+				41E479122CDB457D0012C6D7 /* Lato-Italic.ttf */,
+				41E479132CDB457D0012C6D7 /* Lato-Light.ttf */,
+				41E479142CDB457D0012C6D7 /* Lato-LightItalic.ttf */,
+				41E479152CDB457D0012C6D7 /* Lato-Regular.ttf */,
+				41E479162CDB457D0012C6D7 /* Lato-Thin.ttf */,
+				41E479172CDB457D0012C6D7 /* Lato-ThinItalic.ttf */,
+				41E479182CDB457D0012C6D7 /* OFL.txt */,
+			);
+			path = Lato;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41E478AB2CDB3DDE0012C6D7 /* El Taquillero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E478D82CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El Taquillero" */;
+			buildPhases = (
+				41E478A82CDB3DDE0012C6D7 /* Sources */,
+				41E478A92CDB3DDE0012C6D7 /* Frameworks */,
+				41E478AA2CDB3DDE0012C6D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "El Taquillero";
+			packageProductDependencies = (
+			);
+			productName = "El Taquillero";
+			productReference = 41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41E478C42CDB3DE00012C6D7 /* El TaquilleroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E478DD2CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroTests" */;
+			buildPhases = (
+				41E478C12CDB3DE00012C6D7 /* Sources */,
+				41E478C22CDB3DE00012C6D7 /* Frameworks */,
+				41E478C32CDB3DE00012C6D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E478C72CDB3DE00012C6D7 /* PBXTargetDependency */,
+			);
+			name = "El TaquilleroTests";
+			packageProductDependencies = (
+			);
+			productName = "El TaquilleroTests";
+			productReference = 41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41E478CE2CDB3DE00012C6D7 /* El TaquilleroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E478E02CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroUITests" */;
+			buildPhases = (
+				41E478CB2CDB3DE00012C6D7 /* Sources */,
+				41E478CC2CDB3DE00012C6D7 /* Frameworks */,
+				41E478CD2CDB3DE00012C6D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41E478D12CDB3DE00012C6D7 /* PBXTargetDependency */,
+			);
+			name = "El TaquilleroUITests";
+			packageProductDependencies = (
+			);
+			productName = "El TaquilleroUITests";
+			productReference = 41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41E478A42CDB3DDE0012C6D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					41E478AB2CDB3DDE0012C6D7 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					41E478C42CDB3DE00012C6D7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 41E478AB2CDB3DDE0012C6D7;
+					};
+					41E478CE2CDB3DE00012C6D7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 41E478AB2CDB3DDE0012C6D7;
+					};
+				};
+			};
+			buildConfigurationList = 41E478A72CDB3DDE0012C6D7 /* Build configuration list for PBXProject "El Taquillero" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41E478A32CDB3DDE0012C6D7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 41E478AD2CDB3DDE0012C6D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41E478AB2CDB3DDE0012C6D7 /* El Taquillero */,
+				41E478C42CDB3DE00012C6D7 /* El TaquilleroTests */,
+				41E478CE2CDB3DE00012C6D7 /* El TaquilleroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41E478AA2CDB3DDE0012C6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E478F32CDB3DEC0012C6D7 /* Assets.xcassets in Resources */,
+				41E479022CDB3FFD0012C6D7 /* CustomScreen.storyboard in Resources */,
+				41E4791A2CDB457D0012C6D7 /* Lato-Thin.ttf in Resources */,
+				41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */,
+				41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */,
+				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
+				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
+				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
+				41E479202CDB457D0012C6D7 /* Lato-Regular.ttf in Resources */,
+				41E479212CDB457D0012C6D7 /* Lato-Black.ttf in Resources */,
+				41E479222CDB457D0012C6D7 /* Lato-Light.ttf in Resources */,
+				41E479232CDB457D0012C6D7 /* Lato-Bold.ttf in Resources */,
+				41E479242CDB457D0012C6D7 /* Lato-BoldItalic.ttf in Resources */,
+				41E478F52CDB3DEC0012C6D7 /* LaunchScreen.storyboard in Resources */,
+				41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478C32CDB3DE00012C6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478CD2CDB3DE00012C6D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41E478A82CDB3DDE0012C6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */,
+				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
+				41E479062CDB40BB0012C6D7 /* LaunchScreenVC.swift in Sources */,
+				41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478C12CDB3DE00012C6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E478F92CDB3DF00012C6D7 /* El_TaquilleroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41E478CB2CDB3DE00012C6D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41E478FD2CDB3DF20012C6D7 /* El_TaquilleroUITests.swift in Sources */,
+				41E478FE2CDB3DF20012C6D7 /* El_TaquilleroUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41E478C72CDB3DE00012C6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E478AB2CDB3DDE0012C6D7 /* El Taquillero */;
+			targetProxy = 41E478C62CDB3DE00012C6D7 /* PBXContainerItemProxy */;
+		};
+		41E478D12CDB3DE00012C6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41E478AB2CDB3DDE0012C6D7 /* El Taquillero */;
+			targetProxy = 41E478D02CDB3DE00012C6D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41E478E82CDB3DEC0012C6D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E478E72CDB3DEC0012C6D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41E478EA2CDB3DEC0012C6D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41E478E92CDB3DEC0012C6D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41E478D92CDB3DE00012C6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "El Taquillero/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-Taquillero";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41E478DA2CDB3DE00012C6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "El Taquillero/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-Taquillero";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41E478DB2CDB3DE00012C6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41E478DC2CDB3DE00012C6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41E478DE2CDB3DE00012C6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-TaquilleroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/El Taquillero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/El Taquillero";
+			};
+			name = Debug;
+		};
+		41E478DF2CDB3DE00012C6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-TaquilleroTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/El Taquillero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/El Taquillero";
+			};
+			name = Release;
+		};
+		41E478E12CDB3DE00012C6D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-TaquilleroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "El Taquillero";
+			};
+			name = Debug;
+		};
+		41E478E22CDB3DE00012C6D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R83QFJW7B8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diefonro.El-TaquilleroUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "El Taquillero";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41E478A72CDB3DDE0012C6D7 /* Build configuration list for PBXProject "El Taquillero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E478DB2CDB3DE00012C6D7 /* Debug */,
+				41E478DC2CDB3DE00012C6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E478D82CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El Taquillero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E478D92CDB3DE00012C6D7 /* Debug */,
+				41E478DA2CDB3DE00012C6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E478DD2CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E478DE2CDB3DE00012C6D7 /* Debug */,
+				41E478DF2CDB3DE00012C6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E478E02CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41E478E12CDB3DE00012C6D7 /* Debug */,
+				41E478E22CDB3DE00012C6D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				41E478EE2CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodel */,
+			);
+			currentVersion = 41E478EE2CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodel */;
+			path = El_Taquillero.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 41E478A42CDB3DDE0012C6D7 /* Project object */;
+}
