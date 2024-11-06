@@ -16,7 +16,10 @@ class CustomLaunchScreenRouter: CustomLaunchScreenRouterProtocol {
     weak var view: CustomLaunchScreenVC?
     
     func presentHomeScreen() {
-        print("Presenting Home Screen...")
+        if let homeScreenVC = UIStoryboard(name: HomeScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: HomeScreenVC.identifier) as? HomeScreenVC {
+            homeScreenVC.modalPresentationStyle = .fullScreen
+            homeScreenVC.modalTransitionStyle = .crossDissolve
+            self.view?.present(homeScreenVC, animated: true)
+        }
     }
-
 }

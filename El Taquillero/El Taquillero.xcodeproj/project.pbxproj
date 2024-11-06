@@ -11,6 +11,8 @@
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
 		41C0900E2CDB4C1F000CFBE5 /* ViewIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900D2CDB4C12000CFBE5 /* ViewIdentity.swift */; };
+		41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */; };
+		41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */; };
 		41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */; };
 		41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */; };
 		41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */; };
@@ -57,6 +59,8 @@
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
 		41C0900D2CDB4C12000CFBE5 /* ViewIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentity.swift; sourceTree = "<group>"; };
+		41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Taquillero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +194,55 @@
 			path = "Shared Protocols";
 			sourceTree = "<group>";
 		};
+		41C0900F2CDB5091000CFBE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */,
+				41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41C090102CDB5091000CFBE5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41C090112CDB5091000CFBE5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41C090122CDB5091000CFBE5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41C090132CDB5091000CFBE5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41C090142CDB5091000CFBE5 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41C0900F2CDB5091000CFBE5 /* View */,
+				41C090102CDB5091000CFBE5 /* Interactor */,
+				41C090112CDB5091000CFBE5 /* Presenter */,
+				41C090122CDB5091000CFBE5 /* Entity */,
+				41C090132CDB5091000CFBE5 /* Router */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		41E478A32CDB3DDE0012C6D7 = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				41E479072CDB420A0012C6D7 /* CustomLaunchScreen */,
+				41C090142CDB5091000CFBE5 /* HomeScreen */,
 				41C090052CDB4ACE000CFBE5 /* Template */,
 			);
 			path = Features;
@@ -454,6 +508,7 @@
 				41E4791A2CDB457D0012C6D7 /* Lato-Thin.ttf in Resources */,
 				41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */,
 				41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */,
+				41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */,
 				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
 				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
 				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
@@ -496,6 +551,7 @@
 				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
 				41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */,
+				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

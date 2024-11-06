@@ -43,7 +43,7 @@ class CustomLaunchScreenVC: UIViewController,  CustomLaunchScreenViewProtocol, S
             self.iconImageView.showScaleEffectAnimated()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             self.presenter?.viewUIReady()
         }
     }
