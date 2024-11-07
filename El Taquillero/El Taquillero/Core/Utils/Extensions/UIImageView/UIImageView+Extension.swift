@@ -15,5 +15,25 @@ extension UIImageView {
         }, completion: nil)
     }
     
+    func setURLImage(imageUrl: String, placeholder: UIImage? = UIImage(named: "ETPlaceholderImage")) {
+        self.image = placeholder
+        
+        guard let url = URL(string: imageUrl.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "") else {
+            print("Invalid URL")
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            
+            if let data = data, error == nil, let downloadedImage = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.image = downloadedImage
+                }
+            } else {
+                print("Failed to load image from URL:", error ?? "Unknown error")
+            }
+        }.resume()
+    }
+    
 }
 

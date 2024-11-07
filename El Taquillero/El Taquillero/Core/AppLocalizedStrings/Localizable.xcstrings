@@ -18,6 +18,23 @@
         }
       }
     },
+    "HOME_SCREEN_CAPTION" : {
+      "comment" : "The home screen caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        }
+      }
+    },
     "HOME_WELCOME_TEXT" : {
       "comment" : "A greeting phrase.",
       "localizations" : {

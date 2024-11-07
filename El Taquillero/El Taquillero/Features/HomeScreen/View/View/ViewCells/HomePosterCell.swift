@@ -8,10 +8,11 @@
 import UIKit
 
 protocol HomePosterCellProtocol: AnyObject {
-    //    func configure(with poster: Poster)
+    func setupCell(with title: Titles)
     func setupUI()
 }
 class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
+    
     static var reuseIdentifier = "HomePosterCell"
     
     @IBOutlet weak var containerView: UIView!
@@ -44,6 +45,19 @@ class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
     func setupLabels() {
         self.titleNameLabel.font = UIFont(name: "Lato-BlackItalic", size: 80)
         self.titleGenreLabel.font = UIFont(name: "Lato-Bold", size: 20)
+        setupLabelsColor(labels: [titleNameLabel, titleGenreLabel])
+    }
+    
+    func setupLabelsColor(labels: [UILabel]) {
+        for eachLabel in labels {
+            eachLabel.textColor = .etPorcelain
+        }
+    }
+    
+    func setupCell(with title: Titles) {
+        self.posterImageView.setURLImage(imageUrl: title.titleImageURL!)
+        self.titleNameLabel.text = title.titleName
+        self.titleGenreLabel.text = title.titleGenre
     }
     
 }
