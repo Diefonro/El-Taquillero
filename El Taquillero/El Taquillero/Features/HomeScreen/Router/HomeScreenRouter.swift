@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomeScreenRouterProtocol {
-    func navigateToTitleDetail()
+    func navigateToTitleDetail(context: Results, title: String)
     func navigateToTitleList(context: [Results], title: String, contentType: ContentType, language: String)
 }
 
@@ -16,8 +16,15 @@ class HomeScreenRouter: HomeScreenRouterProtocol{
     
     weak var view: HomeScreenVC?
     
-    func navigateToTitleDetail() {
-        
+    func navigateToTitleDetail(context: Results, title: String) {
+        if let titleDetailVC = UIStoryboard(name: TitleDetailScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: TitleDetailScreenVC.identifier) as? TitleDetailScreenVC {
+            titleDetailVC.context = context
+            titleDetailVC.titleName = title
+            titleDetailVC.hidesBottomBarWhenPushed = true
+            self.view?.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+            self.view?.navigationController?.navigationBar.isHidden = false
+            self.view?.navigationController?.pushViewController(titleDetailVC, animated: true)
+        }
     }
     
     func navigateToTitleList(context: [Results], title: String, contentType: ContentType, language: String) {
@@ -25,6 +32,7 @@ class HomeScreenRouter: HomeScreenRouterProtocol{
             
             let interactor = HomeScreenInteractor()
             let router = TitlesListScreenRouter()
+            router.view = titleListVC
             let presenter = TitlesListScreenPresenter(view: titleListVC, interactor: interactor, router: router)
             titleListVC.presenter = presenter
             

@@ -5,11 +5,7 @@
 //  Created by Andrés Fonseca on 07/11/2024.
 //
 
-protocol HomeScreenInteractorProtocol {
-   
-}
-
-class HomeScreenInteractor: HomeScreenInteractorProtocol {
+class HomeScreenInteractor {
     
     var homeServices = HomeServices()
     

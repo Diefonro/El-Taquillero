@@ -16,3 +16,8 @@ enum FetchType: String {
         return self.rawValue
     }
 }
+
+enum RootScreen: String {
+    case home
+    case sliders
+}

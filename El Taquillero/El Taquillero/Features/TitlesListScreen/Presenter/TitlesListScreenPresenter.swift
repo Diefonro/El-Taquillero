@@ -8,9 +8,6 @@
 
 import UIKit
 
-protocol TItleListScreenPresenterProtocol {
-    func viewUIReady()
-}
 
 class TitlesListScreenPresenter {
     var view: TitlesListScreenVC
@@ -23,6 +20,10 @@ class TitlesListScreenPresenter {
         self.router = router
     }
     
-    func viewUIReady() {
+    func readyToNavigateToDetail(context: Results, title: String) {
+        self.router.navigateToTitleDetail(context: context, title: title)
     }
+
 }
+
+

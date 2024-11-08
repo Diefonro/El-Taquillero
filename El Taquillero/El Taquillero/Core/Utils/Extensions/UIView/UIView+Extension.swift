@@ -42,6 +42,34 @@ extension UIView {
         self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
     }
     
+    func setupCustomNavBar(navBar: UIView, label: UILabel, context: UIViewController, rootScreen: RootScreen) {
+        navBar.backgroundColor = .etLightTeal
+        navBar.addBottomBorder(with: .darkGray, andWidth: 0.5)
+        label.font = UIFont(name: "Lato-Bold", size: 18)
+        label.textColor = .etPorcelain
+        
+        switch rootScreen {
+        case .home:
+            label.text = HomeStrings.homeScreenCaption
+        case .sliders:
+            label.text = ""
+        }
+        
+        context.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        navBar.insertSubview(blurView, at: 0)
+        
+        NSLayoutConstraint.activate([
+          blurView.topAnchor.constraint(equalTo: navBar.topAnchor),
+          blurView.leadingAnchor.constraint(equalTo: navBar.leadingAnchor),
+          blurView.heightAnchor.constraint(equalTo: navBar.heightAnchor),
+          blurView.widthAnchor.constraint(equalTo: navBar.widthAnchor)
+        ])
+    }
+    
 }
 
 

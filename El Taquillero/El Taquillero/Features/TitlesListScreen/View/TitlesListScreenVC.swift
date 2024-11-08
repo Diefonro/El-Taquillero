@@ -103,6 +103,13 @@ extension TitlesListScreenVC: UITableViewDataSource, UITableViewDelegate {
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let context = self.context[indexPath.row]
+        if let title = context.title ?? context.name {
+            self.presenter.readyToNavigateToDetail(context: context, title: title)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }

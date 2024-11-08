@@ -106,6 +106,24 @@
         }
       }
     },
+    "TITLE_DETAIL_REPRODUCE_BUTTON_CAPTION" : {
+      "comment" : "Reproduce button's caption.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproduce"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir"
+          }
+        }
+      }
+    },
     "TITLE_LIST_SCREEN_RELEASE_DATE_CAPTION" : {
       "comment" : "Title release date.",
       "extractionState" : "manual",

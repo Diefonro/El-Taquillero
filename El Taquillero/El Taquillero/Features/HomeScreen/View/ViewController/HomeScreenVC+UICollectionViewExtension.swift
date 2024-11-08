@@ -50,6 +50,29 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         return UICollectionViewCell()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let section = indexPath.section
+        
+        switch section {
+        case 0:
+            let context = self.titles[indexPath.row]
+            if let title = context.name ?? context.title {
+                self.presenter.readyToNavigateToDetail(context: context, title: title)
+            }
+        case 1:
+            let context = self.topMovies[indexPath.row]
+            if let title = context.name ?? context.title {
+                self.presenter.readyToNavigateToDetail(context: context, title: title)
+            }
+        case 2: let context = self.topSeries[indexPath.row]
+            if let title = context.name ?? context.title {
+                self.presenter.readyToNavigateToDetail(context: context, title: title)
+            }
+        default:
+            print("hola")
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
             if let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as? HeaderView {
@@ -67,7 +90,7 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                     headerView.language = self.language
                     
                     headerView.didTapOnViewAll = { [weak self] data, title, contentType, language in
-                        self?.presenter.readyToNavigate(context: data, title: title, contentType: contentType, language: language)
+                        self?.presenter.readyToNavigateToList(context: data, title: title, contentType: contentType, language: language)
                     }
                     
                 case 2:
@@ -81,7 +104,7 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                     headerView.language = self.language
                     
                     headerView.didTapOnViewAll = { [weak self] data, title, contentType, language in
-                        self?.presenter.readyToNavigate(context: data, title: title, contentType: contentType, language: language)
+                        self?.presenter.readyToNavigateToList(context: data, title: title, contentType: contentType, language: language)
                     }
                 default:
                     break
