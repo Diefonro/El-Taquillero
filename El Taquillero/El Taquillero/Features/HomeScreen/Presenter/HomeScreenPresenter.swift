@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeScreenPresenterProtocol  {
+    func readyToNavigate(context: [Results], title: String)
+}
+
 class HomeScreenPresenter {
     var view: HomeScreenVC
     var interactor: HomeScreenInteractor
@@ -16,6 +20,10 @@ class HomeScreenPresenter {
         self.view = view
         self.interactor = interactor
         self.router = router
+    }
+    
+    func readyToNavigate(context: [Results], title: String) {
+        self.router.navigateToTitleList(context: context, title: title)
     }
 
     func fetchTrendingData(success: @escaping () -> Void, failure: @escaping () -> Void) {

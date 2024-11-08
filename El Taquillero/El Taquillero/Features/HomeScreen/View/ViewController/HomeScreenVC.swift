@@ -41,11 +41,13 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
         self.fetchTrendingMovies()
         self.fetchTopMovies()
         self.fetchTopSeries()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupCustomNavBar()
+        self.navigationController?.navigationBar.isHidden = true
     }
  
     func setupCollectionView() {
@@ -75,6 +77,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     }
     
     func setupCustomNavBar() {
+        self.simulatedNavBarView.backgroundColor = .etLightTeal
         self.simulatedNavBarView.addBottomBorder(with: .darkGray, andWidth: 0.5)
         self.simulatedNavBarLabel.text = HomeStrings.homeScreenCaption
         self.simulatedNavBarLabel.font = UIFont(name: "Lato-Bold", size: 18)

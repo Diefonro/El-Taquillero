@@ -60,6 +60,14 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                     let navTitle = String(localized: "HOME_TOP_MOVIES_CAPTION")
                     headerView.label.text = navTitle
                     headerView.navTitle = navTitle
+                    
+                    let context = self.topMovies
+                    headerView.context = context
+                    
+                    headerView.didTapOnViewAll = { [weak self] data, title in
+                        self?.presenter.readyToNavigate(context: data, title: title)
+                    }
+                    
                 case 2:
                     let navTitle = String(localized: "HOME_TOP_SERIES_CAPTION")
                     headerView.label.text = navTitle

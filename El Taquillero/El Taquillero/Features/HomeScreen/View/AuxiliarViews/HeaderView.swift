@@ -12,7 +12,7 @@ class HeaderView: UICollectionReusableView {
     let label: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = UIFont(name: "Lato-Bold", size: 20)
+        label.font = UIFont(name: "Lato-Black", size: 20)
         label.textColor = .etLightPaleGray
         return label
     }()
@@ -26,8 +26,9 @@ class HeaderView: UICollectionReusableView {
         return button
     }()
     
-    var didTapOnViewAll: ((_ navTitle: String) -> Void)?
+    var didTapOnViewAll: ((_ data: [Results], _ title: String) -> Void)?
     var navTitle: String? = ""
+    var context: [Results] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,8 +42,7 @@ class HeaderView: UICollectionReusableView {
     }
     
     @objc func buttonTapped() {
-//        self.didTapOnViewAll?(navTitle!)
-        print("Tapped on view all")
+        self.didTapOnViewAll?(context, navTitle!)
     }
     
     required init?(coder: NSCoder) {

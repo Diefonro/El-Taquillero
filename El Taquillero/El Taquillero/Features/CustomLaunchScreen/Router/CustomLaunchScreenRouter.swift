@@ -16,18 +16,11 @@ class CustomLaunchScreenRouter: CustomLaunchScreenRouterProtocol {
     weak var view: CustomLaunchScreenVC?
     
     func presentHomeScreen() {
-        if let homeScreenVC = UIStoryboard(name: HomeScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: HomeScreenVC.identifier) as? HomeScreenVC {
-            homeScreenVC.modalPresentationStyle = .fullScreen
-            homeScreenVC.modalTransitionStyle = .crossDissolve
+        if let tabBarScreen = UIStoryboard(name: TabBarScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: TabBarScreenVC.identifier) as? TabBarScreenVC {
+            tabBarScreen.modalTransitionStyle = .crossDissolve
+            tabBarScreen.modalPresentationStyle = .fullScreen
             
-            let interactor = HomeScreenInteractor()
-            let router = HomeScreenRouter()
-            
-            let presenter = HomeScreenPresenter(view: homeScreenVC, interactor: interactor, router: router)
-            
-            homeScreenVC.presenter = presenter
-            
-            self.view?.present(homeScreenVC, animated: true)
+            self.view?.present(tabBarScreen, animated: true)
         }
     }
 }
