@@ -78,4 +78,18 @@ struct Results: Codable {
         }
         return genreIDS
     }
+    
+    func getRating() -> Double {
+        guard let voteAverage = voteAverage else {
+            return 0.0
+        }
+        return voteAverage
+    }
+    
+    func getDescription() -> String {
+        guard let description = overview else {
+            return ""
+        }
+        return description
+    }
 }

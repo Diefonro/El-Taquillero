@@ -32,6 +32,8 @@
 		413303A12CDDEDFD0010B769 /* TitlesListScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A02CDDEDFD0010B769 /* TitlesListScreenPresenter.swift */; };
 		413303A32CDDEE060010B769 /* TitlesListScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A22CDDEE060010B769 /* TitlesListScreenRouter.swift */; };
 		413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A92CDE16380010B769 /* GetLanguageCode.swift */; };
+		413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */; };
+		413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -117,6 +119,8 @@
 		413303A02CDDEDFD0010B769 /* TitlesListScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesListScreenPresenter.swift; sourceTree = "<group>"; };
 		413303A22CDDEE060010B769 /* TitlesListScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesListScreenRouter.swift; sourceTree = "<group>"; };
 		413303A92CDE16380010B769 /* GetLanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguageCode.swift; sourceTree = "<group>"; };
+		413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TitleDetailScreen.storyboard; sourceTree = "<group>"; };
+		413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailScreenVC.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 		413303942CDDE9B30010B769 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */,
+				413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,7 +374,7 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		413303992CDDE9B30010B769 /* Template  */ = {
+		413303992CDDE9B30010B769 /* TitleDetailScreeen */ = {
 			isa = PBXGroup;
 			children = (
 				413303942CDDE9B30010B769 /* View */,
@@ -377,7 +383,7 @@
 				413303972CDDE9B30010B769 /* Entity */,
 				413303982CDDE9B30010B769 /* Router */,
 			);
-			path = "Template ";
+			path = TitleDetailScreeen;
 			sourceTree = "<group>";
 		};
 		413303A62CDE161C0010B769 /* GetLanguage */ = {
@@ -386,6 +392,53 @@
 				413303A92CDE16380010B769 /* GetLanguageCode.swift */,
 			);
 			path = GetLanguage;
+			sourceTree = "<group>";
+		};
+		413303AB2CDE230C0010B769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		413303AC2CDE230C0010B769 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		413303AD2CDE230C0010B769 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		413303AE2CDE230C0010B769 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		413303AF2CDE230C0010B769 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		413303B02CDE230C0010B769 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				413303AB2CDE230C0010B769 /* View */,
+				413303AC2CDE230C0010B769 /* Interactor */,
+				413303AD2CDE230C0010B769 /* Presenter */,
+				413303AE2CDE230C0010B769 /* Entity */,
+				413303AF2CDE230C0010B769 /* Router */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 		41C08FF92CDB491F000CFBE5 /* Utils */ = {
@@ -632,8 +685,9 @@
 				41E479072CDB420A0012C6D7 /* CustomLaunchScreen */,
 				41C090142CDB5091000CFBE5 /* HomeScreen */,
 				41C090052CDB4ACE000CFBE5 /* TitlesListScreen */,
+				413303992CDDE9B30010B769 /* TitleDetailScreeen */,
 				413303792CDDDEA40010B769 /* UserInfoScreen */,
-				413303992CDDE9B30010B769 /* Template  */,
+				413303B02CDE230C0010B769 /* Template */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -855,6 +909,7 @@
 				4133037C2CDDDECC0010B769 /* TitlesListScreen.storyboard in Resources */,
 				41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */,
 				41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */,
+				413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */,
 				41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */,
 				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
 				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
@@ -903,6 +958,7 @@
 				41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */,
 				41C0900E2CDB4C1F000CFBE5 /* ViewIdentity.swift in Sources */,
 				413303732CDDCB100010B769 /* FetchType.swift in Sources */,
+				413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */,
 				4133037E2CDDDEEA0010B769 /* TitlesListScreenVC.swift in Sources */,
 				413303852CDDE3070010B769 /* String+Extension.swift in Sources */,
 				41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */,

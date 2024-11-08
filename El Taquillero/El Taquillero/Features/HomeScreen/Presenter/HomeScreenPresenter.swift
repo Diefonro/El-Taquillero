@@ -8,7 +8,8 @@
 import UIKit
 
 protocol HomeScreenPresenterProtocol  {
-    func readyToNavigate(context: [Results], title: String)
+    func readyToNavigateToList(context: [Results], title: String)
+    func readyToNavigateToDetail(context: Results, title: String)
 }
 
 class HomeScreenPresenter {
@@ -22,8 +23,12 @@ class HomeScreenPresenter {
         self.router = router
     }
     
-    func readyToNavigate(context: [Results], title: String, contentType: ContentType, language: String) {
+    func readyToNavigateToList(context: [Results], title: String, contentType: ContentType, language: String) {
         self.router.navigateToTitleList(context: context, title: title, contentType: contentType, language: language)
+    }
+    
+    func readyToNavigateToDetail(context: Results, title: String) {
+        self.router.navigateToTitleDetail(context: context, title: title)
     }
 
     func fetchTrendingData(success: @escaping () -> Void, failure: @escaping () -> Void) {

@@ -52,7 +52,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupCustomNavBar()
+        self.simulatedNavBarView.setupCustomNavBar(navBar: self.simulatedNavBarView, label: self.simulatedNavBarLabel, context: self)
         self.navigationController?.navigationBar.isHidden = true
     }
  
@@ -80,28 +80,6 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
             collectionView.bottomAnchor.constraint(equalTo: collectionViewContainer.bottomAnchor)
         ])
         
-    }
-    
-    func setupCustomNavBar() {
-        self.simulatedNavBarView.backgroundColor = .etLightTeal
-        self.simulatedNavBarView.addBottomBorder(with: .darkGray, andWidth: 0.5)
-        self.simulatedNavBarLabel.text = HomeStrings.homeScreenCaption
-        self.simulatedNavBarLabel.font = UIFont(name: "Lato-Bold", size: 18)
-        self.simulatedNavBarLabel.textColor = .etPorcelain
-        
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
-        
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.translatesAutoresizingMaskIntoConstraints = false
-        simulatedNavBarView.insertSubview(blurView, at: 0)
-        
-        NSLayoutConstraint.activate([
-          blurView.topAnchor.constraint(equalTo: simulatedNavBarView.topAnchor),
-          blurView.leadingAnchor.constraint(equalTo: simulatedNavBarView.leadingAnchor),
-          blurView.heightAnchor.constraint(equalTo: simulatedNavBarView.heightAnchor),
-          blurView.widthAnchor.constraint(equalTo: simulatedNavBarView.widthAnchor)
-        ])
     }
     
     func updateViewWithTrendingData(with titles: [Results]) {
