@@ -44,6 +44,16 @@
 		41E479222CDB457D0012C6D7 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479132CDB457D0012C6D7 /* Lato-Light.ttf */; };
 		41E479232CDB457D0012C6D7 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479102CDB457D0012C6D7 /* Lato-Bold.ttf */; };
 		41E479242CDB457D0012C6D7 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41E479112CDB457D0012C6D7 /* Lato-BoldItalic.ttf */; };
+		41FFE69B2CDD56F7007A3800 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE69A2CDD56F7007A3800 /* Endpoint.swift */; };
+		41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE69C2CDD5713007A3800 /* RequestComponents.swift */; };
+		41FFE69F2CDD5885007A3800 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE69E2CDD5881007A3800 /* HTTPRequest.swift */; };
+		41FFE6A22CDD593F007A3800 /* HomeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6A12CDD593F007A3800 /* HomeEndpoints.swift */; };
+		41FFE6A42CDD5EAA007A3800 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41FFE6A32CDD5EAA007A3800 /* Config.plist */; };
+		41FFE6A62CDD6055007A3800 /* ReadToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6A52CDD6048007A3800 /* ReadToken.swift */; };
+		41FFE6A82CDD62B3007A3800 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6A72CDD62AE007A3800 /* HomeServices.swift */; };
+		41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6A92CDD7268007A3800 /* HomeScreenInteractor.swift */; };
+		41FFE6AC2CDD767D007A3800 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6AB2CDD7678007A3800 /* HomeScreenPresenter.swift */; };
+		41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6AD2CDD7900007A3800 /* HomeScreenRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +115,16 @@
 		41E479162CDB457D0012C6D7 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 		41E479172CDB457D0012C6D7 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
 		41E479182CDB457D0012C6D7 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		41FFE69A2CDD56F7007A3800 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		41FFE69C2CDD5713007A3800 /* RequestComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestComponents.swift; sourceTree = "<group>"; };
+		41FFE69E2CDD5881007A3800 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		41FFE6A12CDD593F007A3800 /* HomeEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoints.swift; sourceTree = "<group>"; };
+		41FFE6A32CDD5EAA007A3800 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		41FFE6A52CDD6048007A3800 /* ReadToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadToken.swift; sourceTree = "<group>"; };
+		41FFE6A72CDD62AE007A3800 /* HomeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
+		41FFE6A92CDD7268007A3800 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
+		41FFE6AB2CDD7678007A3800 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
+		41FFE6AD2CDD7900007A3800 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +297,8 @@
 		41C090102CDB5091000CFBE5 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				41FFE6A92CDD7268007A3800 /* HomeScreenInteractor.swift */,
+				41FFE6A02CDD590A007A3800 /* Networking */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -284,6 +306,7 @@
 		41C090112CDB5091000CFBE5 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				41FFE6AB2CDD7678007A3800 /* HomeScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -299,6 +322,7 @@
 		41C090132CDB5091000CFBE5 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				41FFE6AD2CDD7900007A3800 /* HomeScreenRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -393,6 +417,7 @@
 		41E479032CDB408D0012C6D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				41FFE6992CDD559F007A3800 /* Networking */,
 				41C090192CDB5591000CFBE5 /* AppLocalizedStrings */,
 				41C08FF92CDB491F000CFBE5 /* Utils */,
 				41E4790D2CDB45720012C6D7 /* CustomFont */,
@@ -400,6 +425,7 @@
 				41E478EB2CDB3DEC0012C6D7 /* SceneDelegate.swift */,
 				41E478E82CDB3DEC0012C6D7 /* LaunchScreen.storyboard */,
 				41E478EA2CDB3DEC0012C6D7 /* Main.storyboard */,
+				41FFE6A32CDD5EAA007A3800 /* Config.plist */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -489,6 +515,26 @@
 				41E479182CDB457D0012C6D7 /* OFL.txt */,
 			);
 			path = Lato;
+			sourceTree = "<group>";
+		};
+		41FFE6992CDD559F007A3800 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				41FFE6A52CDD6048007A3800 /* ReadToken.swift */,
+				41FFE69E2CDD5881007A3800 /* HTTPRequest.swift */,
+				41FFE69A2CDD56F7007A3800 /* Endpoint.swift */,
+				41FFE69C2CDD5713007A3800 /* RequestComponents.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		41FFE6A02CDD590A007A3800 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				41FFE6A12CDD593F007A3800 /* HomeEndpoints.swift */,
+				41FFE6A72CDD62AE007A3800 /* HomeServices.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -621,6 +667,7 @@
 				411E03D42CDC1ED60089073E /* HomePosterCell.xib in Resources */,
 				41E478F52CDB3DEC0012C6D7 /* LaunchScreen.storyboard in Resources */,
 				41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */,
+				41FFE6A42CDD5EAA007A3800 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,8 +693,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */,
+				41FFE6A62CDD6055007A3800 /* ReadToken.swift in Sources */,
 				411E03D32CDC1ED60089073E /* HomePosterCell.swift in Sources */,
 				41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */,
+				41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */,
 				41C0900E2CDB4C1F000CFBE5 /* ViewIdentity.swift in Sources */,
 				41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */,
 				411E03D02CDC1A430089073E /* LayoutFactory.swift in Sources */,
@@ -656,10 +705,17 @@
 				411E03D92CDC820A0089073E /* UIView+Extension.swift in Sources */,
 				411E03DB2CDCA4C70089073E /* Titles.swift in Sources */,
 				41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */,
+				41FFE6AC2CDD767D007A3800 /* HomeScreenPresenter.swift in Sources */,
+				41FFE6A82CDD62B3007A3800 /* HomeServices.swift in Sources */,
+				41FFE6A22CDD593F007A3800 /* HomeEndpoints.swift in Sources */,
 				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
+				41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */,
 				41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */,
 				411E03DE2CDCAB4A0089073E /* PageControlFooterView.swift in Sources */,
+				41FFE69B2CDD56F7007A3800 /* Endpoint.swift in Sources */,
+				41FFE69F2CDD5885007A3800 /* HTTPRequest.swift in Sources */,
+				41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */,
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,8 @@ import UIKit
 protocol HomeScreenViewProtocol {
     func setupUI()
     func setupCollectionView()
+    func updateViewWithData(with titles: [Results])
+    func updateViewNoData()
 }
 
 class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
@@ -28,8 +30,10 @@ class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
         collectionView.backgroundColor = .etDarkTeal
         return collectionView
     }()
-    
     var footerView = PageControlFooterView()
+    
+    var presenter: HomeScreenPresenter!
+    var titles: [Results] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +43,21 @@ class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupCustomNavBar()
+        self.setupCollectionView()
     }
     
     func setupUI() {
-        setupCollectionView()
         self.simulatedNavBarView.alpha = 0
+    
+        presenter.fetchData {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        } failure: {
+            DispatchQueue.main.async {
+                self.updateViewNoData()
+            }
+        }
     }
     
     func setupCollectionView() {
@@ -90,9 +104,12 @@ class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
         ])
     }
     
-    func setupVIPER() {
-        print("on it")
+    func updateViewWithData(with titles: [Results]) {
+        self.titles = titles
     }
     
+    func updateViewNoData() {
+        print("No data :(")
+    }
 }
 

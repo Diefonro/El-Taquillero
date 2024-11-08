@@ -8,7 +8,7 @@
 import UIKit
 
 protocol HomePosterCellProtocol: AnyObject {
-    func setupCell(with title: Titles)
+    func setupCell(with context: Results)
     func setupUI()
 }
 class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
@@ -21,7 +21,9 @@ class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
     @IBOutlet weak var titleNameLabel: UILabel!
     @IBOutlet weak var titleGenreLabel: UILabel!
     
-    @IBOutlet weak var testView: UIView!
+    
+    @IBOutlet weak var gradientView: UIView!
+ 
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,11 +32,9 @@ class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-            self.testView.applyDarkGradient()
+            self.gradientView.applyDarkGradient()
         }
-        
     }
     
     func setupUI() {
@@ -43,8 +43,8 @@ class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
     }
     
     func setupLabels() {
-        self.titleNameLabel.font = UIFont(name: "Lato-BlackItalic", size: 80)
-        self.titleGenreLabel.font = UIFont(name: "Lato-Bold", size: 20)
+        self.titleNameLabel.font = UIFont(name: "Lato-BlackItalic", size: 42)
+        self.titleGenreLabel.font = UIFont(name: "Lato-Bold", size: 18)
         setupLabelsColor(labels: [titleNameLabel, titleGenreLabel])
     }
     
@@ -54,10 +54,20 @@ class HomePosterCell: UICollectionViewCell, CellInfo, HomePosterCellProtocol {
         }
     }
     
-    func setupCell(with title: Titles) {
-        self.posterImageView.setURLImage(imageUrl: title.titleImageURL!)
-        self.titleNameLabel.text = title.titleName
-        self.titleGenreLabel.text = title.titleGenre
+    func setupCell(with context: Results) {
+        let imagePath = context.getPosterPath()
+        let imageURL = HomeConstants.imageURL + imagePath
+        self.posterImageView.setURLImage(imageUrl: imageURL)
+        
+        self.titleNameLabel.text = context.title ?? context.name
+        
+        let genreIDS = context.getGenres()
+        let genreDictionary = HomeConstants.genreDictionary
+        let genreNames = genreIDS.compactMap { genreDictionary[$0] }
+        let genreLabelText = genreNames.joined(separator: ", ")
+        
+        self.titleGenreLabel.text = genreLabelText
     }
+    
     
 }

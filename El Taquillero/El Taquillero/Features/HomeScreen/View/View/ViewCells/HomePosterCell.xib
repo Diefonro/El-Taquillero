@@ -39,20 +39,20 @@
                                             <constraint firstItem="kRm-m0-88S" firstAttribute="top" secondItem="Kum-oG-8Ho" secondAttribute="top" id="ia0-Nj-gsL"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-eu-Wzf" userLabel="TestView">
-                                        <rect key="frame" x="0.0" y="352" width="331" height="200"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-eu-Wzf" userLabel="GradientView">
+                                        <rect key="frame" x="0.0" y="152" width="331" height="400"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="jmL-AL-mfU"/>
+                                            <constraint firstAttribute="height" constant="400" id="jmL-AL-mfU"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-yV-ENp">
-                                        <rect key="frame" x="50" y="385" width="231" height="67"/>
+                                        <rect key="frame" x="30" y="385" width="271" height="67"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                         <color key="textColor" name="ETWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf6-g3-0EX">
-                                        <rect key="frame" x="50" y="462" width="231" height="20.333333333333314"/>
+                                        <rect key="frame" x="50" y="457" width="231" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="ETWhite"/>
                                         <nil key="highlightedColor"/>
@@ -66,9 +66,9 @@
                                     <constraint firstItem="Kum-oG-8Ho" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" id="8SO-Il-sqX"/>
                                     <constraint firstAttribute="bottom" secondItem="Kum-oG-8Ho" secondAttribute="bottom" id="J2P-cN-ewd"/>
                                     <constraint firstAttribute="bottom" secondItem="iJC-yV-ENp" secondAttribute="bottom" constant="100" id="MsU-w5-P5Q"/>
-                                    <constraint firstItem="iJC-yV-ENp" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" constant="50" id="PS7-OE-F86"/>
-                                    <constraint firstAttribute="trailing" secondItem="iJC-yV-ENp" secondAttribute="trailing" constant="50" id="Vzb-1G-ces"/>
-                                    <constraint firstItem="sf6-g3-0EX" firstAttribute="top" secondItem="iJC-yV-ENp" secondAttribute="bottom" constant="10" id="YS6-9J-OzN"/>
+                                    <constraint firstItem="iJC-yV-ENp" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" constant="30" id="PS7-OE-F86"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJC-yV-ENp" secondAttribute="trailing" constant="30" id="Vzb-1G-ces"/>
+                                    <constraint firstItem="sf6-g3-0EX" firstAttribute="top" secondItem="iJC-yV-ENp" secondAttribute="bottom" constant="5" id="YS6-9J-OzN"/>
                                     <constraint firstAttribute="trailing" secondItem="sf6-g3-0EX" secondAttribute="trailing" constant="50" id="cHU-yS-k2P"/>
                                     <constraint firstAttribute="trailing" secondItem="fJY-eu-Wzf" secondAttribute="trailing" id="jl8-0D-Osi"/>
                                     <constraint firstAttribute="trailing" secondItem="Kum-oG-8Ho" secondAttribute="trailing" id="msU-z9-uMr"/>
@@ -96,9 +96,9 @@
             <size key="customSize" width="331" height="552"/>
             <connections>
                 <outlet property="containerView" destination="Blq-LE-3QD" id="Ogu-b9-Kj3"/>
+                <outlet property="gradientView" destination="fJY-eu-Wzf" id="n81-vK-QOp"/>
                 <outlet property="imageContainerView" destination="Kum-oG-8Ho" id="HQ3-EY-O3v"/>
                 <outlet property="posterImageView" destination="kRm-m0-88S" id="yFi-BT-a49"/>
-                <outlet property="testView" destination="fJY-eu-Wzf" id="Ier-Sc-2Lg"/>
                 <outlet property="titleGenreLabel" destination="sf6-g3-0EX" id="yvN-ZT-Sj6"/>
                 <outlet property="titleNameLabel" destination="iJC-yV-ENp" id="kbq-2Y-fgN"/>
             </connections>

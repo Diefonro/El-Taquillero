@@ -10,8 +10,6 @@ import UIKit
 protocol StoryboardInfo {
     static var storyboard: String { get }
     static var identifier: String { get }
-    
-    func setupVIPER()
 }
 
 protocol CellInfo {

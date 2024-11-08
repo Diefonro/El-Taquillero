@@ -14,18 +14,20 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.titles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomePosterCell.reuseIdentifier, for: indexPath) as? HomePosterCell {
+            let context = self.titles[indexPath.row]
+            cell.setupCell(with: context)
             return cell
         }
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let pagesInBanner = 10
+        let pagesInBanner = self.titles.count
         if let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "footer", for: indexPath) as? PageControlFooterView {
             footerView.pagesInBanner = pagesInBanner
             return footerView
