@@ -1,0 +1,165 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "HOME_DESCRIPTION_TEXT" : {
+      "comment" : "The home description.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is a home test description."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta es una descripción de prueba."
+          }
+        }
+      }
+    },
+    "HOME_SCREEN_CAPTION" : {
+      "comment" : "The home screen caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inicio"
+          }
+        }
+      }
+    },
+    "HOME_TOP_MOVIES_CAPTION" : {
+      "comment" : "Top Rated Movies list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Rated Movies"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Películas mejor votadas"
+          }
+        }
+      }
+    },
+    "HOME_TOP_SERIES_CAPTION" : {
+      "comment" : "Top Rated Series list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Rated Series"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Series mejor votadas"
+          }
+        }
+      }
+    },
+    "HOME_VIEW_ALL_BUTTON_CAPTION" : {
+      "comment" : "View all the top rated movie list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View all"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver todo"
+          }
+        }
+      }
+    },
+    "HOME_WELCOME_TEXT" : {
+      "comment" : "A greeting phrase.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to Home Screen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bienvenido a la pantalla de inicio."
+          }
+        }
+      }
+    },
+    "TITLE_DETAIL_REPRODUCE_BUTTON_CAPTION" : {
+      "comment" : "Reproduce button's caption.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproduce"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reproducir"
+          }
+        }
+      }
+    },
+    "TITLE_LIST_SCREEN_RELEASE_DATE_CAPTION" : {
+      "comment" : "Title release date.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Released at:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanzado en:"
+          }
+        }
+      }
+    },
+    "USER_INFO_SCREEN_CAPTION" : {
+      "comment" : "User's info screen caption.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuenta"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

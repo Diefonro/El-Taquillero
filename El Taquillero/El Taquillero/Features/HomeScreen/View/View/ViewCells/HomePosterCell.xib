@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomePosterCell" customModule="El_Taquillero" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfQ-iQ-EDm" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Blq-LE-3QD" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kum-oG-8Ho" userLabel="ImageViewContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ETGenericPoster" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-m0-88S">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="552"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="kRm-m0-88S" secondAttribute="bottom" id="Mj7-i3-ob3"/>
+                                            <constraint firstAttribute="trailing" secondItem="kRm-m0-88S" secondAttribute="trailing" id="WJw-dU-dUo"/>
+                                            <constraint firstItem="kRm-m0-88S" firstAttribute="leading" secondItem="Kum-oG-8Ho" secondAttribute="leading" id="X4c-d6-Uvf"/>
+                                            <constraint firstItem="kRm-m0-88S" firstAttribute="top" secondItem="Kum-oG-8Ho" secondAttribute="top" id="ia0-Nj-gsL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJY-eu-Wzf" userLabel="GradientView">
+                                        <rect key="frame" x="0.0" y="152" width="331" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="jmL-AL-mfU"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-yV-ENp">
+                                        <rect key="frame" x="30" y="385" width="271" height="67"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                        <color key="textColor" name="ETWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf6-g3-0EX">
+                                        <rect key="frame" x="50" y="457" width="231" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="ETWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fJY-eu-Wzf" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" id="1j8-Mb-Ze3"/>
+                                    <constraint firstAttribute="bottom" secondItem="fJY-eu-Wzf" secondAttribute="bottom" id="3bV-eC-RnQ"/>
+                                    <constraint firstItem="sf6-g3-0EX" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" constant="50" id="8Ag-Yt-n49"/>
+                                    <constraint firstItem="Kum-oG-8Ho" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" id="8SO-Il-sqX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kum-oG-8Ho" secondAttribute="bottom" id="J2P-cN-ewd"/>
+                                    <constraint firstAttribute="bottom" secondItem="iJC-yV-ENp" secondAttribute="bottom" constant="100" id="MsU-w5-P5Q"/>
+                                    <constraint firstItem="iJC-yV-ENp" firstAttribute="leading" secondItem="Blq-LE-3QD" secondAttribute="leading" constant="30" id="PS7-OE-F86"/>
+                                    <constraint firstAttribute="trailing" secondItem="iJC-yV-ENp" secondAttribute="trailing" constant="30" id="Vzb-1G-ces"/>
+                                    <constraint firstItem="sf6-g3-0EX" firstAttribute="top" secondItem="iJC-yV-ENp" secondAttribute="bottom" constant="5" id="YS6-9J-OzN"/>
+                                    <constraint firstAttribute="trailing" secondItem="sf6-g3-0EX" secondAttribute="trailing" constant="50" id="cHU-yS-k2P"/>
+                                    <constraint firstAttribute="trailing" secondItem="fJY-eu-Wzf" secondAttribute="trailing" id="jl8-0D-Osi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kum-oG-8Ho" secondAttribute="trailing" id="msU-z9-uMr"/>
+                                    <constraint firstItem="Kum-oG-8Ho" firstAttribute="top" secondItem="Blq-LE-3QD" secondAttribute="top" id="rdx-XL-XGz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Blq-LE-3QD" secondAttribute="trailing" id="4QG-tO-O8I"/>
+                            <constraint firstAttribute="bottom" secondItem="Blq-LE-3QD" secondAttribute="bottom" id="Hzt-zc-9ku"/>
+                            <constraint firstItem="Blq-LE-3QD" firstAttribute="top" secondItem="pfQ-iQ-EDm" secondAttribute="top" id="rqL-SN-rey"/>
+                            <constraint firstItem="Blq-LE-3QD" firstAttribute="leading" secondItem="pfQ-iQ-EDm" secondAttribute="leading" id="tBa-k2-QRZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pfQ-iQ-EDm" secondAttribute="bottom" id="81r-mI-pDh"/>
+                <constraint firstItem="pfQ-iQ-EDm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k0h-w4-NQG"/>
+                <constraint firstItem="pfQ-iQ-EDm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vwC-ts-dpt"/>
+                <constraint firstAttribute="trailing" secondItem="pfQ-iQ-EDm" secondAttribute="trailing" id="w45-Ow-Bx0"/>
+            </constraints>
+            <size key="customSize" width="331" height="552"/>
+            <connections>
+                <outlet property="containerView" destination="Blq-LE-3QD" id="Ogu-b9-Kj3"/>
+                <outlet property="gradientView" destination="fJY-eu-Wzf" id="n81-vK-QOp"/>
+                <outlet property="imageContainerView" destination="Kum-oG-8Ho" id="HQ3-EY-O3v"/>
+                <outlet property="posterImageView" destination="kRm-m0-88S" id="yFi-BT-a49"/>
+                <outlet property="titleGenreLabel" destination="sf6-g3-0EX" id="yvN-ZT-Sj6"/>
+                <outlet property="titleNameLabel" destination="iJC-yV-ENp" id="kbq-2Y-fgN"/>
+            </connections>
+            <point key="canvasLocation" x="260.30534351145036" y="196.47887323943664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ETGenericPoster" width="2000" height="3000"/>
+        <namedColor name="ETWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
