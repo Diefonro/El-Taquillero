@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeTitleCell" customModule="El_Taquillero" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="305"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="305"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3EO-y5-dvA" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="305"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvQ-9H-HUl" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="397" height="305"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBt-t0-qYN" userLabel="ImageViewContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="397" height="255"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ETGenericPoster" translatesAutoresizingMaskIntoConstraints="NO" id="FUj-EH-Rgx">
+                                                <rect key="frame" x="0.0" y="0.0" width="397" height="255"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="FUj-EH-Rgx" firstAttribute="leading" secondItem="jBt-t0-qYN" secondAttribute="leading" id="Kbd-zI-IUo"/>
+                                            <constraint firstItem="FUj-EH-Rgx" firstAttribute="top" secondItem="jBt-t0-qYN" secondAttribute="top" id="Q0g-rz-RxV"/>
+                                            <constraint firstAttribute="bottom" secondItem="FUj-EH-Rgx" secondAttribute="bottom" id="bAX-We-2dM"/>
+                                            <constraint firstAttribute="trailing" secondItem="FUj-EH-Rgx" secondAttribute="trailing" id="jPZ-JH-3xP"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsh-lO-hOj" userLabel="TitleNameLabelContainer">
+                                        <rect key="frame" x="0.0" y="255" width="397" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZR-SB-jRS">
+                                                <rect key="frame" x="10" y="14.999999999999998" width="382" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="ETWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="LZR-SB-jRS" firstAttribute="leading" secondItem="Dsh-lO-hOj" secondAttribute="leading" constant="10" id="6dO-zv-ftq"/>
+                                            <constraint firstItem="LZR-SB-jRS" firstAttribute="centerY" secondItem="Dsh-lO-hOj" secondAttribute="centerY" id="86u-zw-w9s"/>
+                                            <constraint firstAttribute="trailing" secondItem="LZR-SB-jRS" secondAttribute="trailing" constant="5" id="BaV-je-oBv"/>
+                                            <constraint firstAttribute="height" constant="50" id="fnE-sE-CfB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Dsh-lO-hOj" firstAttribute="top" secondItem="jBt-t0-qYN" secondAttribute="bottom" id="9d7-Rf-8XK"/>
+                                    <constraint firstItem="jBt-t0-qYN" firstAttribute="top" secondItem="JvQ-9H-HUl" secondAttribute="top" id="9uG-XS-Mxu"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dsh-lO-hOj" secondAttribute="bottom" id="SMC-Qs-8Lc"/>
+                                    <constraint firstAttribute="trailing" secondItem="jBt-t0-qYN" secondAttribute="trailing" id="UPR-Pr-VyL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dsh-lO-hOj" secondAttribute="trailing" id="joF-4Q-nwv"/>
+                                    <constraint firstItem="Dsh-lO-hOj" firstAttribute="leading" secondItem="JvQ-9H-HUl" secondAttribute="leading" id="wwB-XR-8fO"/>
+                                    <constraint firstItem="jBt-t0-qYN" firstAttribute="leading" secondItem="JvQ-9H-HUl" secondAttribute="leading" id="xA9-Qg-rs3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JvQ-9H-HUl" firstAttribute="top" secondItem="3EO-y5-dvA" secondAttribute="top" id="2Jg-2f-slU"/>
+                            <constraint firstAttribute="trailing" secondItem="JvQ-9H-HUl" secondAttribute="trailing" id="fD9-BX-Fdv"/>
+                            <constraint firstItem="JvQ-9H-HUl" firstAttribute="leading" secondItem="3EO-y5-dvA" secondAttribute="leading" id="sXY-6v-kWI"/>
+                            <constraint firstAttribute="bottom" secondItem="JvQ-9H-HUl" secondAttribute="bottom" id="wvD-50-OvC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3EO-y5-dvA" secondAttribute="bottom" id="7Ug-eS-hhF"/>
+                <constraint firstItem="3EO-y5-dvA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IEo-Pf-VD1"/>
+                <constraint firstItem="3EO-y5-dvA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YWD-rT-tKM"/>
+                <constraint firstAttribute="trailing" secondItem="3EO-y5-dvA" secondAttribute="trailing" id="fT7-ra-wuu"/>
+            </constraints>
+            <size key="customSize" width="397" height="305"/>
+            <connections>
+                <outlet property="containerView" destination="JvQ-9H-HUl" id="VPA-xJ-uBq"/>
+                <outlet property="imageViewContainer" destination="jBt-t0-qYN" id="Y4p-Dz-xnQ"/>
+                <outlet property="titleImageView" destination="FUj-EH-Rgx" id="e84-Dg-e7s"/>
+                <outlet property="titleNameLabel" destination="LZR-SB-jRS" id="Msa-xO-EIG"/>
+            </connections>
+            <point key="canvasLocation" x="197.70992366412213" y="78.521126760563391"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ETGenericPoster" width="2000" height="3000"/>
+        <namedColor name="ETWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

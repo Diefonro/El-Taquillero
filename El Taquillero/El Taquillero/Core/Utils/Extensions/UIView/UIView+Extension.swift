@@ -35,6 +35,13 @@ extension UIView {
         addSubview(border)
     }
     
+    func roundAllCorners(cornerRadius: Double) {
+        self.layer.cornerRadius = CGFloat(cornerRadius)
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
+        self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
+    }
+    
 }
 
 
