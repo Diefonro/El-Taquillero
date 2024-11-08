@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeScreenPresenterProtocol  {
+    func readyToNavigate(context: [Results], title: String)
+}
+
 class HomeScreenPresenter {
     var view: HomeScreenVC
     var interactor: HomeScreenInteractor
@@ -16,6 +20,10 @@ class HomeScreenPresenter {
         self.view = view
         self.interactor = interactor
         self.router = router
+    }
+    
+    func readyToNavigate(context: [Results], title: String, contentType: ContentType, language: String) {
+        self.router.navigateToTitleList(context: context, title: title, contentType: contentType, language: language)
     }
 
     func fetchTrendingData(success: @escaping () -> Void, failure: @escaping () -> Void) {
@@ -32,8 +40,8 @@ class HomeScreenPresenter {
         }
     }
 
-    func fetchTopMoviesData(success: @escaping () -> Void, failure: @escaping () -> Void) {
-        self.interactor.fetchTopMovies { [weak self] results in
+    func fetchTopMoviesData(success: @escaping () -> Void, failure: @escaping () -> Void, language: String, page: String) {
+        self.interactor.fetchTopMovies(completion: { [weak self] results in
             switch results {
             case .success(let titles):
                 let titleArray = titles.getTitles()
@@ -43,11 +51,11 @@ class HomeScreenPresenter {
                 AppError.handle(error: error)
                 failure()
             }
-        }
+        }, language: language, page: page)
     }
 
-    func fetchTopSeriesData(success: @escaping () -> Void, failure: @escaping () -> Void) {
-        self.interactor.fetchTopSeries { [weak self] results in
+    func fetchTopSeriesData(success: @escaping () -> Void, failure: @escaping () -> Void, language: String, page: String) {
+        self.interactor.fetchTopSeries(completion: { [weak self] results in
             switch results {
             case .success(let titles):
                 let titleArray = titles.getTitles()
@@ -57,19 +65,19 @@ class HomeScreenPresenter {
                 AppError.handle(error: error)
                 failure()
             }
-        }
+        }, language: language, page: page)
     }
 }
 
 extension HomeScreenPresenter {
-    func fetchData(for type: FetchType, success: @escaping () -> Void, failure: @escaping () -> Void) {
+    func fetchData(for type: FetchType, success: @escaping () -> Void, failure: @escaping () -> Void, language: String, page: String) {
         switch type {
         case .trendingMovies:
             fetchTrendingData(success: success, failure: failure)
         case .topMovies:
-            fetchTopMoviesData(success: success, failure: failure)
+            fetchTopMoviesData(success: success, failure: failure, language: language, page: page)
         case .topSeries:
-            fetchTopSeriesData(success: success, failure: failure)
+            fetchTopSeriesData(success: success, failure: failure, language: language, page: page)
         }
     }
 }

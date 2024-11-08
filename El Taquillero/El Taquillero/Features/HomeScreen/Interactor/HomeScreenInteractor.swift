@@ -6,16 +6,16 @@
 //
 
 protocol HomeScreenInteractorProtocol {
-    func fetchData(service: @escaping () async -> Result<Titles, RequestError>, completion: @escaping (Result<Titles, Error>) -> Void)
+   
 }
 
 class HomeScreenInteractor: HomeScreenInteractorProtocol {
     
     var homeServices = HomeServices()
     
-    func fetchData(service: @escaping () async -> Result<Titles, RequestError>, completion: @escaping (Result<Titles, Error>) -> Void) {
+    func fetchTrendingMovies(completion: @escaping (Result<Titles, Error>) -> Void) {
         Task(priority: .userInitiated) {
-            let result = await service()
+            let result = await self.homeServices.getTrendingMovies()
             switch result {
             case .success(let data):
                 completion(.success(data))
@@ -23,18 +23,29 @@ class HomeScreenInteractor: HomeScreenInteractorProtocol {
                 completion(.failure(error))
             }
         }
-
     }
     
-    func fetchTrendingMovies(completion: @escaping (Result<Titles, Error>) -> Void) {
-        fetchData(service: self.homeServices.getTrendingMovies, completion: completion)
+    func fetchTopMovies(completion: @escaping (Result<Titles, Error>) -> Void, language: String, page: String) {
+        Task(priority: .userInitiated) {
+            let result = await self.homeServices.getTopRatedMovies(language: language, page: page)
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
-
-    func fetchTopMovies(completion: @escaping (Result<Titles, Error>) -> Void) {
-        fetchData(service: self.homeServices.getTopRatedMovies, completion: completion)
-    }
-
-    func fetchTopSeries(completion: @escaping (Result<Titles, Error>) -> Void) {
-        fetchData(service: self.homeServices.getTopRatedSeries, completion: completion)
+    
+    func fetchTopSeries(completion: @escaping (Result<Titles, Error>) -> Void, language: String, page: String) {
+        Task(priority: .userInitiated) {
+            let result = await self.homeServices.getTopRatedSeries(language: language, page: page)
+            switch result {
+            case .success(let data):
+                completion(.success(data))
+            case .failure(let error):
+                completion(.failure(error))
+            }
+        }
     }
 }

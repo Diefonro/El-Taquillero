@@ -105,6 +105,42 @@
           }
         }
       }
+    },
+    "TITLE_LIST_SCREEN_RELEASE_DATE_CAPTION" : {
+      "comment" : "Title release date.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Released at:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanzado en:"
+          }
+        }
+      }
+    },
+    "USER_INFO_SCREEN_CAPTION" : {
+      "comment" : "User's info screen caption.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuenta"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
