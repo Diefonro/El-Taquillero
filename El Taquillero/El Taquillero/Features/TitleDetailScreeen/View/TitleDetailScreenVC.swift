@@ -39,6 +39,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var titleDescriptionLabel: UILabel!
     
     var context: Results?
+    var titleName: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.simulatedNavBarView.setupCustomNavBar(navBar: self.simulatedNavBarView, label: self.simulatedNavLabel, context: self)
+        self.simulatedNavBarView.setupCustomNavBar(navBar: self.simulatedNavBarView, label: self.simulatedNavLabel, context: self, rootScreen: .sliders)
         self.setupImageView(context: self.context!)
     }
     
@@ -60,6 +61,8 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
         self.simulatedNavBarView.alpha = 0
         self.scrollView.delegate = self
         setupLabels()
+        self.scrollView.contentInsetAdjustmentBehavior = .never
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     func setupLabels() {
@@ -75,6 +78,8 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     
     
     func setupImageView(context: Results) {
+        self.simulatedNavLabel.text = self.titleName
+        
         let imagePath = context.getPosterPath()
         let imageURL = HomeConstants.imageURL + imagePath
         self.posterUIImageView.setURLImage(imageUrl: imageURL)
@@ -84,6 +89,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
         self.setupTitleInfo(context: context)
         
         self.reproduceButtonView.roundAllCorners(cornerRadius: 8)
+        self.reproduceButtonLabel.text = String(localized: "TITLE_DETAIL_REPRODUCE_BUTTON_CAPTION")
         
         self.titleDescriptionLabel.text = context.getDescription()
         

@@ -52,7 +52,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.simulatedNavBarView.setupCustomNavBar(navBar: self.simulatedNavBarView, label: self.simulatedNavBarLabel, context: self)
+        self.simulatedNavBarView.setupCustomNavBar(navBar: self.simulatedNavBarView, label: self.simulatedNavBarLabel, context: self, rootScreen: .home)
         self.navigationController?.navigationBar.isHidden = true
     }
  

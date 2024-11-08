@@ -42,12 +42,18 @@ extension UIView {
         self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
     }
     
-    func setupCustomNavBar(navBar: UIView, label: UILabel, context: UIViewController) {
+    func setupCustomNavBar(navBar: UIView, label: UILabel, context: UIViewController, rootScreen: RootScreen) {
         navBar.backgroundColor = .etLightTeal
         navBar.addBottomBorder(with: .darkGray, andWidth: 0.5)
-        label.text = HomeStrings.homeScreenCaption
         label.font = UIFont(name: "Lato-Bold", size: 18)
         label.textColor = .etPorcelain
+        
+        switch rootScreen {
+        case .home:
+            label.text = HomeStrings.homeScreenCaption
+        case .sliders:
+            label.text = ""
+        }
         
         context.navigationController?.interactivePopGestureRecognizer?.delegate = nil
         
