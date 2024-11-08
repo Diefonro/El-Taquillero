@@ -120,6 +120,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     }
 
     @IBAction func backButtonAction(_ sender: Any) {
+        self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.popViewController(animated: true)
     }
     

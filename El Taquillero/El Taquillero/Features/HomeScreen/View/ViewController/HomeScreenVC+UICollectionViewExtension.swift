@@ -59,6 +59,15 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
             if let title = context.name ?? context.title {
                 self.presenter.readyToNavigateToDetail(context: context, title: title)
             }
+        case 1:
+            let context = self.topMovies[indexPath.row]
+            if let title = context.name ?? context.title {
+                self.presenter.readyToNavigateToDetail(context: context, title: title)
+            }
+        case 2: let context = self.topSeries[indexPath.row]
+            if let title = context.name ?? context.title {
+                self.presenter.readyToNavigateToDetail(context: context, title: title)
+            }
         default:
             print("hola")
         }

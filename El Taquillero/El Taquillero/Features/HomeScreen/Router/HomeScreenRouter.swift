@@ -32,6 +32,7 @@ class HomeScreenRouter: HomeScreenRouterProtocol{
             
             let interactor = HomeScreenInteractor()
             let router = TitlesListScreenRouter()
+            router.view = titleListVC
             let presenter = TitlesListScreenPresenter(view: titleListVC, interactor: interactor, router: router)
             titleListVC.presenter = presenter
             
