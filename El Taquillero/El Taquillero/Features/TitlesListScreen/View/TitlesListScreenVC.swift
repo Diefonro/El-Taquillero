@@ -22,6 +22,7 @@ class TitlesListScreenVC: UIViewController, StoryboardInfo {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +33,7 @@ class TitlesListScreenVC: UIViewController, StoryboardInfo {
     }
     
     func setupTableView() {
-        self.tableView.backgroundColor = .etDarkTeal
+        self.tableView.backgroundColor = .clear
         self.tableView.register(UINib(nibName: TitleTableCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: TitleTableCell.reuseIdentifier)
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -51,5 +52,9 @@ extension TitlesListScreenVC: UITableViewDataSource, UITableViewDelegate {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }

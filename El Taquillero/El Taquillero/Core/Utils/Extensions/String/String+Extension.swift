@@ -8,7 +8,7 @@
 import UIKit
 
 extension String {
-    func toDate(withFormats formats: [String] = ["dd/MM/yyyy HH:mm:ss", "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'", "yyyy-MM-dd'T'HH:mm:ss'Z'"]) -> Date? {
+    func toDate(withFormats formats: [String] = ["yyyy-MM-dd", "dd/MM/yyyy HH:mm:ss", "yyyy-MM-dd'T'HH:mm:ss.SSSSSS'Z'", "yyyy-MM-dd'T'HH:mm:ss'Z'"]) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.timeZone = TimeZone.current
         dateFormatter.locale = Locale.current

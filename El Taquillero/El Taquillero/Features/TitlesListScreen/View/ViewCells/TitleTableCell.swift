@@ -10,7 +10,7 @@ import UIKit
 class TitleTableCell: UITableViewCell, CellInfo {
     
     static var reuseIdentifier = "TitleTableCell"
-
+    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var posterContainerView: UIView!
     @IBOutlet weak var posterImageView: UIImageView!
@@ -22,7 +22,7 @@ class TitleTableCell: UITableViewCell, CellInfo {
         super.awakeFromNib()
         self.setupUI()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -30,8 +30,8 @@ class TitleTableCell: UITableViewCell, CellInfo {
     func setupUI() {
         self.containerView.roundAllCorners(cornerRadius: 18)
         
-        self.titleNameLabel.font = UIFont(name: "Lato-Bold", size: 40)
-        self.titleReleaseDateLabel.font = UIFont(name: "Lato-Regular", size: 17)
+        self.titleNameLabel.font = UIFont(name: "Lato-Bold", size: 20)
+        self.titleReleaseDateLabel.font = UIFont(name: "Lato-Regular", size: 15)
     }
     
     func setupCell(with context: Results) {
@@ -46,5 +46,4 @@ class TitleTableCell: UITableViewCell, CellInfo {
             self.titleReleaseDateLabel.text = "\(String(localized: "TITLE_LIST_SCREEN_RELEASE_DATE_CAPTION")) \(date.formattedPublishedDate())"
         }
     }
-    
 }

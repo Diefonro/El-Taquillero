@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,21 +11,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="261" id="KGk-i7-Jjw" customClass="TitleTableCell" customModule="El_Taquillero" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="596" height="261"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="TitleTableCell" customModule="El_Taquillero" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="596" height="117"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" userLabel="MainView">
-                <rect key="frame" x="0.0" y="0.0" width="596" height="261"/>
+                <rect key="frame" x="0.0" y="0.0" width="596" height="117"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQ7-Ag-W65" userLabel="ContainerView">
-                        <rect key="frame" x="0.0" y="0.0" width="596" height="261"/>
+                        <rect key="frame" x="5" y="5" width="586" height="107"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-w7-Lti" userLabel="ImageContainerView">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="261"/>
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="107"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ETGenericPoster" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-Iz-LE1">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="261"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="107"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -36,14 +37,14 @@
                                     <constraint firstItem="1Bw-Iz-LE1" firstAttribute="top" secondItem="hYJ-w7-Lti" secondAttribute="top" id="PSL-3H-S5I"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGq-bu-QEa">
-                                <rect key="frame" x="170" y="20" width="406" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Title name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGq-bu-QEa">
+                                <rect key="frame" x="170" y="20" width="396" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release date:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVx-Aq-3oH">
-                                <rect key="frame" x="170" y="70" width="406" height="20.333333333333329"/>
+                                <rect key="frame" x="170" y="55" width="396" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,20 +55,22 @@
                             <constraint firstAttribute="trailing" secondItem="oGq-bu-QEa" secondAttribute="trailing" constant="20" id="3v8-fB-fti"/>
                             <constraint firstAttribute="trailing" secondItem="sVx-Aq-3oH" secondAttribute="trailing" constant="20" id="Aqb-iO-EEM"/>
                             <constraint firstAttribute="bottom" secondItem="hYJ-w7-Lti" secondAttribute="bottom" id="C6v-jg-ewb"/>
+                            <constraint firstAttribute="bottom" secondItem="sVx-Aq-3oH" secondAttribute="bottom" constant="20" id="CXg-h1-BRC"/>
                             <constraint firstItem="oGq-bu-QEa" firstAttribute="top" secondItem="KQ7-Ag-W65" secondAttribute="top" constant="20" id="IRT-OY-W3c"/>
                             <constraint firstItem="sVx-Aq-3oH" firstAttribute="leading" secondItem="hYJ-w7-Lti" secondAttribute="trailing" constant="20" id="OAf-mi-ULx"/>
                             <constraint firstItem="oGq-bu-QEa" firstAttribute="leading" secondItem="hYJ-w7-Lti" secondAttribute="trailing" constant="20" id="UDF-Xw-4sX"/>
                             <constraint firstItem="hYJ-w7-Lti" firstAttribute="leading" secondItem="KQ7-Ag-W65" secondAttribute="leading" id="UVN-Ly-jcE"/>
                             <constraint firstItem="hYJ-w7-Lti" firstAttribute="top" secondItem="KQ7-Ag-W65" secondAttribute="top" id="fP9-iO-tpH"/>
-                            <constraint firstItem="sVx-Aq-3oH" firstAttribute="top" secondItem="oGq-bu-QEa" secondAttribute="bottom" constant="20" id="pUT-xB-Tx5"/>
+                            <constraint firstItem="sVx-Aq-3oH" firstAttribute="top" secondItem="oGq-bu-QEa" secondAttribute="bottom" constant="5" id="pUT-xB-Tx5"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="ETDarkTeal"/>
                 <constraints>
-                    <constraint firstItem="KQ7-Ag-W65" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Gda-VD-9eM"/>
-                    <constraint firstItem="KQ7-Ag-W65" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Nk5-g1-JfN"/>
-                    <constraint firstAttribute="bottom" secondItem="KQ7-Ag-W65" secondAttribute="bottom" id="ieI-mB-bK5"/>
-                    <constraint firstAttribute="trailing" secondItem="KQ7-Ag-W65" secondAttribute="trailing" id="sfP-l7-9cR"/>
+                    <constraint firstItem="KQ7-Ag-W65" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Gda-VD-9eM"/>
+                    <constraint firstItem="KQ7-Ag-W65" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Nk5-g1-JfN"/>
+                    <constraint firstAttribute="bottom" secondItem="KQ7-Ag-W65" secondAttribute="bottom" constant="5" id="ieI-mB-bK5"/>
+                    <constraint firstAttribute="trailing" secondItem="KQ7-Ag-W65" secondAttribute="trailing" constant="5" id="sfP-l7-9cR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -78,11 +81,14 @@
                 <outlet property="titleNameLabel" destination="oGq-bu-QEa" id="LvH-z0-CS6"/>
                 <outlet property="titleReleaseDateLabel" destination="sVx-Aq-3oH" id="mhh-jr-aT9"/>
             </connections>
-            <point key="canvasLocation" x="143.5114503816794" y="65.140845070422543"/>
+            <point key="canvasLocation" x="143.5114503816794" y="14.43661971830986"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="ETGenericPoster" width="2000" height="3000"/>
+        <namedColor name="ETDarkTeal">
+            <color red="0.0" green="0.22745098039215686" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
