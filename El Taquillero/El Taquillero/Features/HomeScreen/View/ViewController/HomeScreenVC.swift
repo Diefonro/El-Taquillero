@@ -26,6 +26,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
     var collectionView: UICollectionView = {
         let layout = LayoutType.homePosters.layout
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         collectionView.register(PageControlFooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "footer")
         collectionView.backgroundColor = .etDarkTeal
         return collectionView
@@ -62,13 +63,16 @@ class HomeScreenVC: UIViewController, StoryboardInfo, HomeScreenViewProtocol {
     
     func setupCollectionView() {
         collectionView.frame = collectionViewContainer.bounds
-        
+        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
+
         collectionView.delegate = self
         collectionView.dataSource = self
         
         collectionView.contentInsetAdjustmentBehavior = .never
         
         collectionView.register(UINib(nibName: HomePosterCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: HomePosterCell.reuseIdentifier)
+        collectionView.register(UINib(nibName: HomeTitleCell.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: HomeTitleCell.reuseIdentifier)
         
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         

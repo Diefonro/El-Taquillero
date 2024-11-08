@@ -35,6 +35,60 @@
         }
       }
     },
+    "HOME_TOP_MOVIES_CAPTION" : {
+      "comment" : "Top Rated Movies list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Rated Movies"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Películas mejor votadas"
+          }
+        }
+      }
+    },
+    "HOME_TOP_SERIES_CAPTION" : {
+      "comment" : "Top Rated Series list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Rated Series"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Series mejor votadas"
+          }
+        }
+      }
+    },
+    "HOME_VIEW_ALL_BUTTON_CAPTION" : {
+      "comment" : "View all the top rated movie list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View all"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver todo"
+          }
+        }
+      }
+    },
     "HOME_WELCOME_TEXT" : {
       "comment" : "A greeting phrase.",
       "localizations" : {
