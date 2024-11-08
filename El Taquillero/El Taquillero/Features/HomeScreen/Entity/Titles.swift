@@ -32,9 +32,9 @@ struct Results: Codable {
     var backdropPath: String?
     var id: Int?
     var title, originalTitle, overview, posterPath: String?
-    var mediaType: MediaType?
+    var mediaType: String?
     var adult: Bool?
-    var originalLanguage: OriginalLanguage?
+    var originalLanguage: String?
     var genreIDS: [Int]?
     var popularity: Double?
     var releaseDate: String?
@@ -78,16 +78,4 @@ struct Results: Codable {
         }
         return genreIDS
     }
-}
-
-enum MediaType: String, Codable {
-    case movie = "movie"
-    case tv = "tv"
-}
-
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case es = "es"
-    case fr = "fr"
-    case ja = "ja"
 }

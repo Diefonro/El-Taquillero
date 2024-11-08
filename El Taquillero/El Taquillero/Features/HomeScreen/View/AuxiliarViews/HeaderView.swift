@@ -41,7 +41,8 @@ class HeaderView: UICollectionReusableView {
     }
     
     @objc func buttonTapped() {
-        self.didTapOnViewAll?(navTitle!)
+//        self.didTapOnViewAll?(navTitle!)
+        print("Tapped on view all")
     }
     
     required init?(coder: NSCoder) {

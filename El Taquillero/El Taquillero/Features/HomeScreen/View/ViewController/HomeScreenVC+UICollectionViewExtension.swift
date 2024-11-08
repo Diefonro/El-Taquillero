@@ -18,28 +18,31 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
         case 0:
             return self.titles.count
         case 1:
-            return self.titles.count - 15
+            return self.topMovies.count
         default:
-            return self.titles.count - 15
+            return self.topSeries.count
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let section = indexPath.section
-        let context = self.titles[indexPath.row]
+        
         switch section {
         case 0:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomePosterCell.reuseIdentifier, for: indexPath) as? HomePosterCell {
+                let context = self.titles[indexPath.row]
                 cell.setupCell(with: context)
                 return cell
             }
         case 1:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeTitleCell.reuseIdentifier, for: indexPath) as? HomeTitleCell {
+                let context = self.topMovies[indexPath.row]
                 cell.setupCell(with: context)
                 return cell
             }
         default:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeTitleCell.reuseIdentifier, for: indexPath) as? HomeTitleCell {
+                let context = self.topSeries[indexPath.row]
                 cell.setupCell(with: context)
                 return cell
             }
