@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum ContentType {
+    case topMovies
+    case topSeries
+}
+
 class TitlesListScreenVC: UIViewController, StoryboardInfo {
     
     static var storyboard = "TitlesListScreen"
@@ -17,8 +22,12 @@ class TitlesListScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var tableView: UITableView!
     
     var presenter: TitlesListScreenPresenter!
-    
+    var contentType: ContentType = .topMovies
     var context: [Results] = []
+    
+    var isLoading = false
+    var currentPage = 1
+    var language = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +47,46 @@ class TitlesListScreenVC: UIViewController, StoryboardInfo {
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
+    
+    func loadData(forPage page: Int) {
+        isLoading = true
+        
+        if self.contentType == .topMovies {
+            presenter.interactor.fetchTopMovies(completion: { [weak self] result in
+                guard let self = self else { return }
+                switch result {
+                case .success(let data):
+                    DispatchQueue.main.async {
+                        self.context.append(contentsOf: data.getTitles())
+                        self.tableView.reloadData()
+                    }
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+                self.isLoading = false
+            }, language: self.language, page: "\(page)")
+        } else {
+            presenter.interactor.fetchTopSeries(completion: { [weak self] result in
+                guard let self = self else { return }
+                switch result {
+                case .success(let data):
+                    DispatchQueue.main.async {
+                        self.context.append(contentsOf: data.getTitles())
+                        self.tableView.reloadData()
+                    }
+                case .failure(let error):
+                    print("Error: \(error)")
+                }
+                self.isLoading = false
+            }, language: self.language, page: "\(page)")
+        }
+        
+    }
+    
+    func loadNextPage() {
+        currentPage += 1
+        loadData(forPage: currentPage)
+    }
 }
 
 extension TitlesListScreenVC: UITableViewDataSource, UITableViewDelegate {
@@ -56,5 +105,19 @@ extension TitlesListScreenVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if isLoading {
+            return
+        }
+        
+        let contentHeight = scrollView.contentSize.height
+        let offsetY = scrollView.contentOffset.y
+        let height = scrollView.frame.size.height
+        
+        if offsetY > contentHeight - height - 100 {
+            loadNextPage()
+        }
     }
 }

@@ -32,6 +32,10 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     var topSeries: [Results] = []
     
     var isAnyFetchFailed = false
+    var isLoading = false
+    var language = ""
+    var currentPage = 1
+    var page = "1"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +46,8 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
         self.fetchTopMovies()
         self.fetchTopSeries()
         
+        let languageCode = LanguageCode()
+        self.language = languageCode.getLanguageCode()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -111,42 +117,42 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     }
     
     func fetchTrendingMovies() {
-        presenter.fetchData(for: .trendingMovies) {
+        presenter.fetchData(for: .trendingMovies, success: {
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.collectionViewContainer.isHidden = false
             }
-        } failure: {
+        }, failure: {
             DispatchQueue.main.async {
                 self.updateViewNoData()
             }
-        }
+        }, language: self.language, page: self.page)
     }
     
     func fetchTopMovies() {
-        presenter.fetchData(for: .topMovies) {
+        presenter.fetchData(for: .topMovies, success: {
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.collectionViewContainer.isHidden = false
             }
-        } failure: {
+        }, failure: {
             DispatchQueue.main.async {
                 self.updateViewNoData()
             }
-        }
+        }, language: self.language, page: self.page)
     }
     
     func fetchTopSeries() {
-        presenter.fetchData(for: .topSeries) {
+        presenter.fetchData(for: .topSeries, success: {
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.collectionViewContainer.isHidden = false
             }
-        } failure: {
+        }, failure: {
             DispatchQueue.main.async {
                 self.updateViewNoData()
             }
-        }
+        }, language: self.language, page: self.page)
     }
 
     func updateViewNoData() {

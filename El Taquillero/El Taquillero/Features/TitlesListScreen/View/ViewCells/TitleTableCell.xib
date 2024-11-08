@@ -65,7 +65,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" name="ETDarkTeal"/>
+                <color key="backgroundColor" name="ETLightTeal"/>
                 <constraints>
                     <constraint firstItem="KQ7-Ag-W65" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Gda-VD-9eM"/>
                     <constraint firstItem="KQ7-Ag-W65" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Nk5-g1-JfN"/>
@@ -86,8 +86,8 @@
     </objects>
     <resources>
         <image name="ETGenericPoster" width="2000" height="3000"/>
-        <namedColor name="ETDarkTeal">
-            <color red="0.0" green="0.22745098039215686" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="ETLightTeal">
+            <color red="0.40000000000000002" green="0.53725490196078429" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

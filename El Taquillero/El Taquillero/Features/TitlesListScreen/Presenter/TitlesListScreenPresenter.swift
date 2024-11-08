@@ -14,10 +14,10 @@ protocol TItleListScreenPresenterProtocol {
 
 class TitlesListScreenPresenter {
     var view: TitlesListScreenVC
-    var interactor: TitlesListScreenInteractor
+    var interactor: HomeScreenInteractor
     var router: TitlesListScreenRouter
     
-    init(view: TitlesListScreenVC, interactor: TitlesListScreenInteractor, router: TitlesListScreenRouter) {
+    init(view: TitlesListScreenVC, interactor: HomeScreenInteractor, router: TitlesListScreenRouter) {
         self.view = view
         self.interactor = interactor
         self.router = router

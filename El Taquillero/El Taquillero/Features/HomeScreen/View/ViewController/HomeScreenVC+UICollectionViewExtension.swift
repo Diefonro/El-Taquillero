@@ -63,15 +63,26 @@ extension HomeScreenVC: UICollectionViewDelegate, UICollectionViewDataSource, UI
                     
                     let context = self.topMovies
                     headerView.context = context
+                    headerView.contentType = .topMovies
+                    headerView.language = self.language
                     
-                    headerView.didTapOnViewAll = { [weak self] data, title in
-                        self?.presenter.readyToNavigate(context: data, title: title)
+                    headerView.didTapOnViewAll = { [weak self] data, title, contentType, language in
+                        self?.presenter.readyToNavigate(context: data, title: title, contentType: contentType, language: language)
                     }
                     
                 case 2:
                     let navTitle = String(localized: "HOME_TOP_SERIES_CAPTION")
                     headerView.label.text = navTitle
                     headerView.navTitle = navTitle
+                    
+                    let context = self.topSeries
+                    headerView.context = context
+                    headerView.contentType = .topSeries
+                    headerView.language = self.language
+                    
+                    headerView.didTapOnViewAll = { [weak self] data, title, contentType, language in
+                        self?.presenter.readyToNavigate(context: data, title: title, contentType: contentType, language: language)
+                    }
                 default:
                     break
                 }

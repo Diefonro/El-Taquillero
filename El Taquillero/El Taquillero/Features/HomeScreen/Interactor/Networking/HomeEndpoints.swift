@@ -9,8 +9,13 @@ import Foundation
 
 enum HomeEndpoints {
     case trendingMovies
-    case topMovies
-    case topSeries
+    case topMovies(titleProperties: TitleProperties)
+    case topSeries(titleProperties: TitleProperties)
+}
+
+struct TitleProperties {
+    var page: String
+    var language: String
 }
 
 extension HomeEndpoints: Endpoint {
@@ -30,10 +35,13 @@ extension HomeEndpoints: Endpoint {
         switch self {
         case .trendingMovies:
             return [URLQueryItem(name: "language", value: "es-ES")]
-        case .topMovies, .topSeries:
+        case .topMovies(let properties), .topSeries(let properties):
+            
+            let language = properties.language
+            let page = properties.page
             return [
-                URLQueryItem(name: "language", value: "es-ES"),
-                URLQueryItem(name: "page", value: "1")
+                URLQueryItem(name: "language", value: language),
+                URLQueryItem(name: "page", value: page)
             ]
         }
     }

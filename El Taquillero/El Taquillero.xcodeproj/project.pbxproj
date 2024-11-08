@@ -31,6 +31,7 @@
 		4133039F2CDDEDE60010B769 /* TitlesListScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133039E2CDDEDDD0010B769 /* TitlesListScreenInteractor.swift */; };
 		413303A12CDDEDFD0010B769 /* TitlesListScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A02CDDEDFD0010B769 /* TitlesListScreenPresenter.swift */; };
 		413303A32CDDEE060010B769 /* TitlesListScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A22CDDEE060010B769 /* TitlesListScreenRouter.swift */; };
+		413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A92CDE16380010B769 /* GetLanguageCode.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -115,6 +116,7 @@
 		4133039E2CDDEDDD0010B769 /* TitlesListScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesListScreenInteractor.swift; sourceTree = "<group>"; };
 		413303A02CDDEDFD0010B769 /* TitlesListScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesListScreenPresenter.swift; sourceTree = "<group>"; };
 		413303A22CDDEE060010B769 /* TitlesListScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlesListScreenRouter.swift; sourceTree = "<group>"; };
+		413303A92CDE16380010B769 /* GetLanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguageCode.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -378,6 +380,14 @@
 			path = "Template ";
 			sourceTree = "<group>";
 		};
+		413303A62CDE161C0010B769 /* GetLanguage */ = {
+			isa = PBXGroup;
+			children = (
+				413303A92CDE16380010B769 /* GetLanguageCode.swift */,
+			);
+			path = GetLanguage;
+			sourceTree = "<group>";
+		};
 		41C08FF92CDB491F000CFBE5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -534,6 +544,7 @@
 		41D5AFBC2CDC16DE00D87EC9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				413303A62CDE161C0010B769 /* GetLanguage */,
 				413303712CDDCB060010B769 /* FetchTypeEnum */,
 				411E03CB2CDC19AA0089073E /* LayoutFactory */,
 				41D5AFBD2CDC16EA00D87EC9 /* HomeStrings */,
@@ -907,6 +918,7 @@
 				413303A32CDDEE060010B769 /* TitlesListScreenRouter.swift in Sources */,
 				41FFE6A82CDD62B3007A3800 /* HomeServices.swift in Sources */,
 				41FFE6A22CDD593F007A3800 /* HomeEndpoints.swift in Sources */,
+				413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */,
 				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
 				413303882CDDE38B0010B769 /* Date+Extension.swift in Sources */,

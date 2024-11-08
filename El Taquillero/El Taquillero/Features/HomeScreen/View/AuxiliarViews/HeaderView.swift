@@ -26,9 +26,11 @@ class HeaderView: UICollectionReusableView {
         return button
     }()
     
-    var didTapOnViewAll: ((_ data: [Results], _ title: String) -> Void)?
+    var didTapOnViewAll: ((_ data: [Results], _ title: String, _ contentType: ContentType, _ language: String) -> Void)?
     var navTitle: String? = ""
     var context: [Results] = []
+    var contentType: ContentType = .topMovies
+    var language = ""
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,7 +44,7 @@ class HeaderView: UICollectionReusableView {
     }
     
     @objc func buttonTapped() {
-        self.didTapOnViewAll?(context, navTitle!)
+        self.didTapOnViewAll?(context, navTitle!, contentType, language)
     }
     
     required init?(coder: NSCoder) {
