@@ -34,6 +34,11 @@
 		413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A92CDE16380010B769 /* GetLanguageCode.swift */; };
 		413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */; };
 		413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */; };
+		415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415782512CDE6FB800DB83BE /* LoginScreen.storyboard */; };
+		415782542CDE6FC500DB83BE /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415782532CDE6FC500DB83BE /* LoginScreenVC.swift */; };
+		4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */; };
+		4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */; };
+		4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -121,6 +126,11 @@
 		413303A92CDE16380010B769 /* GetLanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguageCode.swift; sourceTree = "<group>"; };
 		413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TitleDetailScreen.storyboard; sourceTree = "<group>"; };
 		413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailScreenVC.swift; sourceTree = "<group>"; };
+		415782512CDE6FB800DB83BE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		415782532CDE6FC500DB83BE /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
+		4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginScreenVC+Extension.swift"; sourceTree = "<group>"; };
+		4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeEnum.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -441,6 +451,100 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		415782492CDE6F6600DB83BE /* HomeScreens */ = {
+			isa = PBXGroup;
+			children = (
+				41C090142CDB5091000CFBE5 /* HomeScreen */,
+				41C090052CDB4ACE000CFBE5 /* TitlesListScreen */,
+				413303992CDDE9B30010B769 /* TitleDetailScreeen */,
+			);
+			path = HomeScreens;
+			sourceTree = "<group>";
+		};
+		4157824A2CDE6F7100DB83BE /* UserInfoScreens */ = {
+			isa = PBXGroup;
+			children = (
+				415782502CDE6FA500DB83BE /* LoginScreen */,
+				413303792CDDDEA40010B769 /* UserInfoScreen */,
+			);
+			path = UserInfoScreens;
+			sourceTree = "<group>";
+		};
+		4157824B2CDE6FA500DB83BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */,
+				415782512CDE6FB800DB83BE /* LoginScreen.storyboard */,
+				415782532CDE6FC500DB83BE /* LoginScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4157824C2CDE6FA500DB83BE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4157824D2CDE6FA500DB83BE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4157824E2CDE6FA500DB83BE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4157824F2CDE6FA500DB83BE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		415782502CDE6FA500DB83BE /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4157824B2CDE6FA500DB83BE /* View */,
+				4157824C2CDE6FA500DB83BE /* Interactor */,
+				4157824D2CDE6FA500DB83BE /* Presenter */,
+				4157824E2CDE6FA500DB83BE /* Entity */,
+				4157824F2CDE6FA500DB83BE /* Router */,
+				4178BFA42CDF35A0000D7A79 /* Tools */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		4178BF9F2CDF3364000D7A79 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		4178BFA42CDF35A0000D7A79 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA52CDF35B2000D7A79 /* TextFieldType */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4178BFA52CDF35B2000D7A79 /* TextFieldType */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */,
+			);
+			path = TextFieldType;
+			sourceTree = "<group>";
+		};
 		41C08FF92CDB491F000CFBE5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +557,7 @@
 		41C08FFA2CDB4925000CFBE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4178BF9F2CDF3364000D7A79 /* UIViewController */,
 				413303862CDDE3830010B769 /* Date */,
 				413303832CDDE2F90010B769 /* String */,
 				411E03D72CDC81FB0089073E /* UIView */,
@@ -683,10 +788,8 @@
 			isa = PBXGroup;
 			children = (
 				41E479072CDB420A0012C6D7 /* CustomLaunchScreen */,
-				41C090142CDB5091000CFBE5 /* HomeScreen */,
-				41C090052CDB4ACE000CFBE5 /* TitlesListScreen */,
-				413303992CDDE9B30010B769 /* TitleDetailScreeen */,
-				413303792CDDDEA40010B769 /* UserInfoScreen */,
+				415782492CDE6F6600DB83BE /* HomeScreens */,
+				4157824A2CDE6F7100DB83BE /* UserInfoScreens */,
 				413303B02CDE230C0010B769 /* Template */,
 			);
 			path = Features;
@@ -911,6 +1014,7 @@
 				41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */,
 				413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */,
 				41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */,
+				415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */,
 				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
 				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
 				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
@@ -950,6 +1054,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415782542CDE6FC500DB83BE /* LoginScreenVC.swift in Sources */,
 				41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */,
 				41FFE6A62CDD6055007A3800 /* ReadToken.swift in Sources */,
 				411E03D32CDC1ED60089073E /* HomePosterCell.swift in Sources */,
@@ -976,6 +1081,7 @@
 				41FFE6A22CDD593F007A3800 /* HomeEndpoints.swift in Sources */,
 				413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */,
 				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
+				4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */,
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
 				413303882CDDE38B0010B769 /* Date+Extension.swift in Sources */,
 				41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */,
@@ -988,7 +1094,9 @@
 				41FFE69F2CDD5885007A3800 /* HTTPRequest.swift in Sources */,
 				41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */,
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
+				4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */,
 				4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */,
+				4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

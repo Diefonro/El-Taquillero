@@ -106,6 +106,210 @@
         }
       }
     },
+    "LOGIN_SCREEN_APPLE_LOGIN_CAPTION" : {
+      "comment" : "Apple Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with Apple"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Apple"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_FORGOT_PASSWORD_CAPTION" : {
+      "comment" : "Forgot password caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot password?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Olvidaste la contraseña?"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_GOOGLE_LOGIN_CAPTION" : {
+      "comment" : "Google Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with Google"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Google"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_LINKEDIN_LOGIN_CAPTION" : {
+      "comment" : "LinkedIn Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with LinkedIn"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con LinkedIn"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_LOGIN_OPTIONS" : {
+      "comment" : "Login options caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "or continue with"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "o ingresa con"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_PASSWORD_ERROR" : {
+      "comment" : "Password input error caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password invalid or incorrect"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña inválida o incorrecta"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_PASSWORD_PLACEHOLDER" : {
+      "comment" : "Password textfield placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_SUBMIT_BUTTON_CAPTION" : {
+      "comment" : "Log In button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_USERNAME_ERROR" : {
+      "comment" : "Mail input error caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail or Username invalid or incorrect"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_USERNAME_PLACEHOLDER" : {
+      "comment" : "Username text field placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail or Username"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo electrónico o nombre de usuario"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_WELCOME_DESCRIPTION" : {
+      "comment" : "Welcome continuation text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In to see your favorite movies"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa para ver tus películas favoritas"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_WELCOME_TEXT" : {
+      "comment" : "Welcome text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome Back!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
     "TITLE_DETAIL_REPRODUCE_BUTTON_CAPTION" : {
       "comment" : "Reproduce button's caption.",
       "extractionState" : "manual",
