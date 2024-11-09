@@ -7,109 +7,135 @@
 
 import UIKit
 
+//MARK: TextFields Logic
+
 extension LoginScreenVC {
     
-    func setInvalidTextField(view: UIView, textField: UITextField, showError: Bool = true) {
-        if userDidInteract {
-            self.invalidTextBorderColor(view: view, textField: textField)
+    func checkTextFields() {
+        // Clear previous error messages and hide error labels
+        usernameErrorLabel.text = ""
+        passwordErrorLabel.text = ""
+        usernameErrorView.isHidden = true
+        passwordErrorView.isHidden = true
+        
+        // Validate username
+        validateTextField(textField: usernameTextField,
+                          errorLabel: usernameErrorLabel,
+                          errorView: usernameErrorView,
+                          validation: { text in
+            return text.isEmpty ? String(localized: "TEXTFIELD_USER_EMPTY") : (text.validateAsEmail() ? nil : String(localized: "TEXTFIELD_EMAIL_INVALID"))
+        })
+        
+        // Validate password
+        validateTextField(textField: passwordTextField,
+                          errorLabel: passwordErrorLabel,
+                          errorView: passwordErrorView,
+                          validation: { text in
+            switch true {
+            case text.isEmpty: return String(localized: "TEXTFIELD_PASSWORD_EMPTY")
+            case !text.validateMinimunEightCharactersRequirement(): return String(localized: "TEXTFIELD_PASSWORD_SHORT")
+            case !text.validateMinimunOneNumberRequirement(): return String(localized: "TEXTFIELD_PASSWORD_MISSING_NUMBER")
+            case !text.validateSpecialCharacterRequirement(): return String(localized: "TEXTFIELD_PASSWORD_MISSING_SPECIAL_CHARACTER")
+            case !text.validateUppercaseLetterRequirement(): return String(localized: "TEXTFIELD_PASSWORD_MISSING_UPPERCASE")
+            case !text.validateLowercaseLetterRequirement(): return String(localized: "TEXTFIELD_PASSWORD_MISSING_LOWERCASE")
+            default: return nil
+            }
+        })
+        
+        // If there are no errors, print form data
+        if usernameErrorView.isHidden && passwordErrorView.isHidden {
+            self.applyBorders(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper])
+            self.setupTextFields(textFields: [self.passwordTextField, self.usernameTextField])
+            print("Form is valid")
+            print("Username: \(usernameTextField.text ?? "")")
+            print("Password: \(passwordTextField.text ?? "")")
         }
     }
     
-    func invalidTextBorderColor(view: UIView, textField: UITextField, showError: Bool = true) {
+    func validateTextField(textField: UITextField, errorLabel: UILabel, errorView: UIView, validation: (String) -> String?) {
+        let text = textField.text ?? ""
+        
+        if let errorMessage = validation(text) {
+            errorLabel.text = errorMessage
+            errorView.isHidden = false
+        } else {
+            errorView.isHidden = true
+        }
+    }
+    
+    func invalidTextBorderColor(view: UIView, textField: UITextField) {
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.etRed.cgColor
         textField.textColor = .etRed
     }
     
-    private func invalidateTextFieldOfType(_ type: TextFieldType) {
-        switch type {
-        case .email:
-            self.setInvalidTextField(view: self.usernameTextFieldWrapper, textField: self.usernameTextField)
-        case .password:
-            self.setInvalidTextField(view: self.passwordTextFieldWrapper, textField: self.passwordTextField)
-        default:
-            break
+    @objc func keyboardWillShow(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let contentInsets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+            scrollView.contentInset = contentInsets
+            scrollView.scrollIndicatorInsets = contentInsets
         }
     }
     
-    func validateEnteredData(text: String, textFieldType: TextFieldType, completionHandler: @escaping (Bool) -> Void) {
-        switch textFieldType {
-        case .email:
-            isUsernameValid = !text.isEmpty && text.validateAsEmail()
-            completionHandler(isUsernameValid)
-        case .password:
-            isPasswordValid = !text.isEmpty && text.validateMinimunEightCharactersRequirement() && text.validateMinimunOneNumberRequirement()
-            completionHandler(isPasswordValid)
-        default:
-            completionHandler(false)
-        }
-    }
-    
-    private func loginButton(enable: Bool) {
-        UIButton.animate(withDuration: 0.25) {
-            self.submitButtonWrapper.backgroundColor = enable ? .etDarkTeal : .etMutedGreen
-            self.submitButton.isEnabled = enable
-        }
-    }
-    
-    private func updateTextFieldsData(text: String, type: TextFieldType) {
-        self.validateEnteredData(text: text, textFieldType: type) { isValid in
-            if !isValid { self.invalidateTextFieldOfType(type) }
-        }
-        loginButton(enable: self.isEnteredDataValid)
-    }
-    
-    func manageOnEndEditingEvents() {
-        self.onEndEditing = { [weak self] in
-            self?.updateTextFieldsData(text: self?.usernameTextField.text ?? "", type: self?.type ?? .email)
-        }
-        
-        self.onEndEditing = { [weak self] in
-            self?.updateTextFieldsData(text: self?.passwordTextField.text ?? "", type: self?.type ?? .password)
-        }
+    @objc func keyboardWillHide(_ notification: Notification) {
+        let contentInsets = UIEdgeInsets.zero
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
     }
 }
 
 extension LoginScreenVC: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.userDidInteract = true
+        self.scrollView.scrollRectToVisible(textField.frame, animated: true)
         
-       
+        guard let textFieldType = TextFieldType(rawValue: textField.tag) else { return }
         
-        let placeholders : [UILabel] = [self.usernamePlaceholder, self.passwordPlaceholder]
+        let placeholder: UILabel?
         
-        placeholders.forEach { placeholder in
+        switch textFieldType {
+        case .username:
+            placeholder = self.usernamePlaceholder
+        case .password:
+            placeholder = self.passwordPlaceholder
+        default:
+            placeholder = nil
+        }
+        
+        if let placeholder = placeholder {
             UIView.animate(withDuration: 0.125) {
-                placeholder.frame.origin.y = -0.5
+                placeholder.frame.origin.y = -10
+                placeholder.frame.origin.x = 45
             }
             placeholder.backgroundColor = .etWhite
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let textFieldType = TextFieldType(rawValue: textField.tag) else { return }
         
-       
+        let placeholder: UILabel?
         
-        let placeholders : [UILabel] = [self.usernamePlaceholder, self.passwordPlaceholder]
+        switch textFieldType {
+        case .username:
+            placeholder = self.usernamePlaceholder
+        case .password:
+            placeholder = self.passwordPlaceholder
+        default:
+            placeholder = nil
+        }
         
-        
-            placeholders.forEach { placeholder in
-                UIView.animate(withDuration: 0.125) {
+        if let placeholder = placeholder {
+            UIView.animate(withDuration: 0.125) {
                 guard let text = textField.text, text.isEmpty else {
-                    placeholder.frame.origin.y = -self.mtop
+                    placeholder.frame.origin.y = -10
                     return
                 }
-                placeholder.frame.origin.y = 23
+                placeholder.frame.origin.y = 26
                 placeholder.frame.origin.x = 80
             }
-                placeholder.backgroundColor = .clear
-        }
-        
-        if let completion = self.onEndEditing {
-            completion()
+            placeholder.backgroundColor = .clear
         }
     }
-    
 }
 
 

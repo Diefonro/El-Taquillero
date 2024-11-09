@@ -193,6 +193,7 @@
     },
     "LOGIN_SCREEN_PASSWORD_ERROR" : {
       "comment" : "Password input error caption.",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -204,23 +205,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contraseña inválida o incorrecta"
-          }
-        }
-      }
-    },
-    "LOGIN_SCREEN_PASSWORD_PLACEHOLDER" : {
-      "comment" : "Password textfield placeholder.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Password"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contraseña"
           }
         }
       }
@@ -244,6 +228,7 @@
     },
     "LOGIN_SCREEN_USERNAME_ERROR" : {
       "comment" : "Mail input error caption.",
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -255,23 +240,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
-          }
-        }
-      }
-    },
-    "LOGIN_SCREEN_USERNAME_PLACEHOLDER" : {
-      "comment" : "Username text field placeholder.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mail or Username"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Correo electrónico o nombre de usuario"
           }
         }
       }
@@ -306,6 +274,176 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_INVALID" : {
+      "comment" : "Invalid email caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid email format"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El formato es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_EMPTY" : {
+      "comment" : "Password empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password field cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña no puede estar vacía"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_LOWERCASE" : {
+      "comment" : "Lowercase requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one lowercase letter"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos una minúscula"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_NUMBER" : {
+      "comment" : "Number requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one number"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos un número"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_SPECIAL_CHARACTER" : {
+      "comment" : "Special char requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one special character"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos un caracter especial"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_UPPERCASE" : {
+      "comment" : "Uppercase requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one uppercase letter"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos una mayúscula"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_PLACEHOLDER" : {
+      "comment" : "Password textfield placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_SHORT" : {
+      "comment" : "Length requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 8 characters"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe tener al menos 8 caracteres"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USER_EMPTY" : {
+      "comment" : "User empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User field cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El correo o usuario no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_PLACEHOLDER" : {
+      "comment" : "Password textfield placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail or Username"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo o usuario"
           }
         }
       }

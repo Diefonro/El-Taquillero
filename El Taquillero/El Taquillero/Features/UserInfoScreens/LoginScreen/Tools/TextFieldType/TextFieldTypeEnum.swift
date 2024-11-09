@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum TextFieldType {
+enum TextFieldType: Int {
     case username
     case lastname
     case password

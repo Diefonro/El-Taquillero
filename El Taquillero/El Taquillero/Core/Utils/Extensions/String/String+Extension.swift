@@ -43,5 +43,20 @@ extension String {
         let regex = NSPredicate(format: "SELF MATCHES %@", ".*[0-9].*")
         return regex.evaluate(with: self)
     }
+    
+    func validateSpecialCharacterRequirement() -> Bool {
+        let regex = NSPredicate(format: "SELF MATCHES %@", ".*[!@#$%^&*(),.?\":{}|<>].*")
+        return regex.evaluate(with: self)
+    }
+    
+    func validateUppercaseLetterRequirement() -> Bool {
+        let regex = NSPredicate(format: "SELF MATCHES %@", ".*[A-Z].*")
+        return regex.evaluate(with: self)
+    }
+
+    func validateLowercaseLetterRequirement() -> Bool {
+        let regex = NSPredicate(format: "SELF MATCHES %@", ".*[a-z].*")
+        return regex.evaluate(with: self)
+    }
 }
 

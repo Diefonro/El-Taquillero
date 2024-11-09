@@ -32,6 +32,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var usernamePlaceholder: UILabel!
     
+    @IBOutlet weak var usernameErrorView: UIView!
     @IBOutlet weak var usernameErrorLabel: UILabel!
     
     //MARK: Password TextField Outlets
@@ -40,6 +41,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var passwordPlaceholder: UILabel!
     @IBOutlet weak var passwordLockImageView: UIImageView!
     
+    @IBOutlet weak var passwordErrorView: UIView!
     @IBOutlet weak var passwordErrorLabel: UILabel!
     
     @IBOutlet weak var forgotPasswordLabel: UILabel!
@@ -74,20 +76,27 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     
     var isUsernameValid: Bool = false
     var isPasswordValid: Bool = false
-    var userDidInteract: Bool = false
-    var mtop: CGFloat = 8
-    
-    var isEnteredDataValid: Bool {
-        return isUsernameValid && isPasswordValid
-    }
     
     var type: TextFieldType = .username
     var onEndEditing: (() -> Void)?
+    var onEditing: (() -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
+        self.setupObservers()
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func setupObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+
     
     func setupUI() {
         self.backButtonView.roundAllCorners(cornerRadius: 25)
@@ -101,10 +110,8 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
         self.welcomeTextLabel.text = String(localized: "LOGIN_SCREEN_WELCOME_TEXT")
         self.welcomeDescriptionLabel.text = String(localized: "LOGIN_SCREEN_WELCOME_DESCRIPTION")
         
-        self.usernamePlaceholder.text = String(localized: "LOGIN_SCREEN_USERNAME_PLACEHOLDER")
-        self.usernameErrorLabel.text = String(localized: "LOGIN_SCREEN_USERNAME_ERROR")
-        self.passwordPlaceholder.text = String(localized: "LOGIN_SCREEN_PASSWORD_PLACEHOLDER")
-        self.passwordErrorLabel.text = String(localized: "LOGIN_SCREEN_PASSWORD_ERROR")
+        self.usernamePlaceholder.text = String(localized: "TEXTFIELD_USERNAME_PLACEHOLDER")
+        self.passwordPlaceholder.text = String(localized: "TEXTFIELD_PASSWORD_PLACEHOLDER")
         self.forgotPasswordLabel.text = String(localized: "LOGIN_SCREEN_FORGOT_PASSWORD_CAPTION")
         
         self.separatorLabel.text = String(localized: "LOGIN_SCREEN_LOGIN_OPTIONS")
@@ -159,14 +166,12 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
         passwordLockImageView.isUserInteractionEnabled = true
         passwordLockImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hidePassword)))
         self.dismissKeyboardWhenTappedAround()
-        
-        manageOnEndEditingEvents()
-        
+
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
-        if userDidInteract {
-            
-        }
+        
+        self.usernameTextField.tag = TextFieldType.username.rawValue
+        self.passwordTextField.tag = TextFieldType.password.rawValue
     }
     
     func setupTextFields(textFields: [UITextField]) {
@@ -202,7 +207,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     }
     
     @IBAction func submitButtonAction(_ sender: Any) {
-        print("Submit")
+        self.checkTextFields()
     }
 
 }
