@@ -40,6 +40,11 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
         self.containedView.isHidden = false
         if let userInfoScreen = UIStoryboard(name: UserInfoScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: UserInfoScreenVC.identifier) as? UserInfoScreenVC {
             
+            let router = UserInfoScreenRouter()
+            router.view = userInfoScreen
+            let presenter = UserInfoScreenPresenter(view: userInfoScreen, router: router)
+            userInfoScreen.presenter = presenter
+            
             addChild(userInfoScreen)
             userInfoScreen.view.frame = self.containedView.bounds
             self.containedView.addSubview(userInfoScreen.view)
