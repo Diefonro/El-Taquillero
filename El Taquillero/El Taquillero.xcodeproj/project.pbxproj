@@ -39,6 +39,12 @@
 		4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */; };
 		4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */; };
 		4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */; };
+		418FB3672CE0AAFD0094FF7E /* WelcomingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */; };
+		418FB3692CE0AB1A0094FF7E /* WelcomingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */; };
+		418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */; };
+		418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */; };
+		418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */; };
+		418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -131,6 +137,12 @@
 		4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginScreenVC+Extension.swift"; sourceTree = "<group>"; };
 		4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeEnum.swift; sourceTree = "<group>"; };
+		418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomingScreen.storyboard; sourceTree = "<group>"; };
+		418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenVC.swift; sourceTree = "<group>"; };
+		418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenPresenter.swift; sourceTree = "<group>"; };
+		418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenRouter.swift; sourceTree = "<group>"; };
+		418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
+		418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenVC.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -464,6 +476,8 @@
 		4157824A2CDE6F7100DB83BE /* UserInfoScreens */ = {
 			isa = PBXGroup;
 			children = (
+				418FB3732CE0B1D20094FF7E /* SignUpScreen */,
+				41C116BD2CE0A616004B5F43 /* WelcomingScreen */,
 				415782502CDE6FA500DB83BE /* LoginScreen */,
 				413303792CDDDEA40010B769 /* UserInfoScreen */,
 			);
@@ -543,6 +557,55 @@
 				4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */,
 			);
 			path = TextFieldType;
+			sourceTree = "<group>";
+		};
+		418FB36E2CE0B1D20094FF7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */,
+				418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		418FB36F2CE0B1D20094FF7E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		418FB3702CE0B1D20094FF7E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		418FB3712CE0B1D20094FF7E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		418FB3722CE0B1D20094FF7E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		418FB3732CE0B1D20094FF7E /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36E2CE0B1D20094FF7E /* View */,
+				418FB36F2CE0B1D20094FF7E /* Interactor */,
+				418FB3702CE0B1D20094FF7E /* Presenter */,
+				418FB3712CE0B1D20094FF7E /* Entity */,
+				418FB3722CE0B1D20094FF7E /* Router */,
+			);
+			path = SignUpScreen;
 			sourceTree = "<group>";
 		};
 		41C08FF92CDB491F000CFBE5 /* Utils */ = {
@@ -697,6 +760,57 @@
 				41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */,
 			);
 			path = AppLocalizedStrings;
+			sourceTree = "<group>";
+		};
+		41C116B82CE0A616004B5F43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */,
+				418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41C116B92CE0A616004B5F43 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41C116BA2CE0A616004B5F43 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41C116BB2CE0A616004B5F43 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41C116BC2CE0A616004B5F43 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41C116BD2CE0A616004B5F43 /* WelcomingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41C116B82CE0A616004B5F43 /* View */,
+				41C116B92CE0A616004B5F43 /* Interactor */,
+				41C116BA2CE0A616004B5F43 /* Presenter */,
+				41C116BB2CE0A616004B5F43 /* Entity */,
+				41C116BC2CE0A616004B5F43 /* Router */,
+			);
+			path = WelcomingScreen;
 			sourceTree = "<group>";
 		};
 		41D5AFBC2CDC16DE00D87EC9 /* Tools */ = {
@@ -1016,6 +1130,7 @@
 				41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */,
 				415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */,
 				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
+				418FB3672CE0AAFD0094FF7E /* WelcomingScreen.storyboard in Resources */,
 				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
 				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
 				41E479202CDB457D0012C6D7 /* Lato-Regular.ttf in Resources */,
@@ -1027,6 +1142,7 @@
 				41E478F52CDB3DEC0012C6D7 /* LaunchScreen.storyboard in Resources */,
 				4133039B2CDDE9D70010B769 /* UserInfoScreen.storyboard in Resources */,
 				41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */,
+				418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */,
 				41FFE6A42CDD5EAA007A3800 /* Config.plist in Resources */,
 				413303822CDDE05E0010B769 /* TitleTableCell.xib in Resources */,
 				413303932CDDE9050010B769 /* TabBarScreen.storyboard in Resources */,
@@ -1072,6 +1188,7 @@
 				41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */,
 				4133039D2CDDE9FF0010B769 /* UserInfoScreenVC.swift in Sources */,
 				411E03D92CDC820A0089073E /* UIView+Extension.swift in Sources */,
+				418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */,
 				411E03DB2CDCA4C70089073E /* Titles.swift in Sources */,
 				41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */,
 				413303A12CDDEDFD0010B769 /* TitlesListScreenPresenter.swift in Sources */,
@@ -1086,6 +1203,7 @@
 				413303882CDDE38B0010B769 /* Date+Extension.swift in Sources */,
 				41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */,
 				413303702CDDADA40010B769 /* HeaderView.swift in Sources */,
+				418FB3692CE0AB1A0094FF7E /* WelcomingScreenVC.swift in Sources */,
 				4133038C2CDDE8980010B769 /* TabBarScreenVC.swift in Sources */,
 				41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */,
 				413303812CDDE05E0010B769 /* TitleTableCell.swift in Sources */,
@@ -1096,7 +1214,9 @@
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
 				4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */,
 				4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */,
+				418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */,
 				4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */,
+				418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

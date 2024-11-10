@@ -69,7 +69,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     var isPasswordHidden = false {
         didSet {
             self.passwordTextField.isSecureTextEntry = isPasswordHidden
-            let imageName = isPasswordHidden ? "eye" : "eye.slash"
+            let imageName = isPasswordHidden ? "eye.slash" : "eye"
             self.passwordLockImageView.image = UIImage(systemName: imageName)
         }
     }
@@ -99,6 +99,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
 
     
     func setupUI() {
+        self.isPasswordHidden = true
         self.backButtonView.roundAllCorners(cornerRadius: 25)
         self.applyBorders(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper])
         self.roundCorner(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper, self.appleLoginButtonWrapper, self.linkedInLoginButtonWrapper, self.googleLoginButtonWrapper, self.submitButtonWrapper])
@@ -120,7 +121,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
         self.linkedInLoginLabel.text = String(localized: "LOGIN_SCREEN_LINKEDIN_LOGIN_CAPTION")
         self.googleLoginLabel.text = String(localized: "LOGIN_SCREEN_GOOGLE_LOGIN_CAPTION")
         
-        self.submitButtonLabel.text = String(localized: "LOGIN_SCREEN_SUBMIT_BUTTON_CAPTION")
+        self.submitButtonLabel.text = String(localized: "LOGIN_BUTTON_CAPTION")
         
         self.setupFonts(labels: [self.usernamePlaceholder, self.passwordPlaceholder])
         self.setupBoldLabels(labels: [self.appleLoginLabel, self.linkedInLoginLabel, self.googleLoginLabel, self.submitButtonLabel])
@@ -187,7 +188,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     }
     
     @IBAction func backButtonAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true)
     }
     
     @IBAction func forgotPasswordButtonAction(_ sender: Any) {

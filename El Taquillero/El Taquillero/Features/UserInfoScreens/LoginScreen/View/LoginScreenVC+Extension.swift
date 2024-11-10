@@ -127,10 +127,10 @@ extension LoginScreenVC: UITextFieldDelegate {
         if let placeholder = placeholder {
             UIView.animate(withDuration: 0.125) {
                 guard let text = textField.text, text.isEmpty else {
-                    placeholder.frame.origin.y = -10
+                    placeholder.frame.origin.y = -12
                     return
                 }
-                placeholder.frame.origin.y = 26
+                placeholder.frame.origin.y = 29
                 placeholder.frame.origin.x = 80
             }
             placeholder.backgroundColor = .clear

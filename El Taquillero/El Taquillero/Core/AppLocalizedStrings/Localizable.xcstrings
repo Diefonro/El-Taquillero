@@ -106,6 +106,23 @@
         }
       }
     },
+    "LOGIN_BUTTON_CAPTION" : {
+      "comment" : "Log In button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa"
+          }
+        }
+      }
+    },
     "LOGIN_SCREEN_APPLE_LOGIN_CAPTION" : {
       "comment" : "Apple Login Button caption.",
       "localizations" : {
@@ -209,23 +226,6 @@
         }
       }
     },
-    "LOGIN_SCREEN_SUBMIT_BUTTON_CAPTION" : {
-      "comment" : "Log In button caption.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Log In"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ingresa"
-          }
-        }
-      }
-    },
     "LOGIN_SCREEN_USERNAME_ERROR" : {
       "comment" : "Mail input error caption.",
       "extractionState" : "stale",
@@ -274,6 +274,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
+    "SIGNUP_BUTTON_CAPTION" : {
+      "comment" : "Sign Up button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Up"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regístrate"
           }
         }
       }
@@ -498,6 +515,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cuenta"
+          }
+        }
+      }
+    },
+    "WELCOMING_SCREEN_DESCRIPTION" : {
+      "comment" : "No session screen description.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave reviews and personalize your experience by exploring your favorite movies and series."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deja reseñas y personaliza tu experiencia al explorar tus películas y series favoritas."
+          }
+        }
+      }
+    },
+    "WELCOMING_SCREEN_TEXT" : {
+      "comment" : "No session screen caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In and access the best titles!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Inicia sesión y accede a los mejores títulos!"
           }
         }
       }
