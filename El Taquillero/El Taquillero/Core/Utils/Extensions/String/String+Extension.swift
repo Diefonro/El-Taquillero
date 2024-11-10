@@ -53,10 +53,15 @@ extension String {
         let regex = NSPredicate(format: "SELF MATCHES %@", ".*[A-Z].*")
         return regex.evaluate(with: self)
     }
-
+    
     func validateLowercaseLetterRequirement() -> Bool {
         let regex = NSPredicate(format: "SELF MATCHES %@", ".*[a-z].*")
         return regex.evaluate(with: self)
+    }
+    
+    func validateNumericRequirement() -> Bool {
+        let regex = "^[0-9]+$"
+        return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
     }
 }
 

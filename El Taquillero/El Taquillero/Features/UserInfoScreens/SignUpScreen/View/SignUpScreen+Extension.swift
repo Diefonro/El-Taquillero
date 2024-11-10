@@ -1,34 +1,57 @@
 //
-//  LoginScreenVC+Extension.swift
+//  SignUpScreen+Extension.swift
 //  El Taquillero
 //
-//  Created by Andrés Fonseca on 09/11/2024.
+//  Created by Andrés Fonseca on 10/11/2024.
 //
 
 import UIKit
 
-//MARK: TextFields Logic
-
-extension LoginScreenVC {
+extension SignUpScreenVC {
     
     func checkTextFields() {
         // Clear previous error messages and hide error labels
-        usernameErrorLabel.text = ""
-        passwordErrorLabel.text = ""
+        usernameErrorCaption.text = ""
+        surnameErrorCaption.text = ""
+        phoneErrorCaption.text = ""
+        emailErrorCaption.text = ""
+        passwordErrorCaption.text = ""
+        
         usernameErrorView.isHidden = true
+        surnameErrorView.isHidden = true
+        phoneErrorViewWrapper.isHidden = true
+        emailErrorView.isHidden = true
         passwordErrorView.isHidden = true
         
         // Validate username
-        validateTextField(textField: usernameTextField,
-                          errorLabel: usernameErrorLabel,
+        validateTextField(textField: usernameTextfield,
+                          errorLabel: usernameErrorCaption,
                           errorView: usernameErrorView,
+                          validation: { text in
+            return text.isEmpty ? String(localized: "TEXTFIELD_USERNAME_EMPTY") : (text.validateAlphabeticRequirement() ? nil : String(localized: "TEXTFIELD_USERNAME_INVALID"))
+        })
+        
+        // Validate surname
+        validateTextField(textField: surnameTextfield, errorLabel: surnameErrorCaption, errorView: surnameErrorView) { text in
+            return text.isEmpty ? String(localized: "TEXTFIELD_SURNAME_EMPTY") : (text.validateAlphabeticRequirement() ? nil : String(localized: "TEXTFIELD_SURNAME_INVALID"))
+        }
+        
+        // Validate phone
+        validateTextField(textField: phoneTextfield, errorLabel: phoneErrorCaption, errorView: phoneErrorViewWrapper) { text in
+            return text.isEmpty ? String(localized: "TEXTFIELD_PHONE_EMPTY") : (text.validateNumericRequirement() ? nil : String(localized: "TEXTFIELD_PHONE_INVALID"))
+        }
+        
+        // Validate email
+        validateTextField(textField: emailTextfield,
+                          errorLabel: emailErrorCaption,
+                          errorView: emailErrorView,
                           validation: { text in
             return text.isEmpty ? String(localized: "TEXTFIELD_EMAIL_EMPTY") : (text.validateAsEmail() ? nil : String(localized: "TEXTFIELD_EMAIL_INVALID"))
         })
         
         // Validate password
-        validateTextField(textField: passwordTextField,
-                          errorLabel: passwordErrorLabel,
+        validateTextField(textField: passwordTextfield,
+                          errorLabel: passwordErrorCaption,
                           errorView: passwordErrorView,
                           validation: { text in
             switch true {
@@ -44,11 +67,20 @@ extension LoginScreenVC {
         
         // If there are no errors, print form data
         if usernameErrorView.isHidden && passwordErrorView.isHidden {
-            self.applyBorders(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper])
-            self.setupTextFields(textFields: [self.passwordTextField, self.usernameTextField])
+            
+            let viewsArray: [UIView] = [self.usernameTextFieldWrapper, self.surnameTextfieldWrapper, self.phoneTextfieldWrapper, self.emailTextfieldWrapper,
+                self.passwordTextfieldWrapper]
+            self.applyBorders(views: viewsArray)
+            
+            let textFieldsArray: [UITextField] = [self.usernameTextfield, self.surnameTextfield, self.phoneTextfield, self.emailTextfield, self.passwordTextfield]
+            self.setupTextFields(textFields: textFieldsArray)
+            
             print("Form is valid")
-            print("Username: \(usernameTextField.text ?? "")")
-            print("Password: \(passwordTextField.text ?? "")")
+            print("Username: \(usernameTextfield.text ?? "")")
+            print("Surname: \(surnameTextfield.text ?? "")")
+            print("Phone: \(phoneTextfield.text ?? "")")
+            print("Email: \(emailTextfield.text ?? "")")
+            print("Password: \(passwordTextfield.text ?? "")")
         }
     }
     
@@ -82,9 +114,10 @@ extension LoginScreenVC {
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
     }
+    
 }
 
-extension LoginScreenVC: UITextFieldDelegate {
+extension SignUpScreenVC: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.scrollView.scrollRectToVisible(textField.frame, animated: true)
         
@@ -93,8 +126,14 @@ extension LoginScreenVC: UITextFieldDelegate {
         let placeholder: UILabel?
         
         switch textFieldType {
-        case .email:
+        case .username:
             placeholder = self.usernamePlaceholder
+        case .lastname:
+            placeholder = self.surnamePlaceholder
+        case .phone:
+            placeholder = self.phonePlaceholder
+        case .email:
+            placeholder = self.emailPlaceholder
         case .password:
             placeholder = self.passwordPlaceholder
         default:
@@ -104,7 +143,7 @@ extension LoginScreenVC: UITextFieldDelegate {
         if let placeholder = placeholder {
             UIView.animate(withDuration: 0.125) {
                 placeholder.frame.origin.y = -10
-                placeholder.frame.origin.x = 45
+                placeholder.frame.origin.x = 40
             }
             placeholder.backgroundColor = .etWhite
         }
@@ -116,8 +155,14 @@ extension LoginScreenVC: UITextFieldDelegate {
         let placeholder: UILabel?
         
         switch textFieldType {
-        case .email:
+        case .username:
             placeholder = self.usernamePlaceholder
+        case .lastname:
+            placeholder = self.surnamePlaceholder
+        case .phone:
+            placeholder = self.phonePlaceholder
+        case .email:
+            placeholder = self.emailPlaceholder
         case .password:
             placeholder = self.passwordPlaceholder
         default:
@@ -131,11 +176,10 @@ extension LoginScreenVC: UITextFieldDelegate {
                     return
                 }
                 placeholder.frame.origin.y = 29
-                placeholder.frame.origin.x = 80
+                placeholder.frame.origin.x = 60
             }
             placeholder.backgroundColor = .clear
         }
     }
 }
-
 

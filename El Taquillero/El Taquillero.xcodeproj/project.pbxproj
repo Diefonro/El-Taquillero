@@ -45,6 +45,7 @@
 		418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */; };
 		418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */; };
 		418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */; };
+		418FB3792CE0C22B0094FF7E /* SignUpScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -143,6 +144,7 @@
 		418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenRouter.swift; sourceTree = "<group>"; };
 		418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
 		418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenVC.swift; sourceTree = "<group>"; };
+		418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen+Extension.swift"; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -564,6 +566,7 @@
 			children = (
 				418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */,
 				418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */,
+				418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1191,6 +1194,7 @@
 				418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */,
 				411E03DB2CDCA4C70089073E /* Titles.swift in Sources */,
 				41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */,
+				418FB3792CE0C22B0094FF7E /* SignUpScreen+Extension.swift in Sources */,
 				413303A12CDDEDFD0010B769 /* TitlesListScreenPresenter.swift in Sources */,
 				41FFE6AC2CDD767D007A3800 /* HomeScreenPresenter.swift in Sources */,
 				413303A32CDDEE060010B769 /* TitlesListScreenRouter.swift in Sources */,

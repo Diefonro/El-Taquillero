@@ -77,9 +77,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     var isUsernameValid: Bool = false
     var isPasswordValid: Bool = false
     
-    var type: TextFieldType = .username
-    var onEndEditing: (() -> Void)?
-    var onEditing: (() -> Void)?
+    var type: TextFieldType = .email
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,17 +99,34 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     func setupUI() {
         self.isPasswordHidden = true
         self.backButtonView.roundAllCorners(cornerRadius: 25)
+        
         self.applyBorders(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper])
         self.roundCorner(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper, self.appleLoginButtonWrapper, self.linkedInLoginButtonWrapper, self.googleLoginButtonWrapper, self.submitButtonWrapper])
         self.setupLabels()
         self.configureTextFields()
     }
     
+    func applyBorders(views: [UIView]) {
+        views.forEach { view in
+            view.layer.borderColor = UIColor.etSoftGrayGreen.cgColor
+            view.layer.borderWidth = 1
+        }
+        
+        self.googleLoginButtonWrapper.layer.borderColor = UIColor.etSoftGrayGreen.cgColor
+        self.googleLoginButtonWrapper.layer.borderWidth = 1
+    }
+    
+    func roundCorner(views: [UIView]) {
+        views.forEach { eachView in
+            eachView.roundAllCorners(cornerRadius: 18)
+        }
+    }
+    
     func setupLabels() {
         self.welcomeTextLabel.text = String(localized: "LOGIN_SCREEN_WELCOME_TEXT")
         self.welcomeDescriptionLabel.text = String(localized: "LOGIN_SCREEN_WELCOME_DESCRIPTION")
         
-        self.usernamePlaceholder.text = String(localized: "TEXTFIELD_USERNAME_PLACEHOLDER")
+        self.usernamePlaceholder.text = String(localized: "TEXTFIELD_EMAIL_PLACEHOLDER")
         self.passwordPlaceholder.text = String(localized: "TEXTFIELD_PASSWORD_PLACEHOLDER")
         self.forgotPasswordLabel.text = String(localized: "LOGIN_SCREEN_FORGOT_PASSWORD_CAPTION")
         
@@ -146,22 +161,6 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
         }
     }
     
-    func applyBorders(views: [UIView]) {
-        views.forEach { view in
-            view.layer.borderColor = UIColor.etSoftGrayGreen.cgColor
-            view.layer.borderWidth = 1
-        }
-        
-        self.googleLoginButtonWrapper.layer.borderColor = UIColor.etSoftGrayGreen.cgColor
-        self.googleLoginButtonWrapper.layer.borderWidth = 1
-    }
-    
-    func roundCorner(views: [UIView]) {
-        views.forEach { eachView in
-            eachView.roundAllCorners(cornerRadius: 18)
-        }
-    }
-    
     func configureTextFields() {
         self.setupTextFields(textFields: [self.passwordTextField, self.usernameTextField])
         passwordLockImageView.isUserInteractionEnabled = true
@@ -171,7 +170,7 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
         self.usernameTextField.delegate = self
         self.passwordTextField.delegate = self
         
-        self.usernameTextField.tag = TextFieldType.username.rawValue
+        self.usernameTextField.tag = TextFieldType.email.rawValue
         self.passwordTextField.tag = TextFieldType.password.rawValue
     }
     

@@ -1,6 +1,40 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "DETAILS_INSTRUCTIONS_DESCRIPTION" : {
+      "comment" : "Share details caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share with us some information to create your profile"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compártenos algunos datos para crear tu perfil"
+          }
+        }
+      }
+    },
+    "DETAILS_INSTRUCTIONS_TITLE" : {
+      "comment" : "Enter details caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your details"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa tus datos"
+          }
+        }
+      }
+    },
     "HOME_DESCRIPTION_TEXT" : {
       "comment" : "The home description.",
       "localizations" : {
@@ -233,19 +267,19 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mail or Username invalid or incorrect"
+            "value" : "Mail invalid or incorrect"
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
           }
         }
       }
     },
     "LOGIN_SCREEN_WELCOME_DESCRIPTION" : {
-      "comment" : "Welcome continuation text.",
+      "comment" : "Welcome description text.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -278,6 +312,40 @@
         }
       }
     },
+    "PASSWORD_INSTRUCTIONS_DESCRIPTION" : {
+      "comment" : "Password setup instructions.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Follow our recommendations to create your password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigue nuestras recomendaciones para crear tu contraseña"
+          }
+        }
+      }
+    },
+    "PASSWORD_INSTRUCTIONS_TITLE" : {
+      "comment" : "Password setup title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        }
+      }
+    },
     "SIGNUP_BUTTON_CAPTION" : {
       "comment" : "Sign Up button caption.",
       "localizations" : {
@@ -295,6 +363,57 @@
         }
       }
     },
+    "SIGNUP_SCREEN_WELCOME_DESCRIPTION" : {
+      "comment" : "Welcome description text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create an account to personalize your experience and explore your favorite movies and series"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una cuenta para personalizar tu experiencia y explorar tus películas y series favoritas"
+          }
+        }
+      }
+    },
+    "SIGNUP_SCREEN_WELCOME_TEXT" : {
+      "comment" : "Sign up welcome text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join Us Today!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Únete hoy!"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_EMPTY" : {
+      "comment" : "Email empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El correo no puede estar vacío"
+          }
+        }
+      }
+    },
     "TEXTFIELD_EMAIL_INVALID" : {
       "comment" : "Invalid email caption.",
       "localizations" : {
@@ -307,7 +426,24 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El formato es inválido"
+            "value" : "El formato del correo es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_PLACEHOLDER" : {
+      "comment" : "Email placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail or username"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo electrónico"
           }
         }
       }
@@ -431,36 +567,155 @@
         }
       }
     },
-    "TEXTFIELD_USER_EMPTY" : {
+    "TEXTFIELD_PHONE_EMPTY" : {
+      "comment" : "Phone empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El teléfono no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PHONE_INVALID" : {
+      "comment" : "Phone invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teléfono inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PHONE_PLACEHOLDER" : {
+      "comment" : "Phone placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teléfono"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_EMPTY" : {
+      "comment" : "Surname empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El apellido no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_INVALID" : {
+      "comment" : "Surname invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname is invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El apellido es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_PLACEHOLDER" : {
+      "comment" : "Surname placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_EMPTY" : {
       "comment" : "User empty caption.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "User field cannot be empty"
+            "value" : "Name field cannot be empty"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El correo o usuario no puede estar vacío"
+            "value" : "El nombre no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_INVALID" : {
+      "comment" : "Name invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name is invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El nombre es inválido"
           }
         }
       }
     },
     "TEXTFIELD_USERNAME_PLACEHOLDER" : {
-      "comment" : "Password textfield placeholder.",
+      "comment" : "Name placeholder.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mail or Username"
+            "value" : "Name"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Correo o usuario"
+            "value" : "Nombre"
           }
         }
       }
