@@ -15,6 +15,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var collectionViewContainer: UIView!
     @IBOutlet weak var simulatedNavBarView: UIView!
     @IBOutlet weak var simulatedNavBarLabel: UILabel!
+    @IBOutlet weak var simulatedNavBarHeightConstant: NSLayoutConstraint!
     
     var collectionView: UICollectionView = {
         let layout = LayoutType.homePosters.layout
@@ -40,6 +41,7 @@ class HomeScreenVC: UIViewController, StoryboardInfo {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionViewContainer.isHidden = true
+        self.simulatedNavBarHeightConstant.constant = UIScreen.main.bounds.height * 0.12
         self.simulatedNavBarView.alpha = 0
         self.setupCollectionView()
         self.fetchTrendingMovies()

@@ -65,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionViewContainer" destination="tdz-wz-jNi" id="3xO-KY-3Pf"/>
+                        <outlet property="simulatedNavBarHeightConstant" destination="o0s-yV-mUP" id="w6y-QO-sqi"/>
                         <outlet property="simulatedNavBarLabel" destination="cSa-mG-KcC" id="7qH-uf-t54"/>
                         <outlet property="simulatedNavBarView" destination="9d0-Xx-bAh" id="q5X-Ho-5Ok"/>
                     </connections>

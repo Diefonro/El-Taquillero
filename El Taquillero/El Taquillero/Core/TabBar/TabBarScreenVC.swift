@@ -19,7 +19,7 @@ class TabBarScreenVC: UITabBarController, StoryboardInfo {
     }
     
     func configureControllers() {
-        if let homeScreen = UIStoryboard(name: HomeScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: HomeScreenVC.identifier) as? HomeScreenVC, let userInfoScreen = UIStoryboard(name: UserInfoScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: UserInfoScreenVC.identifier) as? UserInfoScreenVC {
+        if let homeScreen = UIStoryboard(name: HomeScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: HomeScreenVC.identifier) as? HomeScreenVC, let welcomingScreen = UIStoryboard(name: WelcomingScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: WelcomingScreenVC.identifier) as? WelcomingScreenVC {
             
             homeScreen.title =  String(localized: "HOME_SCREEN_CAPTION")
             homeScreen.tabBarItem.image = UIImage(systemName: "movieclapper.fill")?.withTintColor(.etTeal)
@@ -30,13 +30,18 @@ class TabBarScreenVC: UITabBarController, StoryboardInfo {
             let homePresenter = HomeScreenPresenter(view: homeScreen, interactor: homeInteractor, router: homeRouter)
             homeScreen.presenter = homePresenter
             
-            userInfoScreen.title = String(localized: "USER_INFO_SCREEN_CAPTION")
-            userInfoScreen.tabBarItem.image = UIImage(systemName: "person.fill")?.withTintColor(.etTeal)
+            let welcomingRouter = WelcomingScreenRouter()
+            welcomingRouter.view = welcomingScreen
+            let welcomingPresenter = WelcomingScreenPresenter(view: welcomingScreen, router: welcomingRouter)
+            welcomingScreen.presenter = welcomingPresenter
+            
+            welcomingScreen.title = String(localized: "USER_INFO_SCREEN_CAPTION")
+            welcomingScreen.tabBarItem.image = UIImage(systemName: "person.fill")?.withTintColor(.etTeal)
 
             let homeNavController = UINavigationController(rootViewController: homeScreen)
-            let userInfoNavController = UINavigationController(rootViewController: userInfoScreen)
+            let welcomingNavController = UINavigationController(rootViewController: welcomingScreen)
             
-            viewControllers = [homeNavController, userInfoNavController]
+            viewControllers = [homeNavController, welcomingNavController]
         }
     }
     

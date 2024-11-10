@@ -1,6 +1,40 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "DETAILS_INSTRUCTIONS_DESCRIPTION" : {
+      "comment" : "Share details caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share with us some information to create your profile"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compártenos algunos datos para crear tu perfil"
+          }
+        }
+      }
+    },
+    "DETAILS_INSTRUCTIONS_TITLE" : {
+      "comment" : "Enter details caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your details"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa tus datos"
+          }
+        }
+      }
+    },
     "HOME_DESCRIPTION_TEXT" : {
       "comment" : "The home description.",
       "localizations" : {
@@ -106,6 +140,586 @@
         }
       }
     },
+    "LOGIN_BUTTON_CAPTION" : {
+      "comment" : "Log In button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_APPLE_LOGIN_CAPTION" : {
+      "comment" : "Apple Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with Apple"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Apple"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_FORGOT_PASSWORD_CAPTION" : {
+      "comment" : "Forgot password caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot password?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Olvidaste la contraseña?"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_GOOGLE_LOGIN_CAPTION" : {
+      "comment" : "Google Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with Google"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con Google"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_LINKEDIN_LOGIN_CAPTION" : {
+      "comment" : "LinkedIn Login Button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue with LinkedIn"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuar con LinkedIn"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_LOGIN_OPTIONS" : {
+      "comment" : "Login options caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "or continue with"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "o ingresa con"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_PASSWORD_ERROR" : {
+      "comment" : "Password input error caption.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password invalid or incorrect"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña inválida o incorrecta"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_USERNAME_ERROR" : {
+      "comment" : "Mail input error caption.",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail invalid or incorrect"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_WELCOME_DESCRIPTION" : {
+      "comment" : "Welcome description text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In to see your favorite movies"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa para ver tus películas favoritas"
+          }
+        }
+      }
+    },
+    "LOGIN_SCREEN_WELCOME_TEXT" : {
+      "comment" : "Welcome text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome Back!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
+    "PASSWORD_INSTRUCTIONS_DESCRIPTION" : {
+      "comment" : "Password setup instructions.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Follow our recommendations to create your password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sigue nuestras recomendaciones para crear tu contraseña"
+          }
+        }
+      }
+    },
+    "PASSWORD_INSTRUCTIONS_TITLE" : {
+      "comment" : "Password setup title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        }
+      }
+    },
+    "SIGNUP_BUTTON_CAPTION" : {
+      "comment" : "Sign Up button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Up"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regístrate"
+          }
+        }
+      }
+    },
+    "SIGNUP_SCREEN_WELCOME_DESCRIPTION" : {
+      "comment" : "Welcome description text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create an account to personalize your experience and explore your favorite movies and series"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crea una cuenta para personalizar tu experiencia y explorar tus películas y series favoritas"
+          }
+        }
+      }
+    },
+    "SIGNUP_SCREEN_WELCOME_TEXT" : {
+      "comment" : "Sign up welcome text.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join Us Today!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Únete hoy!"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_EMPTY" : {
+      "comment" : "Email empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El correo no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_INVALID" : {
+      "comment" : "Invalid email caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid email format"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El formato del correo es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_EMAIL_PLACEHOLDER" : {
+      "comment" : "Email placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail or username"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correo electrónico"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_EMPTY" : {
+      "comment" : "Password empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password field cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña no puede estar vacía"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_LOWERCASE" : {
+      "comment" : "Lowercase requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one lowercase letter"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos una minúscula"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_NUMBER" : {
+      "comment" : "Number requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one number"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos un número"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_SPECIAL_CHARACTER" : {
+      "comment" : "Special char requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one special character"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos un caracter especial"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_MISSING_UPPERCASE" : {
+      "comment" : "Uppercase requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain at least one uppercase letter"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe contener al menos una mayúscula"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_PLACEHOLDER" : {
+      "comment" : "Password textfield placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PASSWORD_SHORT" : {
+      "comment" : "Length requirement caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 8 characters"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La contraseña debe tener al menos 8 caracteres"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PHONE_EMPTY" : {
+      "comment" : "Phone empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El teléfono no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PHONE_INVALID" : {
+      "comment" : "Phone invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teléfono inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_PHONE_PLACEHOLDER" : {
+      "comment" : "Phone placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teléfono"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_EMPTY" : {
+      "comment" : "Surname empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El apellido no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_INVALID" : {
+      "comment" : "Surname invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname is invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El apellido es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_SURNAME_PLACEHOLDER" : {
+      "comment" : "Surname placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surname"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apellido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_EMPTY" : {
+      "comment" : "User empty caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name field cannot be empty"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El nombre no puede estar vacío"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_INVALID" : {
+      "comment" : "Name invalid caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name is invalid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El nombre es inválido"
+          }
+        }
+      }
+    },
+    "TEXTFIELD_USERNAME_PLACEHOLDER" : {
+      "comment" : "Name placeholder.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
+        }
+      }
+    },
     "TITLE_DETAIL_REPRODUCE_BUTTON_CAPTION" : {
       "comment" : "Reproduce button's caption.",
       "extractionState" : "manual",
@@ -156,6 +770,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cuenta"
+          }
+        }
+      }
+    },
+    "WELCOMING_SCREEN_DESCRIPTION" : {
+      "comment" : "No session screen description.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave reviews and personalize your experience by exploring your favorite movies and series."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deja reseñas y personaliza tu experiencia al explorar tus películas y series favoritas."
+          }
+        }
+      }
+    },
+    "WELCOMING_SCREEN_TEXT" : {
+      "comment" : "No session screen caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log In and access the best titles!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Inicia sesión y accede a los mejores títulos!"
           }
         }
       }

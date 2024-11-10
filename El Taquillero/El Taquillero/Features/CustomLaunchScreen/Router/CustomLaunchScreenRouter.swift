@@ -22,5 +22,12 @@ class CustomLaunchScreenRouter: CustomLaunchScreenRouterProtocol {
             
             self.view?.present(tabBarScreen, animated: true)
         }
+        
+//        if let tabBarScreen = UIStoryboard(name: LoginScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: LoginScreenVC.identifier) as? LoginScreenVC {
+//            tabBarScreen.modalTransitionStyle = .crossDissolve
+//            tabBarScreen.modalPresentationStyle = .fullScreen
+//            
+//            self.view?.present(tabBarScreen, animated: true)
+//        }
     }
 }
