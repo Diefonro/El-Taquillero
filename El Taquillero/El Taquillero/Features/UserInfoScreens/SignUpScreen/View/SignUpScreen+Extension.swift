@@ -17,11 +17,11 @@ extension SignUpScreenVC {
         emailErrorCaption.text = ""
         passwordErrorCaption.text = ""
         
-        usernameErrorView.isHidden = true
-        surnameErrorView.isHidden = true
-        phoneErrorViewWrapper.isHidden = true
-        emailErrorView.isHidden = true
-        passwordErrorView.isHidden = true
+//        usernameErrorView.isHidden = true
+//        surnameErrorView.isHidden = true
+//        phoneErrorViewWrapper.isHidden = true
+//        emailErrorView.isHidden = true
+//        passwordErrorView.isHidden = true
         
         // Validate username
         validateTextField(textField: usernameTextfield,
@@ -88,11 +88,23 @@ extension SignUpScreenVC {
             print("Email: \(email)")
             print("Password: \(password)")
             
+            
+            
             FirebaseGlobalFunctions.signUpUser(email: email, password: password) { result in
                 switch result {
                 case .success(let message):
                     print(message)
-                    self.dismiss(animated: true)
+                    
+                    FirebaseGlobalFunctions.sendVerificationEmail { verificationResult in
+                        switch verificationResult {
+                        case .success(let successMessage):
+                            print(successMessage)
+                            self.presenter.readyToPopUpVerifyScreen(userMail: email)
+                        case .failure(let error):
+                            print("Failed to send verification email: \(error.localizedDescription)")
+                        }
+                    }
+                    
                 case .failure(let error):
                     print("Error during registration: \(error.localizedDescription)")
                     let errorLocalized = error.localizedDescription

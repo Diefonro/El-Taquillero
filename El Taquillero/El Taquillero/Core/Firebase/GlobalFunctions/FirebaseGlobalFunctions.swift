@@ -47,6 +47,34 @@ class FirebaseGlobalFunctions {
         }
         return (FirebaseAuthErrorType(authErrorCode: errorCode), errorCode)
     }
+    
+    static func sendVerificationEmail(completion: @escaping (Result<String, Error>) -> Void) {
+        guard let currentUser = Auth.auth().currentUser else {
+            completion(.failure(NSError(domain: "FirebaseError", code: -1, userInfo: [NSLocalizedDescriptionKey: "No user is logged in."])))
+            return
+        }
+        
+        currentUser.sendEmailVerification { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success("Verification email sent"))
+            }
+        }
+    }
+    
+    static func checkEmailVerification(completion: @escaping (Bool) -> Void) {
+        guard let user = Auth.auth().currentUser else {
+            completion(false)
+            return
+        }
+        
+        if user.isEmailVerified {
+            completion(true)
+        } else {
+            completion(false)
+        }
+    }
 
 }
 

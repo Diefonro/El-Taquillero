@@ -13,7 +13,7 @@ class WelcomingScreenRouter {
     
     func navigateToLogin() {
         if let loginScreenVC = UIStoryboard(name: LoginScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: LoginScreenVC.identifier) as? LoginScreenVC {
-            loginScreenVC.modalPresentationStyle = .fullScreen
+            loginScreenVC.modalPresentationStyle = .overFullScreen
             loginScreenVC.modalTransitionStyle = .coverVertical
             
             self.view?.present(loginScreenVC, animated: true, completion: nil)
@@ -22,11 +22,15 @@ class WelcomingScreenRouter {
     
     func navigateToSignUp() {
         if let signUpScreen = UIStoryboard(name: SignUpScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: SignUpScreenVC.identifier) as? SignUpScreenVC {
-            signUpScreen.modalPresentationStyle = .fullScreen
+            signUpScreen.modalPresentationStyle = .overFullScreen
             signUpScreen.modalTransitionStyle = .coverVertical
+            
+            let router = SignUpScreenRouter()
+            router.view = signUpScreen
+            let presenter = SignUpScreenPresenter(view: signUpScreen, router: router)
+            signUpScreen.presenter = presenter
             
             self.view?.present(signUpScreen, animated: true, completion: nil)
         }
-
     }
 }

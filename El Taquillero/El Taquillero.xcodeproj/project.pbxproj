@@ -55,6 +55,10 @@
 		41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */; };
 		41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */; };
 		41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */; };
+		41CE85242CE10F10009A555A /* VerifyEmailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */; };
+		41CE85262CE10F23009A555A /* VerifyEmailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */; };
+		41CE852C2CE1199B009A555A /* SignUpScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */; };
+		41CE852E2CE119D8009A555A /* SignUpScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */; };
 		41CF52802CE0EC39008667E0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 41CF527F2CE0EC39008667E0 /* Podfile */; };
 		41CF52842CE0EE38008667E0 /* FirebaseGlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */; };
 		41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */; };
@@ -161,6 +165,10 @@
 		41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyEmailScreen.storyboard; sourceTree = "<group>"; };
+		41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailScreenVC.swift; sourceTree = "<group>"; };
+		41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenPresenter.swift; sourceTree = "<group>"; };
+		41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenRouter.swift; sourceTree = "<group>"; };
 		41CF527F2CE0EC39008667E0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGlobalFunctions.swift; sourceTree = "<group>"; };
 		41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
@@ -499,9 +507,10 @@
 		4157824A2CDE6F7100DB83BE /* UserInfoScreens */ = {
 			isa = PBXGroup;
 			children = (
-				418FB3732CE0B1D20094FF7E /* SignUpScreen */,
 				41C116BD2CE0A616004B5F43 /* WelcomingScreen */,
+				418FB3732CE0B1D20094FF7E /* SignUpScreen */,
 				415782502CDE6FA500DB83BE /* LoginScreen */,
+				41CE85222CE10D92009A555A /* VerifyEmailScreen */,
 				413303792CDDDEA40010B769 /* UserInfoScreen */,
 			);
 			path = UserInfoScreens;
@@ -602,6 +611,7 @@
 		418FB3702CE0B1D20094FF7E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -616,6 +626,7 @@
 		418FB3722CE0B1D20094FF7E /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -835,6 +846,55 @@
 				41C116BC2CE0A616004B5F43 /* Router */,
 			);
 			path = WelcomingScreen;
+			sourceTree = "<group>";
+		};
+		41CE851D2CE10D92009A555A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */,
+				41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41CE851E2CE10D92009A555A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41CE851F2CE10D92009A555A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41CE85202CE10D92009A555A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41CE85212CE10D92009A555A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41CE85222CE10D92009A555A /* VerifyEmailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41CE851D2CE10D92009A555A /* View */,
+				41CE851E2CE10D92009A555A /* Interactor */,
+				41CE851F2CE10D92009A555A /* Presenter */,
+				41CE85202CE10D92009A555A /* Entity */,
+				41CE85212CE10D92009A555A /* Router */,
+			);
+			path = VerifyEmailScreen;
 			sourceTree = "<group>";
 		};
 		41CF52812CE0EE1D008667E0 /* Firebase */ = {
@@ -1204,6 +1264,7 @@
 				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
 				41E479202CDB457D0012C6D7 /* Lato-Regular.ttf in Resources */,
 				41E479212CDB457D0012C6D7 /* Lato-Black.ttf in Resources */,
+				41CE85242CE10F10009A555A /* VerifyEmailScreen.storyboard in Resources */,
 				41E479222CDB457D0012C6D7 /* Lato-Light.ttf in Resources */,
 				41E479232CDB457D0012C6D7 /* Lato-Bold.ttf in Resources */,
 				41E479242CDB457D0012C6D7 /* Lato-BoldItalic.ttf in Resources */,
@@ -1346,6 +1407,7 @@
 				41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */,
 				41FFE6A62CDD6055007A3800 /* ReadToken.swift in Sources */,
 				411E03D32CDC1ED60089073E /* HomePosterCell.swift in Sources */,
+				41CE85262CE10F23009A555A /* VerifyEmailScreenVC.swift in Sources */,
 				41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */,
 				4133039F2CDDEDE60010B769 /* TitlesListScreenInteractor.swift in Sources */,
 				41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */,
@@ -1387,7 +1449,9 @@
 				41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */,
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
 				4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */,
+				41CE852E2CE119D8009A555A /* SignUpScreenRouter.swift in Sources */,
 				4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */,
+				41CE852C2CE1199B009A555A /* SignUpScreenPresenter.swift in Sources */,
 				418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */,
 				4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */,
 				418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */,

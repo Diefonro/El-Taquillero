@@ -72,7 +72,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="689"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LW-ag-gF1" userLabel="ScrollContentView">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="820.33333333333337"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="810.33333333333337"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8W4-ql-OzD" userLabel="WelcomeView">
                                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="230.33333333333334"/>
@@ -113,7 +113,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-oO-WDl" userLabel="TextFieldsStackView">
-                                                                <rect key="frame" x="0.0" y="250.33333333333331" width="393" height="309.99999999999994"/>
+                                                                <rect key="frame" x="0.0" y="250.33333333333331" width="393" height="299.99999999999994"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32q-cc-hjj" userLabel="UsernameTextFieldViewContainer">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
@@ -196,13 +196,13 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-AC-nPU" userLabel="SpacerView">
-                                                                        <rect key="frame" x="0.0" y="80" width="393" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="80" width="393" height="10"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCs-HV-1rk">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="20"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="10"/>
                                                                                 <color key="backgroundColor" name="ETWhite"/>
                                                                                 <constraints>
-                                                                                    <constraint firstAttribute="height" constant="20" id="5Dm-UE-FJk"/>
+                                                                                    <constraint firstAttribute="height" constant="10" id="5Dm-UE-FJk"/>
                                                                                 </constraints>
                                                                             </view>
                                                                         </subviews>
@@ -215,7 +215,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZb-ko-ZdX" userLabel="PasswordTextFieldViewContainer">
-                                                                        <rect key="frame" x="0.0" y="110" width="393" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="100" width="393" height="70"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5i0-cl-yIk" userLabel="TextFieldView">
                                                                                 <rect key="frame" x="30" y="10" width="333" height="60"/>
@@ -257,7 +257,7 @@
                                                                                 </constraints>
                                                                             </view>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gF-c0-blK" userLabel="PlaceholderLabel">
-                                                                                <rect key="frame" x="80" y="30.000000000000057" width="73.333333333333314" height="20.333333333333329"/>
+                                                                                <rect key="frame" x="80" y="30" width="73.333333333333314" height="20.333333333333329"/>
                                                                                 <color key="backgroundColor" name="ETWhite"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,7 +276,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMv-kt-zb2" userLabel="PasswordErrorLabelView">
-                                                                        <rect key="frame" x="0.0" y="185.00000000000006" width="393" height="20"/>
+                                                                        <rect key="frame" x="0.0" y="175.00000000000006" width="393" height="20"/>
                                                                         <subviews>
                                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="r72-Kx-5fZ">
                                                                                 <rect key="frame" x="30" y="3.3333333333332948" width="15" height="13.66666666666667"/>
@@ -306,7 +306,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElN-9D-M1Z" userLabel="ForgotPasswordView">
-                                                                        <rect key="frame" x="0.0" y="190.00000000000006" width="393" height="40"/>
+                                                                        <rect key="frame" x="0.0" y="180.00000000000006" width="393" height="40"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Olvidaste tu contraseña?" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jus-DJ-80D">
                                                                                 <rect key="frame" x="163" y="0.0" width="200" height="40"/>
@@ -341,7 +341,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZ0-eg-3Nd" userLabel="SubmitButtonContainerView">
-                                                                        <rect key="frame" x="0.0" y="240.00000000000006" width="393" height="70"/>
+                                                                        <rect key="frame" x="0.0" y="230.00000000000006" width="393" height="70"/>
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jak-0S-hNm" userLabel="SubmitButtonView">
                                                                                 <rect key="frame" x="30" y="10" width="333" height="50"/>
@@ -386,7 +386,7 @@
                                                                 <color key="backgroundColor" name="ETWhite"/>
                                                             </stackView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clC-GB-RHv" userLabel="SeparatorView">
-                                                                <rect key="frame" x="0.0" y="560.33333333333337" width="393" height="50"/>
+                                                                <rect key="frame" x="0.0" y="550.33333333333337" width="393" height="50"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-Hw-iTA" userLabel="LineView">
                                                                         <rect key="frame" x="30.000000000000007" y="24.666666666666629" width="117.66666666666669" height="1"/>
@@ -423,7 +423,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gi9-Dc-9Og" userLabel="SocialLoginView">
-                                                                <rect key="frame" x="0.0" y="610.33333333333337" width="393" height="210"/>
+                                                                <rect key="frame" x="0.0" y="600.33333333333337" width="393" height="210"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AIV-yb-V9S" userLabel="SocialLoginStackView">
                                                                         <rect key="frame" x="0.0" y="0.0" width="393" height="210"/>

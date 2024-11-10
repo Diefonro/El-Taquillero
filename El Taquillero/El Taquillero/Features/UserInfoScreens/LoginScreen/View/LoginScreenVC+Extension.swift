@@ -59,7 +59,7 @@ extension LoginScreenVC {
                 case .success(let message):
                     print(message)
                     self.dismiss(animated: true)
-                    
+            
                 case .failure(let error):
                     let errorLocalized = error.localizedDescription
                     print("Error during registration: \(errorLocalized)")

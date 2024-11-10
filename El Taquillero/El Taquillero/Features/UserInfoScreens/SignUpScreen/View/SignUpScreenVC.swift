@@ -93,6 +93,9 @@ class SignUpScreenVC: UIViewController, StoryboardInfo {
     var isPasswordValid: Bool = false
     
     var type: TextFieldType = .username
+    
+    var presenter: SignUpScreenPresenter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
@@ -216,7 +219,7 @@ class SignUpScreenVC: UIViewController, StoryboardInfo {
     }
     
     @IBAction func signUpButtonAction(_ sender: Any) {
-        print("Sign Up")
+        print("Tapped Sign Up")
         self.checkTextFields()
     }
 }

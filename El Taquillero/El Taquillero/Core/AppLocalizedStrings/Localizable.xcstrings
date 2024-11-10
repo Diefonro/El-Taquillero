@@ -738,6 +738,74 @@
         }
       }
     },
+    "VERIFY_BUTTON_CAPTION" : {
+      "comment" : "Verify button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificar"
+          }
+        }
+      }
+    },
+    "VERIFY_EMAIL_DESCRIPTION" : {
+      "comment" : "Verify email description.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For your security, we have sent a confirmation email to"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Por tu seguridad, hemos enviado un correo de confirmación a"
+          }
+        }
+      }
+    },
+    "VERIFY_EMAIL_TITLE" : {
+      "comment" : "Verify email title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify your mail"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifica tu correo"
+          }
+        }
+      }
+    },
+    "VERIFY_ERROR_CAPTION" : {
+      "comment" : "Verify error caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail is not verified."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El correo no ha sido verificado"
+          }
+        }
+      }
+    },
     "WELCOMING_SCREEN_DESCRIPTION" : {
       "comment" : "No session screen description.",
       "localizations" : {
