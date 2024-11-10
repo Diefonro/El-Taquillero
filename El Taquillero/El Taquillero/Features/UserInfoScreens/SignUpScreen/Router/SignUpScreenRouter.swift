@@ -16,6 +16,7 @@ class SignUpScreenRouter {
             
             verifyEmailScreen.userMail = userMail
             verifyEmailScreen.onEmailVerified = { [weak self] in
+                self?.view?.onSignUpSuccessfully?()
                 self?.view?.dismiss(animated: true)
             }
             

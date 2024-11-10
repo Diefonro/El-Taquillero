@@ -96,6 +96,8 @@ class SignUpScreenVC: UIViewController, StoryboardInfo {
     
     var presenter: SignUpScreenPresenter!
     
+    var onSignUpSuccessfully: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()

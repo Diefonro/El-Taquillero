@@ -79,6 +79,8 @@ class LoginScreenVC: UIViewController, StoryboardInfo {
     
     var type: TextFieldType = .email
     
+    var onLoginSucceed: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()

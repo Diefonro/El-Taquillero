@@ -21,6 +21,8 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
     @IBOutlet weak var registerButtonWrapper: UIView!
     @IBOutlet weak var registerButtonCaption: UILabel!
     
+    @IBOutlet weak var containedView: UIView!
+    
     var presenter : WelcomingScreenPresenter!
     
     override func viewDidLoad() {
@@ -32,6 +34,20 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
         setupLabels()
         setupViews()
     }
+    
+    
+    func setupUserInfoScreen() {
+        self.containedView.isHidden = false
+        if let userInfoScreen = UIStoryboard(name: UserInfoScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: UserInfoScreenVC.identifier) as? UserInfoScreenVC {
+            
+            addChild(userInfoScreen)
+            userInfoScreen.view.frame = self.containedView.bounds
+            self.containedView.addSubview(userInfoScreen.view)
+            userInfoScreen.didMove(toParent: self)
+        }
+    }
+    
+    
     
     func setupLabels() {
         self.welcomingTextLabel.font = UIFont(name: "Lato-Black", size: 36)
