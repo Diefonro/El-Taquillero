@@ -35,19 +35,19 @@
         }
       }
     },
-    "HOME_DESCRIPTION_TEXT" : {
-      "comment" : "The home description.",
+    "EMAIL_ALREADY_IN_USE" : {
+      "comment" : "Email in use caption.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "This is a home test description."
+            "value" : "Email already in use."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esta es una descripción de prueba."
+            "value" : "El correo ya está en uso"
           }
         }
       }
@@ -123,23 +123,6 @@
         }
       }
     },
-    "HOME_WELCOME_TEXT" : {
-      "comment" : "A greeting phrase.",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Welcome to Home Screen."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bienvenido a la pantalla de inicio."
-          }
-        }
-      }
-    },
     "LOGIN_BUTTON_CAPTION" : {
       "comment" : "Log In button caption.",
       "localizations" : {
@@ -153,6 +136,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingresa"
+          }
+        }
+      }
+    },
+    "LOGIN_REQUEST_ERROR" : {
+      "comment" : "Login request failed caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login request has failed"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El inicio de sesión ha fallado"
           }
         }
       }
@@ -238,42 +238,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "o ingresa con"
-          }
-        }
-      }
-    },
-    "LOGIN_SCREEN_PASSWORD_ERROR" : {
-      "comment" : "Password input error caption.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Password invalid or incorrect"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contraseña inválida o incorrecta"
-          }
-        }
-      }
-    },
-    "LOGIN_SCREEN_USERNAME_ERROR" : {
-      "comment" : "Mail input error caption.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mail invalid or incorrect"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
           }
         }
       }

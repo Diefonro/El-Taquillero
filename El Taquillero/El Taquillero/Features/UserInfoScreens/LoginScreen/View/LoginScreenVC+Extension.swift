@@ -46,9 +46,31 @@ extension LoginScreenVC {
         if usernameErrorView.isHidden && passwordErrorView.isHidden {
             self.applyBorders(views: [self.usernameTextFieldWrapper, self.passwordTextFieldWrapper])
             self.setupTextFields(textFields: [self.passwordTextField, self.usernameTextField])
+            
+            let email = usernameTextField.text ?? ""
+            let password = passwordTextField.text ?? ""
+            
             print("Form is valid")
-            print("Username: \(usernameTextField.text ?? "")")
-            print("Password: \(passwordTextField.text ?? "")")
+            print("Username: \(email)")
+            print("Password: \(password)")
+            
+            FirebaseGlobalFunctions.loginUser(email: email, password: password) { result in
+                switch result {
+                case .success(let message):
+                    print(message)
+                    self.dismiss(animated: true)
+                    
+                case .failure(let error):
+                    let errorLocalized = error.localizedDescription
+                    print("Error during registration: \(errorLocalized)")
+                    if errorLocalized == "The supplied auth credential is malformed or has expired." {
+                        self.passwordErrorView.isHidden = false
+                        self.passwordErrorLabel.text = String(localized: "LOGIN_REQUEST_ERROR")
+                    } else {
+                        print("An unknown error occurred.")
+                    }
+                }
+            }
         }
     }
     
