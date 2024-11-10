@@ -16,6 +16,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     
     @IBOutlet weak var simulatedNavBarView: UIView!
     @IBOutlet weak var simulatedNavLabel: UILabel!
+    @IBOutlet weak var simulatedNavBarHeightConstant: NSLayoutConstraint!
     
     @IBOutlet weak var backButtonView: UIView!
     @IBOutlet weak var backButton: UIButton!
@@ -26,6 +27,7 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     
     @IBOutlet weak var posterImageView: UIView!
     @IBOutlet weak var posterUIImageView: UIImageView!
+    @IBOutlet weak var posterViewHeightConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var gradientView: UIView!
     
@@ -59,6 +61,11 @@ class TitleDetailScreenVC: UIViewController, StoryboardInfo {
     
     func setupUI() {
         self.simulatedNavBarView.alpha = 0
+        self.simulatedNavBarHeightConstant.constant = UIScreen.main.bounds.height * 0.12
+        
+        self.posterViewHeightConstraint.constant = UIScreen.main.bounds.height * 0.75
+        
+        
         self.scrollView.delegate = self
         setupLabels()
         self.scrollView.contentInsetAdjustmentBehavior = .never
