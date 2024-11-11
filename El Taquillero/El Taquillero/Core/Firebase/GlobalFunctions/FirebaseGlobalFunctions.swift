@@ -10,11 +10,20 @@ import FirebaseAuth
 
 class FirebaseGlobalFunctions {
     
-    static func signUpUser(email: String, password: String, completion: @escaping (Result<String, Error>) -> Void) {
+    static func signUpUser(name: String, surname: String, phone: String, email: String, password: String, completion: @escaping (Result<String, Error>) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
                 completion(.failure(error))
             } else {
+                SessionCRUDFunctions.shared.saveUser(name: name, surname: surname, phone: phone, email: email)
+                if let userEntity = SessionCRUDFunctions.shared.fetchUser(withEmail: email) {
+                
+                    
+                    completion(.success("User signedUp in successfully with name: \(userEntity.name ?? "") and email: \(userEntity.email ?? "")"))
+                } else {
+                    completion(.failure(NSError(domain: "", code: 404, userInfo: [NSLocalizedDescriptionKey: "User data not found in Core Data."])))
+                }
+                
                 completion(.success("User signed up successfully"))
             }
         }
@@ -25,27 +34,23 @@ class FirebaseGlobalFunctions {
             if let error = error {
                 completion(.failure(error))
             } else {
-                completion(.success("User logged in successfully"))
+                if let isEmailVerified = Auth.auth().currentUser?.isEmailVerified, isEmailVerified {
+                    UserDefaults.setLoggedIn(true, email: email)
+                    
+                    if let userEntity = SessionCRUDFunctions.shared.fetchUser(withEmail: email) {
+                    
+                        
+                        completion(.success("User logged in successfully with name: \(userEntity.name ?? "") and email: \(userEntity.email ?? "")"))
+                    } else {
+                        completion(.failure(NSError(domain: "", code: 404, userInfo: [NSLocalizedDescriptionKey: "User data not found in Core Data."])))
+                    }
+                    
+                    completion(.success(("User logged in successfully")))
+                } else {
+                    completion(.failure(NSError(domain: "", code: 401, userInfo: [NSLocalizedDescriptionKey: "Email not verified."])))
+                }
             }
         }
-    }
-    
-    static func resetPassword(email: String, completion: @escaping (Result<String, Error>) -> Void) {
-        Auth.auth().sendPasswordReset(withEmail: email) { error in
-            if let error = error {
-                completion(.failure(error))
-            } else {
-                completion(.success("Password reset email sent"))
-            }
-        }
-    }
-    
-    static func handleAuthError(_ error: Error) -> (FirebaseAuthErrorType, AuthErrorCode?) {
-        let authError = error as NSError
-        guard let errorCode = AuthErrorCode(rawValue: authError.code) else {
-            return (.unknown, nil)
-        }
-        return (FirebaseAuthErrorType(authErrorCode: errorCode), errorCode)
     }
     
     static func sendVerificationEmail(completion: @escaping (Result<String, Error>) -> Void) {
@@ -64,36 +69,32 @@ class FirebaseGlobalFunctions {
     }
     
     static func checkEmailVerification(completion: @escaping (Bool) -> Void) {
-        guard let user = Auth.auth().currentUser else {
-            completion(false)
-            return
-        }
-        
-        if user.isEmailVerified {
-            completion(true)
-        } else {
-            completion(false)
+        Auth.auth().currentUser?.reload { error in
+            if let user = Auth.auth().currentUser, user.isEmailVerified {
+                completion(true)
+            } else {
+                completion(false)
+            }
         }
     }
-
-}
-
-enum FirebaseAuthErrorType: String {
-    case invalidEmail = "The email address is badly formatted."
-    case invalidCredential = "The supplied auth credential is malformed or has expired."
-    case wrongPassword = "The password is invalid or the user does not have a password."
-    case unknown
     
-    init(authErrorCode: AuthErrorCode) {
-        switch authErrorCode {
-        case .invalidEmail:
-            self = .invalidEmail
-        case .wrongPassword:
-            self = .wrongPassword
-        case .invalidCredential:
-            self = .invalidCredential
-        default:
-            self = .unknown
+    static func logOutUser(completion: @escaping (Result<Void, Error>) -> Void) {
+        do {
+            try Auth.auth().signOut()
+            UserDefaults.setLoggedIn(false)
+            completion(.success(()))
+        } catch let signedOutError {
+            completion(.failure(signedOutError))
+        }
+    }
+    
+    static func resetPassword(email: String, completion: @escaping (Result<String, Error>) -> Void) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success("Password reset email sent"))
+            }
         }
     }
 }

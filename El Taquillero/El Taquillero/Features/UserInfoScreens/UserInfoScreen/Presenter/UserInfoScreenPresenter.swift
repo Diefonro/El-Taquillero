@@ -20,4 +20,8 @@ class UserInfoScreenPresenter {
     func readyToNavigateToFavoritesScreen() {
         self.router?.navigateToFavoritesScreen()
     }
+    
+    func readyToNavigateToConfirmLogOut() {
+        self.router?.navigateToConfirmLogOut()
+    }
 }

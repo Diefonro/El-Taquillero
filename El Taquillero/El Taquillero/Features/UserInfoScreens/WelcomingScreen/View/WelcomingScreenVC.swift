@@ -28,6 +28,12 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        self.checkIfTheresSession()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     func setupUI() {
@@ -35,10 +41,39 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
         setupViews()
     }
     
+    func checkIfTheresSession() {
+        let isUserLoggedIn = UserDefaults.isLoggedIn()
+        
+        if isUserLoggedIn {
+            if let email = SessionCRUDFunctions.shared.fetchEmail() {
+                
+            } else {
+                print("No email found to continue session")
+                
+            }
+        } else {
+            print("No active session")
+        }
+    }
     
-    func setupUserInfoScreen() {
+    
+    func setupUserInfoScreen(email: String) {
         self.containedView.isHidden = false
         if let userInfoScreen = UIStoryboard(name: UserInfoScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: UserInfoScreenVC.identifier) as? UserInfoScreenVC {
+            
+            let userData = SessionCRUDFunctions.shared.fetchUser(withEmail: email)
+            userInfoScreen.name = userData?.name
+            userInfoScreen.surname = userData?.surname
+            userInfoScreen.phone = userData?.phone
+            userInfoScreen.email = userData?.email
+           
+            print("Setting up UserInfoScreen with email: \(email)")
+
+            
+            userInfoScreen.onLogOutConfirmed = { [weak self] in
+                userInfoScreen.clearData()
+                self?.setUpWelcomingAfterLogOut()
+            }
             
             let router = UserInfoScreenRouter()
             router.view = userInfoScreen
@@ -52,8 +87,16 @@ class WelcomingScreenVC: UIViewController, StoryboardInfo {
         }
     }
     
+    func setUpWelcomingAfterLogOut() {
+        for child in children {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
     
-    
+        self.containedView.isHidden = true
+    }
+
     func setupLabels() {
         self.welcomingTextLabel.font = UIFont(name: "Lato-Black", size: 36)
         self.welcomingDescriptionLabel.font = UIFont(name: "Lato-Regular", size: 20)

@@ -58,6 +58,7 @@ extension LoginScreenVC {
                 switch result {
                 case .success(let message):
                     print(message)
+                    UserDefaults.setLoggedIn(true, email: email)
                     self.onLoginSucceed?()
                     self.dismiss(animated: true)
                 case .failure(let error):

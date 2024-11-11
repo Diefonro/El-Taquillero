@@ -38,6 +38,11 @@
 		413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */; };
 		415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415782512CDE6FB800DB83BE /* LoginScreen.storyboard */; };
 		415782542CDE6FC500DB83BE /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415782532CDE6FC500DB83BE /* LoginScreenVC.swift */; };
+		4174F9832CE2233B0067E737 /* SessionCRUDFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */; };
+		4174F9862CE224420067E737 /* UserEntityModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */; };
+		4174F9892CE229B90067E737 /* UserDefaults+SessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */; };
+		4174F98C2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */; };
+		4174F98E2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */; };
 		4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */; };
 		4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */; };
 		4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */; };
@@ -48,6 +53,7 @@
 		418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */; };
 		418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */; };
 		418FB3792CE0C22B0094FF7E /* SignUpScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */; };
+		41959C132CE244B0005E8D3A /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41959C122CE244AB005E8D3A /* UserStruct.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -63,7 +69,6 @@
 		41CE85382CE175E1009A555A /* FavoritesScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85372CE175E1009A555A /* FavoritesScreenVC.swift */; };
 		41CE853A2CE1764A009A555A /* UserInfoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85392CE17645009A555A /* UserInfoScreenPresenter.swift */; };
 		41CE853C2CE1768B009A555A /* UserInfoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE853B2CE17681009A555A /* UserInfoScreenRouter.swift */; };
-		41CF52802CE0EC39008667E0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 41CF527F2CE0EC39008667E0 /* Podfile */; };
 		41CF52842CE0EE38008667E0 /* FirebaseGlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */; };
 		41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */; };
 		41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */; };
@@ -152,6 +157,11 @@
 		413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailScreenVC.swift; sourceTree = "<group>"; };
 		415782512CDE6FB800DB83BE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		415782532CDE6FC500DB83BE /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
+		4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCRUDFunctions.swift; sourceTree = "<group>"; };
+		4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserEntityModel.xcdatamodel; sourceTree = "<group>"; };
+		4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SessionExtension.swift"; sourceTree = "<group>"; };
+		4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmLogOutScreen.storyboard; sourceTree = "<group>"; };
+		4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLogOutScreenVC.swift; sourceTree = "<group>"; };
 		4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginScreenVC+Extension.swift"; sourceTree = "<group>"; };
 		4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeEnum.swift; sourceTree = "<group>"; };
@@ -162,6 +172,7 @@
 		418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
 		418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenVC.swift; sourceTree = "<group>"; };
 		418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen+Extension.swift"; sourceTree = "<group>"; };
+		41959C122CE244AB005E8D3A /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -177,7 +188,6 @@
 		41CE85372CE175E1009A555A /* FavoritesScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenVC.swift; sourceTree = "<group>"; };
 		41CE85392CE17645009A555A /* UserInfoScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoScreenPresenter.swift; sourceTree = "<group>"; };
 		41CE853B2CE17681009A555A /* UserInfoScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoScreenRouter.swift; sourceTree = "<group>"; };
-		41CF527F2CE0EC39008667E0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGlobalFunctions.swift; sourceTree = "<group>"; };
 		41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
 		41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Taquillero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,6 +328,7 @@
 		413303742CDDDEA40010B769 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4174F98A2CE237C40067E737 /* Subviews */,
 				4133039A2CDDE9D70010B769 /* UserInfoScreen.storyboard */,
 				4133039C2CDDE9FF0010B769 /* UserInfoScreenVC.swift */,
 			);
@@ -578,6 +589,33 @@
 			path = LoginScreen;
 			sourceTree = "<group>";
 		};
+		4174F97D2CE2226D0067E737 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				41959C122CE244AB005E8D3A /* UserStruct.swift */,
+				4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */,
+				4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4174F9872CE229A00067E737 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		4174F98A2CE237C40067E737 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */,
+				4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		4178BF9F2CDF3364000D7A79 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -666,6 +704,7 @@
 		41C08FFA2CDB4925000CFBE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4174F9872CE229A00067E737 /* UserDefaults */,
 				4178BF9F2CDF3364000D7A79 /* UIViewController */,
 				413303862CDDE3830010B769 /* Date */,
 				413303832CDDE2F90010B769 /* String */,
@@ -1023,7 +1062,6 @@
 				41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */,
 				4124C1CA2CE0EAAC002C11A4 /* GoogleService-Info.plist */,
 				41E478E62CDB3DEC0012C6D7 /* Info.plist */,
-				41CF527F2CE0EC39008667E0 /* Podfile */,
 			);
 			path = "El Taquillero";
 			sourceTree = "<group>";
@@ -1048,6 +1086,7 @@
 		41E479032CDB408D0012C6D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4174F97D2CE2226D0067E737 /* User */,
 				41CF52812CE0EE1D008667E0 /* Firebase */,
 				413303892CDDE82B0010B769 /* TabBar */,
 				41FFE6992CDD559F007A3800 /* Networking */,
@@ -1305,7 +1344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41CF52802CE0EC39008667E0 /* Podfile in Resources */,
 				41E478F32CDB3DEC0012C6D7 /* Assets.xcassets in Resources */,
 				4133036D2CDDA9F80010B769 /* HomeTitleCell.xib in Resources */,
 				41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */,
@@ -1335,6 +1373,7 @@
 				41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */,
 				418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */,
 				41FFE6A42CDD5EAA007A3800 /* Config.plist in Resources */,
+				4174F98C2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard in Resources */,
 				413303822CDDE05E0010B769 /* TitleTableCell.xib in Resources */,
 				413303932CDDE9050010B769 /* TabBarScreen.storyboard in Resources */,
 			);
@@ -1480,11 +1519,13 @@
 				4133037E2CDDDEEA0010B769 /* TitlesListScreenVC.swift in Sources */,
 				413303852CDDE3070010B769 /* String+Extension.swift in Sources */,
 				41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */,
+				4174F9862CE224420067E737 /* UserEntityModel.xcdatamodeld in Sources */,
 				411E03D02CDC1A430089073E /* LayoutFactory.swift in Sources */,
 				411E03D62CDC220B0089073E /* HomeScreenVC+UICollectionViewExtension.swift in Sources */,
 				41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */,
 				4133039D2CDDE9FF0010B769 /* UserInfoScreenVC.swift in Sources */,
 				41CE853A2CE1764A009A555A /* UserInfoScreenPresenter.swift in Sources */,
+				4174F98E2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift in Sources */,
 				411E03D92CDC820A0089073E /* UIView+Extension.swift in Sources */,
 				418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */,
 				411E03DB2CDCA4C70089073E /* Titles.swift in Sources */,
@@ -1501,6 +1542,7 @@
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
 				413303882CDDE38B0010B769 /* Date+Extension.swift in Sources */,
 				41CF52842CE0EE38008667E0 /* FirebaseGlobalFunctions.swift in Sources */,
+				41959C132CE244B0005E8D3A /* UserStruct.swift in Sources */,
 				41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */,
 				413303702CDDADA40010B769 /* HeaderView.swift in Sources */,
 				418FB3692CE0AB1A0094FF7E /* WelcomingScreenVC.swift in Sources */,
@@ -1512,6 +1554,8 @@
 				41FFE69F2CDD5885007A3800 /* HTTPRequest.swift in Sources */,
 				41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */,
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
+				4174F9892CE229B90067E737 /* UserDefaults+SessionExtension.swift in Sources */,
+				4174F9832CE2233B0067E737 /* SessionCRUDFunctions.swift in Sources */,
 				4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */,
 				41CE852E2CE119D8009A555A /* SignUpScreenRouter.swift in Sources */,
 				4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */,
@@ -1873,6 +1917,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */,
+			);
+			currentVersion = 4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */;
+			path = UserEntityModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

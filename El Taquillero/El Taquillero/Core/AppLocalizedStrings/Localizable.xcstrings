@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "CANCEL_BUTTON_CAPTION" : {
+      "comment" : "Cancel button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
     "DETAILS_INSTRUCTIONS_DESCRIPTION" : {
       "comment" : "Share details caption.",
       "localizations" : {
@@ -119,6 +136,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ver todo"
+          }
+        }
+      }
+    },
+    "LOG_OUT_DESCRIPTION" : {
+      "comment" : "Log out ",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to log out?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás seguro de que quieres cerrar sesión?"
+          }
+        }
+      }
+    },
+    "LOG_OUT_TITLE" : {
+      "comment" : "Log out title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión"
           }
         }
       }
@@ -272,6 +323,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
+    "LOGOUT_BUTTON_CAPTION" : {
+      "comment" : "Log out button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log Out"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión"
           }
         }
       }
@@ -766,7 +834,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Por tu seguridad, hemos enviado un correo de confirmación a"
           }
         }

@@ -14,8 +14,12 @@ class WelcomingScreenRouter {
     func navigateToLogin() {
         if let loginScreenVC = UIStoryboard(name: LoginScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: LoginScreenVC.identifier) as? LoginScreenVC {
             
-            loginScreenVC.onLoginSucceed = { [weak self] in
-                self?.view?.setupUserInfoScreen()
+            loginScreenVC.onLoginSucceed = { [weak self]  in
+                if let email = SessionCRUDFunctions.shared.fetchEmail() {
+                    self?.view?.setupUserInfoScreen(email: email)
+                } else {
+                    print("No email found after login")
+                }
             }
             
             loginScreenVC.modalPresentationStyle = .overFullScreen
@@ -29,7 +33,12 @@ class WelcomingScreenRouter {
         if let signUpScreen = UIStoryboard(name: SignUpScreenVC.storyboard, bundle: nil).instantiateViewController(withIdentifier: SignUpScreenVC.identifier) as? SignUpScreenVC {
             
             signUpScreen.onSignUpSuccessfully = { [weak self] in
-                self?.view?.setupUserInfoScreen()
+                if let email = SessionCRUDFunctions.shared.fetchEmail() {
+                    self?.view?.setupUserInfoScreen(email: email)
+                } else {
+                    print("No email found after register")
+                }
+                signUpScreen.dismiss(animated: true)
             }
             
             signUpScreen.modalPresentationStyle = .overFullScreen

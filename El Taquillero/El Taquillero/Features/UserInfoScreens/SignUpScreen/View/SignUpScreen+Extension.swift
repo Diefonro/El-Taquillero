@@ -90,7 +90,7 @@ extension SignUpScreenVC {
             
             
             
-            FirebaseGlobalFunctions.signUpUser(email: email, password: password) { result in
+            FirebaseGlobalFunctions.signUpUser(name: name, surname: surname, phone: phone, email: email, password: password) { result in
                 switch result {
                 case .success(let message):
                     print(message)
@@ -99,7 +99,11 @@ extension SignUpScreenVC {
                         switch verificationResult {
                         case .success(let successMessage):
                             print(successMessage)
-                            self.presenter.readyToPopUpVerifyScreen(userMail: email)
+                            if let email = SessionCRUDFunctions.shared.fetchEmail() {
+                                self.presenter.readyToPopUpVerifyScreen(userMail: email)
+                            } else {
+                                print("Email to verify not found.")
+                            }
                         case .failure(let error):
                             print("Failed to send verification email: \(error.localizedDescription)")
                         }

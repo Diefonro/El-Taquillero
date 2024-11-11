@@ -50,10 +50,10 @@ class VerifyEmailScreenVC: UIViewController, StoryboardInfo {
     
     func checkIfVerified() {
         FirebaseGlobalFunctions.checkEmailVerification { isVerified in
-            if !isVerified {
+            if isVerified {
+                self.onEmailVerified?()
                 print("Email is verified!")
                 self.dismiss(animated: true)
-                self.onEmailVerified?()
             } else {
                 print("Email is not verified.")
                 self.verifyErrorView.isHidden = false
