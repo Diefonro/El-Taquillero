@@ -9,6 +9,7 @@ target 'El Taquillero' do
 
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
+pod 'Firebase/Firestore'
 
   target 'El TaquilleroTests' do
     inherit! :search_paths
