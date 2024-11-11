@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home ScreenVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreenVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeScreenVC" customModule="El_Taquillero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QK-iK-eQi" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdz-wz-jNi" userLabel="CollectionViewContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                        <color key="backgroundColor" name="ETWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-Xx-bAh" userLabel="SimulatedNavBarView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSa-mG-KcC">
+                                                <rect key="frame" x="80" y="69.666666666666671" width="233" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cSa-mG-KcC" secondAttribute="trailing" constant="80" id="D98-eJ-sJV"/>
+                                            <constraint firstAttribute="bottom" secondItem="cSa-mG-KcC" secondAttribute="bottom" constant="20" id="Idn-pA-gVL"/>
+                                            <constraint firstItem="cSa-mG-KcC" firstAttribute="leading" secondItem="9d0-Xx-bAh" secondAttribute="leading" constant="80" id="hnS-IU-7Ro"/>
+                                            <constraint firstAttribute="height" constant="110" id="o0s-yV-mUP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="ETWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tdz-wz-jNi" secondAttribute="trailing" id="APT-7G-JTN"/>
+                                    <constraint firstAttribute="bottom" secondItem="tdz-wz-jNi" secondAttribute="bottom" id="FtQ-E7-pfM"/>
+                                    <constraint firstItem="9d0-Xx-bAh" firstAttribute="top" secondItem="1QK-iK-eQi" secondAttribute="top" id="MQc-C8-jtD"/>
+                                    <constraint firstItem="tdz-wz-jNi" firstAttribute="leading" secondItem="1QK-iK-eQi" secondAttribute="leading" id="Oc1-aI-8nW"/>
+                                    <constraint firstItem="tdz-wz-jNi" firstAttribute="top" secondItem="1QK-iK-eQi" secondAttribute="top" id="XNM-1z-srW"/>
+                                    <constraint firstItem="9d0-Xx-bAh" firstAttribute="leading" secondItem="1QK-iK-eQi" secondAttribute="leading" id="XV5-op-iEU"/>
+                                    <constraint firstAttribute="trailing" secondItem="9d0-Xx-bAh" secondAttribute="trailing" id="xBg-p5-Dwh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="ETDarkTeal"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1QK-iK-eQi" secondAttribute="trailing" id="F4A-X2-Sea"/>
+                            <constraint firstItem="1QK-iK-eQi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="YPp-Eb-nij"/>
+                            <constraint firstItem="1QK-iK-eQi" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="nbK-Vh-na4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1QK-iK-eQi" secondAttribute="bottom" id="otL-f5-tvh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionViewContainer" destination="tdz-wz-jNi" id="3xO-KY-3Pf"/>
+                        <outlet property="simulatedNavBarHeightConstant" destination="o0s-yV-mUP" id="w6y-QO-sqi"/>
+                        <outlet property="simulatedNavBarLabel" destination="cSa-mG-KcC" id="7qH-uf-t54"/>
+                        <outlet property="simulatedNavBarView" destination="9d0-Xx-bAh" id="q5X-Ho-5Ok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ETDarkTeal">
+            <color red="0.0" green="0.22745098039215686" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ETWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

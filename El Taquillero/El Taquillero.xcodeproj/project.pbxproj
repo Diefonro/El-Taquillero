@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1347F55180345FC90F13E88D /* Pods_El_Taquillero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF991AB69E24E681DCBA6F49 /* Pods_El_Taquillero.framework */; };
 		411E03D02CDC1A430089073E /* LayoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E03CF2CDC1A3D0089073E /* LayoutFactory.swift */; };
 		411E03D32CDC1ED60089073E /* HomePosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E03D12CDC1ED60089073E /* HomePosterCell.swift */; };
 		411E03D42CDC1ED60089073E /* HomePosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 411E03D22CDC1ED60089073E /* HomePosterCell.xib */; };
@@ -14,6 +15,7 @@
 		411E03D92CDC820A0089073E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E03D82CDC82030089073E /* UIView+Extension.swift */; };
 		411E03DB2CDCA4C70089073E /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E03DA2CDCA4C20089073E /* Titles.swift */; };
 		411E03DE2CDCAB4A0089073E /* PageControlFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411E03DD2CDCAB4A0089073E /* PageControlFooterView.swift */; };
+		4124C1CB2CE0EAAC002C11A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4124C1CA2CE0EAAC002C11A4 /* GoogleService-Info.plist */; };
 		4133036D2CDDA9F80010B769 /* HomeTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4133036C2CDDA9F80010B769 /* HomeTitleCell.xib */; };
 		4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133036B2CDDA9F80010B769 /* HomeTitleCell.swift */; };
 		413303702CDDADA40010B769 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4133036F2CDDADA00010B769 /* HeaderView.swift */; };
@@ -34,6 +36,24 @@
 		413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303A92CDE16380010B769 /* GetLanguageCode.swift */; };
 		413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */; };
 		413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */; };
+		415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 415782512CDE6FB800DB83BE /* LoginScreen.storyboard */; };
+		415782542CDE6FC500DB83BE /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415782532CDE6FC500DB83BE /* LoginScreenVC.swift */; };
+		4174F9832CE2233B0067E737 /* SessionCRUDFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */; };
+		4174F9862CE224420067E737 /* UserEntityModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */; };
+		4174F9892CE229B90067E737 /* UserDefaults+SessionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */; };
+		4174F98C2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */; };
+		4174F98E2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */; };
+		4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */; };
+		4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */; };
+		4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */; };
+		418FB3672CE0AAFD0094FF7E /* WelcomingScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */; };
+		418FB3692CE0AB1A0094FF7E /* WelcomingScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */; };
+		418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */; };
+		418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */; };
+		418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */; };
+		418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */; };
+		418FB3792CE0C22B0094FF7E /* SignUpScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */; };
+		41959C132CE244B0005E8D3A /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41959C122CE244AB005E8D3A /* UserStruct.swift */; };
 		41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */; };
 		41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */; };
 		41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */; };
@@ -41,6 +61,15 @@
 		41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */; };
 		41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */; };
 		41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */; };
+		41CE85242CE10F10009A555A /* VerifyEmailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */; };
+		41CE85262CE10F23009A555A /* VerifyEmailScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */; };
+		41CE852C2CE1199B009A555A /* SignUpScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */; };
+		41CE852E2CE119D8009A555A /* SignUpScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */; };
+		41CE85362CE175CF009A555A /* FavoritesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CE85352CE175CF009A555A /* FavoritesScreen.storyboard */; };
+		41CE85382CE175E1009A555A /* FavoritesScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85372CE175E1009A555A /* FavoritesScreenVC.swift */; };
+		41CE853A2CE1764A009A555A /* UserInfoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE85392CE17645009A555A /* UserInfoScreenPresenter.swift */; };
+		41CE853C2CE1768B009A555A /* UserInfoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE853B2CE17681009A555A /* UserInfoScreenRouter.swift */; };
+		41CF52842CE0EE38008667E0 /* FirebaseGlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */; };
 		41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */; };
 		41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E32CDB3DEC0012C6D7 /* AppDelegate.swift */; };
 		41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */; };
@@ -74,6 +103,8 @@
 		41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6A92CDD7268007A3800 /* HomeScreenInteractor.swift */; };
 		41FFE6AC2CDD767D007A3800 /* HomeScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6AB2CDD7678007A3800 /* HomeScreenPresenter.swift */; };
 		41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FFE6AD2CDD7900007A3800 /* HomeScreenRouter.swift */; };
+		6FF72524431AC59C821B976D /* Pods_El_TaquilleroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD627EE84886028B3999394 /* Pods_El_TaquilleroTests.framework */; };
+		743C4520245D3BD59FB32789 /* Pods_El_Taquillero_El_TaquilleroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D97B5F8F1F1B06DB9A434B /* Pods_El_Taquillero_El_TaquilleroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +125,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20FC779D87BF3FB019F9FDC4 /* Pods-El TaquilleroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El TaquilleroTests.release.xcconfig"; path = "Target Support Files/Pods-El TaquilleroTests/Pods-El TaquilleroTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D2708C11826B4CAFC6C929F /* Pods-El Taquillero-El TaquilleroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Taquillero-El TaquilleroUITests.release.xcconfig"; path = "Target Support Files/Pods-El Taquillero-El TaquilleroUITests/Pods-El Taquillero-El TaquilleroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		411E03CF2CDC1A3D0089073E /* LayoutFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFactory.swift; sourceTree = "<group>"; };
 		411E03D12CDC1ED60089073E /* HomePosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePosterCell.swift; sourceTree = "<group>"; };
 		411E03D22CDC1ED60089073E /* HomePosterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePosterCell.xib; sourceTree = "<group>"; };
@@ -101,6 +134,7 @@
 		411E03D82CDC82030089073E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		411E03DA2CDCA4C20089073E /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
 		411E03DD2CDCAB4A0089073E /* PageControlFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlFooterView.swift; sourceTree = "<group>"; };
+		4124C1CA2CE0EAAC002C11A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4133036B2CDDA9F80010B769 /* HomeTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleCell.swift; sourceTree = "<group>"; };
 		4133036C2CDDA9F80010B769 /* HomeTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleCell.xib; sourceTree = "<group>"; };
 		4133036F2CDDADA00010B769 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -121,6 +155,24 @@
 		413303A92CDE16380010B769 /* GetLanguageCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLanguageCode.swift; sourceTree = "<group>"; };
 		413303B12CDE23360010B769 /* TitleDetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TitleDetailScreen.storyboard; sourceTree = "<group>"; };
 		413303B32CDE23510010B769 /* TitleDetailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailScreenVC.swift; sourceTree = "<group>"; };
+		415782512CDE6FB800DB83BE /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		415782532CDE6FC500DB83BE /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
+		4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCRUDFunctions.swift; sourceTree = "<group>"; };
+		4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserEntityModel.xcdatamodel; sourceTree = "<group>"; };
+		4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+SessionExtension.swift"; sourceTree = "<group>"; };
+		4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmLogOutScreen.storyboard; sourceTree = "<group>"; };
+		4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLogOutScreenVC.swift; sourceTree = "<group>"; };
+		4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginScreenVC+Extension.swift"; sourceTree = "<group>"; };
+		4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTypeEnum.swift; sourceTree = "<group>"; };
+		418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomingScreen.storyboard; sourceTree = "<group>"; };
+		418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenVC.swift; sourceTree = "<group>"; };
+		418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenPresenter.swift; sourceTree = "<group>"; };
+		418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingScreenRouter.swift; sourceTree = "<group>"; };
+		418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpScreen.storyboard; sourceTree = "<group>"; };
+		418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenVC.swift; sourceTree = "<group>"; };
+		418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpScreen+Extension.swift"; sourceTree = "<group>"; };
+		41959C122CE244AB005E8D3A /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
 		41C08FFC2CDB4941000CFBE5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		41C090082CDB4BA3000CFBE5 /* CustomLaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenPresenter.swift; sourceTree = "<group>"; };
 		41C0900A2CDB4BE2000CFBE5 /* CustomLaunchScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLaunchScreenRouter.swift; sourceTree = "<group>"; };
@@ -128,6 +180,15 @@
 		41C090152CDB50A5000CFBE5 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
 		41C090172CDB50B5000CFBE5 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		41C0901C2CDB5B41000CFBE5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyEmailScreen.storyboard; sourceTree = "<group>"; };
+		41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyEmailScreenVC.swift; sourceTree = "<group>"; };
+		41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenPresenter.swift; sourceTree = "<group>"; };
+		41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenRouter.swift; sourceTree = "<group>"; };
+		41CE85352CE175CF009A555A /* FavoritesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoritesScreen.storyboard; sourceTree = "<group>"; };
+		41CE85372CE175E1009A555A /* FavoritesScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreenVC.swift; sourceTree = "<group>"; };
+		41CE85392CE17645009A555A /* UserInfoScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoScreenPresenter.swift; sourceTree = "<group>"; };
+		41CE853B2CE17681009A555A /* UserInfoScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoScreenRouter.swift; sourceTree = "<group>"; };
+		41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseGlobalFunctions.swift; sourceTree = "<group>"; };
 		41D5AFBE2CDC16F200D87EC9 /* HomeStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrings.swift; sourceTree = "<group>"; };
 		41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Taquillero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "El TaquilleroTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +226,13 @@
 		41FFE6A92CDD7268007A3800 /* HomeScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenInteractor.swift; sourceTree = "<group>"; };
 		41FFE6AB2CDD7678007A3800 /* HomeScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenPresenter.swift; sourceTree = "<group>"; };
 		41FFE6AD2CDD7900007A3800 /* HomeScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRouter.swift; sourceTree = "<group>"; };
+		73D97B5F8F1F1B06DB9A434B /* Pods_El_Taquillero_El_TaquilleroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_Taquillero_El_TaquilleroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D7479E1BF0809E8B66B68D /* Pods-El Taquillero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Taquillero.debug.xcconfig"; path = "Target Support Files/Pods-El Taquillero/Pods-El Taquillero.debug.xcconfig"; sourceTree = "<group>"; };
+		7FABDFE748D7D9EC58ECA328 /* Pods-El Taquillero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Taquillero.release.xcconfig"; path = "Target Support Files/Pods-El Taquillero/Pods-El Taquillero.release.xcconfig"; sourceTree = "<group>"; };
+		9103B9FF43FF057F9D84DEA8 /* Pods-El Taquillero-El TaquilleroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Taquillero-El TaquilleroUITests.debug.xcconfig"; path = "Target Support Files/Pods-El Taquillero-El TaquilleroUITests/Pods-El Taquillero-El TaquilleroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD627EE84886028B3999394 /* Pods_El_TaquilleroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_TaquilleroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BF0EF3E37D352C1959A93C /* Pods-El TaquilleroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El TaquilleroTests.debug.xcconfig"; path = "Target Support Files/Pods-El TaquilleroTests/Pods-El TaquilleroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF991AB69E24E681DCBA6F49 /* Pods_El_Taquillero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_Taquillero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1347F55180345FC90F13E88D /* Pods_El_Taquillero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF72524431AC59C821B976D /* Pods_El_TaquilleroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743C4520245D3BD59FB32789 /* Pods_El_Taquillero_El_TaquilleroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +328,7 @@
 		413303742CDDDEA40010B769 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4174F98A2CE237C40067E737 /* Subviews */,
 				4133039A2CDDE9D70010B769 /* UserInfoScreen.storyboard */,
 				4133039C2CDDE9FF0010B769 /* UserInfoScreenVC.swift */,
 			);
@@ -273,6 +345,7 @@
 		413303762CDDDEA40010B769 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				41CE85392CE17645009A555A /* UserInfoScreenPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -287,6 +360,7 @@
 		413303782CDDDEA40010B769 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				41CE853B2CE17681009A555A /* UserInfoScreenRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -441,6 +515,183 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		415782492CDE6F6600DB83BE /* HomeScreens */ = {
+			isa = PBXGroup;
+			children = (
+				41C090142CDB5091000CFBE5 /* HomeScreen */,
+				41C090052CDB4ACE000CFBE5 /* TitlesListScreen */,
+				413303992CDDE9B30010B769 /* TitleDetailScreeen */,
+			);
+			path = HomeScreens;
+			sourceTree = "<group>";
+		};
+		4157824A2CDE6F7100DB83BE /* UserInfoScreens */ = {
+			isa = PBXGroup;
+			children = (
+				41C116BD2CE0A616004B5F43 /* WelcomingScreen */,
+				418FB3732CE0B1D20094FF7E /* SignUpScreen */,
+				415782502CDE6FA500DB83BE /* LoginScreen */,
+				41CE85222CE10D92009A555A /* VerifyEmailScreen */,
+				413303792CDDDEA40010B769 /* UserInfoScreen */,
+				41CE85342CE175A8009A555A /* FavoritesScreen */,
+			);
+			path = UserInfoScreens;
+			sourceTree = "<group>";
+		};
+		4157824B2CDE6FA500DB83BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA22CDF3548000D7A79 /* LoginScreenVC+Extension.swift */,
+				415782512CDE6FB800DB83BE /* LoginScreen.storyboard */,
+				415782532CDE6FC500DB83BE /* LoginScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4157824C2CDE6FA500DB83BE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4157824D2CDE6FA500DB83BE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4157824E2CDE6FA500DB83BE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4157824F2CDE6FA500DB83BE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		415782502CDE6FA500DB83BE /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4157824B2CDE6FA500DB83BE /* View */,
+				4157824C2CDE6FA500DB83BE /* Interactor */,
+				4157824D2CDE6FA500DB83BE /* Presenter */,
+				4157824E2CDE6FA500DB83BE /* Entity */,
+				4157824F2CDE6FA500DB83BE /* Router */,
+				4178BFA42CDF35A0000D7A79 /* Tools */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		4174F97D2CE2226D0067E737 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				41959C122CE244AB005E8D3A /* UserStruct.swift */,
+				4174F9822CE223350067E737 /* SessionCRUDFunctions.swift */,
+				4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4174F9872CE229A00067E737 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				4174F9882CE229AA0067E737 /* UserDefaults+SessionExtension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		4174F98A2CE237C40067E737 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				4174F98D2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift */,
+				4174F98B2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		4178BF9F2CDF3364000D7A79 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA02CDF336E000D7A79 /* UIViewController+Extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		4178BFA42CDF35A0000D7A79 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA52CDF35B2000D7A79 /* TextFieldType */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4178BFA52CDF35B2000D7A79 /* TextFieldType */ = {
+			isa = PBXGroup;
+			children = (
+				4178BFA62CDF35BD000D7A79 /* TextFieldTypeEnum.swift */,
+			);
+			path = TextFieldType;
+			sourceTree = "<group>";
+		};
+		418FB36E2CE0B1D20094FF7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418FB3742CE0B1EE0094FF7E /* SignUpScreen.storyboard */,
+				418FB3762CE0B1FD0094FF7E /* SignUpScreenVC.swift */,
+				418FB3782CE0C2200094FF7E /* SignUpScreen+Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		418FB36F2CE0B1D20094FF7E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		418FB3702CE0B1D20094FF7E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				41CE852B2CE11994009A555A /* SignUpScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		418FB3712CE0B1D20094FF7E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		418FB3722CE0B1D20094FF7E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				41CE852D2CE119D2009A555A /* SignUpScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		418FB3732CE0B1D20094FF7E /* SignUpScreen */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36E2CE0B1D20094FF7E /* View */,
+				418FB36F2CE0B1D20094FF7E /* Interactor */,
+				418FB3702CE0B1D20094FF7E /* Presenter */,
+				418FB3712CE0B1D20094FF7E /* Entity */,
+				418FB3722CE0B1D20094FF7E /* Router */,
+			);
+			path = SignUpScreen;
+			sourceTree = "<group>";
+		};
 		41C08FF92CDB491F000CFBE5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +704,8 @@
 		41C08FFA2CDB4925000CFBE5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4174F9872CE229A00067E737 /* UserDefaults */,
+				4178BF9F2CDF3364000D7A79 /* UIViewController */,
 				413303862CDDE3830010B769 /* Date */,
 				413303832CDDE2F90010B769 /* String */,
 				411E03D72CDC81FB0089073E /* UIView */,
@@ -594,6 +847,171 @@
 			path = AppLocalizedStrings;
 			sourceTree = "<group>";
 		};
+		41C116B82CE0A616004B5F43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418FB3662CE0AAFD0094FF7E /* WelcomingScreen.storyboard */,
+				418FB3682CE0AB1A0094FF7E /* WelcomingScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41C116B92CE0A616004B5F43 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41C116BA2CE0A616004B5F43 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36A2CE0AF070094FF7E /* WelcomingScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41C116BB2CE0A616004B5F43 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41C116BC2CE0A616004B5F43 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				418FB36C2CE0AF540094FF7E /* WelcomingScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41C116BD2CE0A616004B5F43 /* WelcomingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41C116B82CE0A616004B5F43 /* View */,
+				41C116B92CE0A616004B5F43 /* Interactor */,
+				41C116BA2CE0A616004B5F43 /* Presenter */,
+				41C116BB2CE0A616004B5F43 /* Entity */,
+				41C116BC2CE0A616004B5F43 /* Router */,
+			);
+			path = WelcomingScreen;
+			sourceTree = "<group>";
+		};
+		41CE851D2CE10D92009A555A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41CE85232CE10F10009A555A /* VerifyEmailScreen.storyboard */,
+				41CE85252CE10F23009A555A /* VerifyEmailScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41CE851E2CE10D92009A555A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41CE851F2CE10D92009A555A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41CE85202CE10D92009A555A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41CE85212CE10D92009A555A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41CE85222CE10D92009A555A /* VerifyEmailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41CE851D2CE10D92009A555A /* View */,
+				41CE851E2CE10D92009A555A /* Interactor */,
+				41CE851F2CE10D92009A555A /* Presenter */,
+				41CE85202CE10D92009A555A /* Entity */,
+				41CE85212CE10D92009A555A /* Router */,
+			);
+			path = VerifyEmailScreen;
+			sourceTree = "<group>";
+		};
+		41CE852F2CE175A8009A555A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41CE85352CE175CF009A555A /* FavoritesScreen.storyboard */,
+				41CE85372CE175E1009A555A /* FavoritesScreenVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41CE85302CE175A8009A555A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41CE85312CE175A8009A555A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41CE85322CE175A8009A555A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		41CE85332CE175A8009A555A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		41CE85342CE175A8009A555A /* FavoritesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41CE852F2CE175A8009A555A /* View */,
+				41CE85302CE175A8009A555A /* Interactor */,
+				41CE85312CE175A8009A555A /* Presenter */,
+				41CE85322CE175A8009A555A /* Entity */,
+				41CE85332CE175A8009A555A /* Router */,
+			);
+			path = FavoritesScreen;
+			sourceTree = "<group>";
+		};
+		41CF52812CE0EE1D008667E0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				41CF52822CE0EE21008667E0 /* GlobalFunctions */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		41CF52822CE0EE21008667E0 /* GlobalFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				41CF52832CE0EE2F008667E0 /* FirebaseGlobalFunctions.swift */,
+			);
+			path = GlobalFunctions;
+			sourceTree = "<group>";
+		};
 		41D5AFBC2CDC16DE00D87EC9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +1038,8 @@
 				41E478F82CDB3DF00012C6D7 /* El TaquilleroTests */,
 				41E478FC2CDB3DF20012C6D7 /* El TaquilleroUITests */,
 				41E478AD2CDB3DDE0012C6D7 /* Products */,
+				5E2863D79E3D72AFA6012B29 /* Pods */,
+				9687348D5C8590826B341689 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -640,6 +1060,7 @@
 				41E479042CDB40940012C6D7 /* Features */,
 				41E478E42CDB3DEC0012C6D7 /* Assets.xcassets */,
 				41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */,
+				4124C1CA2CE0EAAC002C11A4 /* GoogleService-Info.plist */,
 				41E478E62CDB3DEC0012C6D7 /* Info.plist */,
 			);
 			path = "El Taquillero";
@@ -665,6 +1086,8 @@
 		41E479032CDB408D0012C6D7 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4174F97D2CE2226D0067E737 /* User */,
+				41CF52812CE0EE1D008667E0 /* Firebase */,
 				413303892CDDE82B0010B769 /* TabBar */,
 				41FFE6992CDD559F007A3800 /* Networking */,
 				41C090192CDB5591000CFBE5 /* AppLocalizedStrings */,
@@ -683,10 +1106,8 @@
 			isa = PBXGroup;
 			children = (
 				41E479072CDB420A0012C6D7 /* CustomLaunchScreen */,
-				41C090142CDB5091000CFBE5 /* HomeScreen */,
-				41C090052CDB4ACE000CFBE5 /* TitlesListScreen */,
-				413303992CDDE9B30010B769 /* TitleDetailScreeen */,
-				413303792CDDDEA40010B769 /* UserInfoScreen */,
+				415782492CDE6F6600DB83BE /* HomeScreens */,
+				4157824A2CDE6F7100DB83BE /* UserInfoScreens */,
 				413303B02CDE230C0010B769 /* Template */,
 			);
 			path = Features;
@@ -789,6 +1210,29 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		5E2863D79E3D72AFA6012B29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75D7479E1BF0809E8B66B68D /* Pods-El Taquillero.debug.xcconfig */,
+				7FABDFE748D7D9EC58ECA328 /* Pods-El Taquillero.release.xcconfig */,
+				9103B9FF43FF057F9D84DEA8 /* Pods-El Taquillero-El TaquilleroUITests.debug.xcconfig */,
+				3D2708C11826B4CAFC6C929F /* Pods-El Taquillero-El TaquilleroUITests.release.xcconfig */,
+				F9BF0EF3E37D352C1959A93C /* Pods-El TaquilleroTests.debug.xcconfig */,
+				20FC779D87BF3FB019F9FDC4 /* Pods-El TaquilleroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9687348D5C8590826B341689 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF991AB69E24E681DCBA6F49 /* Pods_El_Taquillero.framework */,
+				73D97B5F8F1F1B06DB9A434B /* Pods_El_Taquillero_El_TaquilleroUITests.framework */,
+				CDD627EE84886028B3999394 /* Pods_El_TaquilleroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -796,17 +1240,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E478D82CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El Taquillero" */;
 			buildPhases = (
+				AF059CF4AEF0DD67A5889E91 /* [CP] Check Pods Manifest.lock */,
 				41E478A82CDB3DDE0012C6D7 /* Sources */,
 				41E478A92CDB3DDE0012C6D7 /* Frameworks */,
 				41E478AA2CDB3DDE0012C6D7 /* Resources */,
+				F67EC64A58389BA5343AF429 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "El Taquillero";
-			packageProductDependencies = (
-			);
 			productName = "El Taquillero";
 			productReference = 41E478AC2CDB3DDE0012C6D7 /* El Taquillero.app */;
 			productType = "com.apple.product-type.application";
@@ -815,6 +1259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E478DD2CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroTests" */;
 			buildPhases = (
+				FEEB379B1EEC6F82AA05109F /* [CP] Check Pods Manifest.lock */,
 				41E478C12CDB3DE00012C6D7 /* Sources */,
 				41E478C22CDB3DE00012C6D7 /* Frameworks */,
 				41E478C32CDB3DE00012C6D7 /* Resources */,
@@ -825,8 +1270,6 @@
 				41E478C72CDB3DE00012C6D7 /* PBXTargetDependency */,
 			);
 			name = "El TaquilleroTests";
-			packageProductDependencies = (
-			);
 			productName = "El TaquilleroTests";
 			productReference = 41E478C52CDB3DE00012C6D7 /* El TaquilleroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -835,9 +1278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E478E02CDB3DE00012C6D7 /* Build configuration list for PBXNativeTarget "El TaquilleroUITests" */;
 			buildPhases = (
+				CF0F32A81800EB1AFA82797C /* [CP] Check Pods Manifest.lock */,
 				41E478CB2CDB3DE00012C6D7 /* Sources */,
 				41E478CC2CDB3DE00012C6D7 /* Frameworks */,
 				41E478CD2CDB3DE00012C6D7 /* Resources */,
+				9CDA292E1B9752EDFA15EEB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -845,8 +1290,6 @@
 				41E478D12CDB3DE00012C6D7 /* PBXTargetDependency */,
 			);
 			name = "El TaquilleroUITests";
-			packageProductDependencies = (
-			);
 			productName = "El TaquilleroUITests";
 			productReference = 41E478CF2CDB3DE00012C6D7 /* El TaquilleroUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -904,18 +1347,23 @@
 				41E478F32CDB3DEC0012C6D7 /* Assets.xcassets in Resources */,
 				4133036D2CDDA9F80010B769 /* HomeTitleCell.xib in Resources */,
 				41C0901D2CDB5B41000CFBE5 /* Localizable.xcstrings in Resources */,
+				41CE85362CE175CF009A555A /* FavoritesScreen.storyboard in Resources */,
 				41E479022CDB3FFD0012C6D7 /* CustomLaunchScreen.storyboard in Resources */,
+				4124C1CB2CE0EAAC002C11A4 /* GoogleService-Info.plist in Resources */,
 				41E4791A2CDB457D0012C6D7 /* Lato-Thin.ttf in Resources */,
 				4133037C2CDDDECC0010B769 /* TitlesListScreen.storyboard in Resources */,
 				41E4791B2CDB457D0012C6D7 /* OFL.txt in Resources */,
 				41E4791C2CDB457D0012C6D7 /* Lato-BlackItalic.ttf in Resources */,
 				413303B22CDE23360010B769 /* TitleDetailScreen.storyboard in Resources */,
 				41C090162CDB50A5000CFBE5 /* HomeScreen.storyboard in Resources */,
+				415782522CDE6FB800DB83BE /* LoginScreen.storyboard in Resources */,
 				41E4791D2CDB457D0012C6D7 /* Lato-LightItalic.ttf in Resources */,
+				418FB3672CE0AAFD0094FF7E /* WelcomingScreen.storyboard in Resources */,
 				41E4791E2CDB457D0012C6D7 /* Lato-Italic.ttf in Resources */,
 				41E4791F2CDB457D0012C6D7 /* Lato-ThinItalic.ttf in Resources */,
 				41E479202CDB457D0012C6D7 /* Lato-Regular.ttf in Resources */,
 				41E479212CDB457D0012C6D7 /* Lato-Black.ttf in Resources */,
+				41CE85242CE10F10009A555A /* VerifyEmailScreen.storyboard in Resources */,
 				41E479222CDB457D0012C6D7 /* Lato-Light.ttf in Resources */,
 				41E479232CDB457D0012C6D7 /* Lato-Bold.ttf in Resources */,
 				41E479242CDB457D0012C6D7 /* Lato-BoldItalic.ttf in Resources */,
@@ -923,7 +1371,9 @@
 				41E478F52CDB3DEC0012C6D7 /* LaunchScreen.storyboard in Resources */,
 				4133039B2CDDE9D70010B769 /* UserInfoScreen.storyboard in Resources */,
 				41E478F62CDB3DEC0012C6D7 /* Main.storyboard in Resources */,
+				418FB3752CE0B1EE0094FF7E /* SignUpScreen.storyboard in Resources */,
 				41FFE6A42CDD5EAA007A3800 /* Config.plist in Resources */,
+				4174F98C2CE237DB0067E737 /* ConfirmLogOutScreen.storyboard in Resources */,
 				413303822CDDE05E0010B769 /* TitleTableCell.xib in Resources */,
 				413303932CDDE9050010B769 /* TabBarScreen.storyboard in Resources */,
 			);
@@ -945,30 +1395,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9CDA292E1B9752EDFA15EEB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Taquillero-El TaquilleroUITests/Pods-El Taquillero-El TaquilleroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Taquillero-El TaquilleroUITests/Pods-El Taquillero-El TaquilleroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-El Taquillero-El TaquilleroUITests/Pods-El Taquillero-El TaquilleroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF059CF4AEF0DD67A5889E91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El Taquillero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF0F32A81800EB1AFA82797C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El Taquillero-El TaquilleroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67EC64A58389BA5343AF429 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Taquillero/Pods-El Taquillero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Taquillero/Pods-El Taquillero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-El Taquillero/Pods-El Taquillero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEEB379B1EEC6F82AA05109F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El TaquilleroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41E478A82CDB3DDE0012C6D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415782542CDE6FC500DB83BE /* LoginScreenVC.swift in Sources */,
 				41C08FFD2CDB4953000CFBE5 /* UIImageView+Extension.swift in Sources */,
 				41FFE6A62CDD6055007A3800 /* ReadToken.swift in Sources */,
 				411E03D32CDC1ED60089073E /* HomePosterCell.swift in Sources */,
+				41CE85262CE10F23009A555A /* VerifyEmailScreenVC.swift in Sources */,
+				41CE85382CE175E1009A555A /* FavoritesScreenVC.swift in Sources */,
 				41C0900B2CDB4BE8000CFBE5 /* CustomLaunchScreenRouter.swift in Sources */,
 				4133039F2CDDEDE60010B769 /* TitlesListScreenInteractor.swift in Sources */,
 				41FFE6AA2CDD7272007A3800 /* HomeScreenInteractor.swift in Sources */,
 				41C0900E2CDB4C1F000CFBE5 /* ViewIdentity.swift in Sources */,
 				413303732CDDCB100010B769 /* FetchType.swift in Sources */,
 				413303B42CDE23510010B769 /* TitleDetailScreenVC.swift in Sources */,
+				41CE853C2CE1768B009A555A /* UserInfoScreenRouter.swift in Sources */,
 				4133037E2CDDDEEA0010B769 /* TitlesListScreenVC.swift in Sources */,
 				413303852CDDE3070010B769 /* String+Extension.swift in Sources */,
 				41D5AFBF2CDC16F700D87EC9 /* HomeStrings.swift in Sources */,
+				4174F9862CE224420067E737 /* UserEntityModel.xcdatamodeld in Sources */,
 				411E03D02CDC1A430089073E /* LayoutFactory.swift in Sources */,
 				411E03D62CDC220B0089073E /* HomeScreenVC+UICollectionViewExtension.swift in Sources */,
 				41E478EF2CDB3DEC0012C6D7 /* AppDelegate.swift in Sources */,
 				4133039D2CDDE9FF0010B769 /* UserInfoScreenVC.swift in Sources */,
+				41CE853A2CE1764A009A555A /* UserInfoScreenPresenter.swift in Sources */,
+				4174F98E2CE2382A0067E737 /* ConfirmLogOutScreenVC.swift in Sources */,
 				411E03D92CDC820A0089073E /* UIView+Extension.swift in Sources */,
+				418FB36B2CE0AF110094FF7E /* WelcomingScreenPresenter.swift in Sources */,
 				411E03DB2CDCA4C70089073E /* Titles.swift in Sources */,
 				41C090092CDB4BB0000CFBE5 /* CustomLaunchScreenPresenter.swift in Sources */,
+				418FB3792CE0C22B0094FF7E /* SignUpScreen+Extension.swift in Sources */,
 				413303A12CDDEDFD0010B769 /* TitlesListScreenPresenter.swift in Sources */,
 				41FFE6AC2CDD767D007A3800 /* HomeScreenPresenter.swift in Sources */,
 				413303A32CDDEE060010B769 /* TitlesListScreenRouter.swift in Sources */,
@@ -976,10 +1538,14 @@
 				41FFE6A22CDD593F007A3800 /* HomeEndpoints.swift in Sources */,
 				413303AA2CDE16400010B769 /* GetLanguageCode.swift in Sources */,
 				41E478F02CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld in Sources */,
+				4178BFA12CDF3377000D7A79 /* UIViewController+Extension.swift in Sources */,
 				41E479062CDB40BB0012C6D7 /* CustomLaunchScreenVC.swift in Sources */,
 				413303882CDDE38B0010B769 /* Date+Extension.swift in Sources */,
+				41CF52842CE0EE38008667E0 /* FirebaseGlobalFunctions.swift in Sources */,
+				41959C132CE244B0005E8D3A /* UserStruct.swift in Sources */,
 				41FFE6AE2CDD7905007A3800 /* HomeScreenRouter.swift in Sources */,
 				413303702CDDADA40010B769 /* HeaderView.swift in Sources */,
+				418FB3692CE0AB1A0094FF7E /* WelcomingScreenVC.swift in Sources */,
 				4133038C2CDDE8980010B769 /* TabBarScreenVC.swift in Sources */,
 				41E478F12CDB3DEC0012C6D7 /* SceneDelegate.swift in Sources */,
 				413303812CDDE05E0010B769 /* TitleTableCell.swift in Sources */,
@@ -988,7 +1554,15 @@
 				41FFE69F2CDD5885007A3800 /* HTTPRequest.swift in Sources */,
 				41FFE69D2CDD5713007A3800 /* RequestComponents.swift in Sources */,
 				41C090182CDB50B5000CFBE5 /* HomeScreenVC.swift in Sources */,
+				4174F9892CE229B90067E737 /* UserDefaults+SessionExtension.swift in Sources */,
+				4174F9832CE2233B0067E737 /* SessionCRUDFunctions.swift in Sources */,
+				4178BFA32CDF3550000D7A79 /* LoginScreenVC+Extension.swift in Sources */,
+				41CE852E2CE119D8009A555A /* SignUpScreenRouter.swift in Sources */,
 				4133036E2CDDA9F80010B769 /* HomeTitleCell.swift in Sources */,
+				41CE852C2CE1199B009A555A /* SignUpScreenPresenter.swift in Sources */,
+				418FB36D2CE0AF5D0094FF7E /* WelcomingScreenRouter.swift in Sources */,
+				4178BFA72CDF35C3000D7A79 /* TextFieldTypeEnum.swift in Sources */,
+				418FB3772CE0B1FD0094FF7E /* SignUpScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,6 +1620,7 @@
 /* Begin XCBuildConfiguration section */
 		41E478D92CDB3DE00012C6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D7479E1BF0809E8B66B68D /* Pods-El Taquillero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1059,6 +1634,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1074,6 +1650,7 @@
 		};
 		41E478DA2CDB3DE00012C6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FABDFE748D7D9EC58ECA328 /* Pods-El Taquillero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1087,6 +1664,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1137,7 +1715,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1201,7 +1779,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1223,6 +1801,7 @@
 		};
 		41E478DE2CDB3DE00012C6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BF0EF3E37D352C1959A93C /* Pods-El TaquilleroTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1242,6 +1821,7 @@
 		};
 		41E478DF2CDB3DE00012C6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FC779D87BF3FB019F9FDC4 /* Pods-El TaquilleroTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1261,6 +1841,7 @@
 		};
 		41E478E12CDB3DE00012C6D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9103B9FF43FF057F9D84DEA8 /* Pods-El Taquillero-El TaquilleroUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1278,6 +1859,7 @@
 		};
 		41E478E22CDB3DE00012C6D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2708C11826B4CAFC6C929F /* Pods-El Taquillero-El TaquilleroUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1335,6 +1917,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		4174F9842CE224420067E737 /* UserEntityModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */,
+			);
+			currentVersion = 4174F9852CE224420067E737 /* UserEntityModel.xcdatamodel */;
+			path = UserEntityModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		41E478E52CDB3DEC0012C6D7 /* El_Taquillero.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
