@@ -7,14 +7,16 @@
 
 import UIKit
 import CoreData
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    let isUserLoggedIn = UserDefaults.isLoggedIn()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
@@ -30,6 +32,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        if isUserLoggedIn {
+            UserDefaults.setLoggedIn(true)
+            saveCurrentUserSession()
+        } else {
+            UserDefaults.setLoggedIn(false)
+        }
+    }
+    
+    private func saveCurrentUserSession() {
+        if let currentUser = SessionCRUDFunctions.shared.fetchEmail() {
+            UserDefaults.standard.set(currentUser, forKey: "LastLoggedInUserEmail")
+            UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+        } else {
+            UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+        }
     }
 
     // MARK: - Core Data stack
@@ -58,6 +78,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        return container
+    }()
+    
+    // For UserEntityModel
+    lazy var userEntityPersistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "UserEntityModel")
+        container.loadPersistentStores { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        }
         return container
     }()
 

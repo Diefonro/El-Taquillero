@@ -10,6 +10,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    let isUserLoggedIn = UserDefaults.isLoggedIn()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -42,12 +44,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
+        if isUserLoggedIn {
+            UserDefaults.setLoggedIn(true)
+            saveCurrentUserSession()
+        } else {
+            UserDefaults.setLoggedIn(false)
+        }
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+    }
+    
+    private func saveCurrentUserSession() {
+        if let currentUser = SessionCRUDFunctions.shared.fetchEmail() {
+            UserDefaults.standard.set(currentUser, forKey: "LastLoggedInUserEmail")
+            UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+        } else {
+            UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
+        }
     }
 
 

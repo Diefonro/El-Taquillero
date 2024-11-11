@@ -42,6 +42,13 @@ extension UIView {
         self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner]
     }
     
+    func roundTopCorners(cornerRadius: Double) {
+        self.layer.cornerRadius = CGFloat(cornerRadius)
+        self.clipsToBounds = true
+        self.layer.masksToBounds = true
+        self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
+    
     func setupCustomNavBar(navBar: UIView, label: UILabel, context: UIViewController, rootScreen: RootScreen) {
         navBar.backgroundColor = .etLightTeal
         navBar.addBottomBorder(with: .darkGray, andWidth: 0.5)

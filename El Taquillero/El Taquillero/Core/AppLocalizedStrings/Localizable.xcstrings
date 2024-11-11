@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "CANCEL_BUTTON_CAPTION" : {
+      "comment" : "Cancel button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        }
+      }
+    },
     "DETAILS_INSTRUCTIONS_DESCRIPTION" : {
       "comment" : "Share details caption.",
       "localizations" : {
@@ -35,19 +52,19 @@
         }
       }
     },
-    "HOME_DESCRIPTION_TEXT" : {
-      "comment" : "The home description.",
+    "EMAIL_ALREADY_IN_USE" : {
+      "comment" : "Email in use caption.",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "This is a home test description."
+            "value" : "Email already in use."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Esta es una descripción de prueba."
+            "value" : "El correo ya está en uso"
           }
         }
       }
@@ -123,19 +140,36 @@
         }
       }
     },
-    "HOME_WELCOME_TEXT" : {
-      "comment" : "A greeting phrase.",
+    "LOG_OUT_DESCRIPTION" : {
+      "comment" : "Log out ",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Welcome to Home Screen."
+            "value" : "Are you sure you want to log out?"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bienvenido a la pantalla de inicio."
+            "value" : "¿Estás seguro de que quieres cerrar sesión?"
+          }
+        }
+      }
+    },
+    "LOG_OUT_TITLE" : {
+      "comment" : "Log out title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión"
           }
         }
       }
@@ -153,6 +187,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingresa"
+          }
+        }
+      }
+    },
+    "LOGIN_REQUEST_ERROR" : {
+      "comment" : "Login request failed caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login request has failed"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El inicio de sesión ha fallado"
           }
         }
       }
@@ -242,42 +293,6 @@
         }
       }
     },
-    "LOGIN_SCREEN_PASSWORD_ERROR" : {
-      "comment" : "Password input error caption.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Password invalid or incorrect"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Contraseña inválida o incorrecta"
-          }
-        }
-      }
-    },
-    "LOGIN_SCREEN_USERNAME_ERROR" : {
-      "comment" : "Mail input error caption.",
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mail invalid or incorrect"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Correo electrónico o nombre de usuario inválido o incorrecto"
-          }
-        }
-      }
-    },
     "LOGIN_SCREEN_WELCOME_DESCRIPTION" : {
       "comment" : "Welcome description text.",
       "localizations" : {
@@ -308,6 +323,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "¡Bienvenido de vuelta!"
+          }
+        }
+      }
+    },
+    "LOGOUT_BUTTON_CAPTION" : {
+      "comment" : "Log out button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log Out"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar sesión"
           }
         }
       }
@@ -770,6 +802,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cuenta"
+          }
+        }
+      }
+    },
+    "VERIFY_BUTTON_CAPTION" : {
+      "comment" : "Verify button caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificar"
+          }
+        }
+      }
+    },
+    "VERIFY_EMAIL_DESCRIPTION" : {
+      "comment" : "Verify email description.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For your security, we have sent a confirmation email to"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por tu seguridad, hemos enviado un correo de confirmación a"
+          }
+        }
+      }
+    },
+    "VERIFY_EMAIL_TITLE" : {
+      "comment" : "Verify email title.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verify your mail"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifica tu correo"
+          }
+        }
+      }
+    },
+    "VERIFY_ERROR_CAPTION" : {
+      "comment" : "Verify error caption.",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail is not verified."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El correo no ha sido verificado"
           }
         }
       }

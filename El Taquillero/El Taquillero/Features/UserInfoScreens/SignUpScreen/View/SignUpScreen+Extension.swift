@@ -17,11 +17,11 @@ extension SignUpScreenVC {
         emailErrorCaption.text = ""
         passwordErrorCaption.text = ""
         
-        usernameErrorView.isHidden = true
-        surnameErrorView.isHidden = true
-        phoneErrorViewWrapper.isHidden = true
-        emailErrorView.isHidden = true
-        passwordErrorView.isHidden = true
+//        usernameErrorView.isHidden = true
+//        surnameErrorView.isHidden = true
+//        phoneErrorViewWrapper.isHidden = true
+//        emailErrorView.isHidden = true
+//        passwordErrorView.isHidden = true
         
         // Validate username
         validateTextField(textField: usernameTextfield,
@@ -75,12 +75,53 @@ extension SignUpScreenVC {
             let textFieldsArray: [UITextField] = [self.usernameTextfield, self.surnameTextfield, self.phoneTextfield, self.emailTextfield, self.passwordTextfield]
             self.setupTextFields(textFields: textFieldsArray)
             
+            let name = usernameTextfield.text ?? ""
+            let surname = surnameTextfield.text ?? ""
+            let phone = phoneTextfield.text ?? ""
+            let email = emailTextfield.text ?? ""
+            let password = passwordTextfield.text ?? ""
+            
             print("Form is valid")
-            print("Username: \(usernameTextfield.text ?? "")")
-            print("Surname: \(surnameTextfield.text ?? "")")
-            print("Phone: \(phoneTextfield.text ?? "")")
-            print("Email: \(emailTextfield.text ?? "")")
-            print("Password: \(passwordTextfield.text ?? "")")
+            print("Username: \(name)")
+            print("Surname: \(surname)")
+            print("Phone: \(phone)")
+            print("Email: \(email)")
+            print("Password: \(password)")
+            
+            
+            
+            FirebaseGlobalFunctions.signUpUser(name: name, surname: surname, phone: phone, email: email, password: password) { result in
+                switch result {
+                case .success(let message):
+                    print(message)
+                    
+                    FirebaseGlobalFunctions.sendVerificationEmail { verificationResult in
+                        switch verificationResult {
+                        case .success(let successMessage):
+                            print(successMessage)
+                            if let email = SessionCRUDFunctions.shared.fetchEmail() {
+                                self.presenter.readyToPopUpVerifyScreen(userMail: email)
+                            } else {
+                                print("Email to verify not found.")
+                            }
+                        case .failure(let error):
+                            print("Failed to send verification email: \(error.localizedDescription)")
+                        }
+                    }
+                    
+                case .failure(let error):
+                    print("Error during registration: \(error.localizedDescription)")
+                    let errorLocalized = error.localizedDescription
+                    print("Error during registration: \(errorLocalized)")
+                    if errorLocalized == "The email address is already in use by another account." {
+                        self.emailErrorView.isHidden = false
+                        self.emailErrorCaption.text = String(localized: "EMAIL_ALREADY_IN_USE")
+                    } else {
+                        print("An unknown error occurred.")
+                    }
+                    
+                }
+            }
         }
     }
     
